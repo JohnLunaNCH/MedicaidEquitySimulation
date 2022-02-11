@@ -1,0 +1,3950 @@
+:root {
+	--web-view-ids: Option_2,Option_1,Dentist_Proto;
+	--web-view-name: Option 2;
+	--web-view-id: Option_2;
+	--web-scale-to-fit: false;
+	--web-scale-to-fit-type: default;
+	--web-enable-scale-up: false;
+	--web-scale-on-resize: true;
+	--web-show-scale-controls: false;
+	--web-scale-on-double-click: false;
+	--web-center-horizontally: false;
+	--web-center-vertically: false;
+	--web-actual-size-on-double-click: false;
+	--web-navigate-on-keypress: false;
+	--web-refresh-for-changes: false;
+	--web-add-image-compare: false;
+	--web-show-by-media-query: false;
+	--web-application: false;
+	--web-show-navigation-controls: true;
+	--web-enable-deep-linking: true;
+	--web-is-overlay: false;
+}
+#Option_2,
+#Option_1,
+#Dentist_Proto {
+	display: none;
+}
+@media (min-width: 0px) {
+	.mediaViewInfo {
+		--web-view-name: Option 2;
+		--web-view-id: Option_2;
+		--web-scale-on-resize: true;
+		--web-show-navigation-controls: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Option_2 {
+		position: absolute;
+		display: block;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Option 2;
+		--web-view-id: Option_2;
+		--web-scale-on-resize: true;
+		--web-show-navigation-controls: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Background {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Left_Scroll_BG {
+		opacity: 0.6;
+		fill: rgba(0,0,0,1);
+	}
+	.Left_Scroll_BG {
+		position: absolute;
+		overflow: visible;
+		width: 1752.97px;
+		height: 785.99px;
+		left: 84.01px;
+		top: 203.01px;
+	}
+	#Filters {
+		position: absolute;
+		width: 1752.97px;
+		height: 107px;
+		left: 84.01px;
+		top: 96px;
+		overflow: visible;
+	}
+	#Distance_cl {
+		position: absolute;
+		width: 143.24px;
+		height: 25.01px;
+		left: 526.022px;
+		top: 7.664px;
+		display: none;
+		overflow: visible;
+	}
+	#Bubble__cm {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bubble__cm {
+		position: absolute;
+		overflow: visible;
+		width: 144.24px;
+		height: 26.01px;
+		left: 0px;
+		top: 0px;
+	}
+	#Distance_Near_to_Far_cn {
+		left: 11.196px;
+		top: 3.043px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		line-height: 60.21369552612305px;
+		margin-top: -23.520972728729248px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.17175006866455px;
+		color: rgba(255,255,255,1);
+	}
+	#Rating_Highest_to_Lowest_co {
+		position: absolute;
+		width: 143.24px;
+		height: 25.01px;
+		left: 526.022px;
+		top: 38.645px;
+		display: none;
+		overflow: visible;
+	}
+	#Bubble__cp {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bubble__cp {
+		position: absolute;
+		overflow: visible;
+		width: 144.24px;
+		height: 26.01px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rating_High_to_Low_cq {
+		left: 15.196px;
+		top: 3.109px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 60.21369552612305px;
+		margin-top: -23.520972728729248px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.17175006866455px;
+		color: rgba(255,255,255,1);
+	}
+	#Sort_cr {
+		display: none;
+		left: 525.979px;
+		top: -21.277px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 64px;
+		margin-top: -23px;
+		text-align: left;
+		font-family: Roboto-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#Left-Top {
+		opacity: 0.8;
+		fill: rgba(0,0,0,1);
+	}
+	.Left-Top {
+		position: absolute;
+		overflow: visible;
+		width: 1752.97px;
+		height: 107px;
+		left: 0px;
+		top: 0px;
+	}
+	#Select_a_Dentist_to_call_until_cs {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 654px;
+		white-space: nowrap;
+		line-height: 64px;
+		margin-top: -20.5px;
+		text-align: left;
+		font-family: Roboto-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 23px;
+		color: rgba(255,255,255,1);
+	}
+	#Right_Side {
+		position: absolute;
+		width: 647.747px;
+		height: 19.318px;
+		left: 37.99px;
+		top: 66.866px;
+		overflow: visible;
+	}
+	#Prediatric_Specialty {
+		position: absolute;
+		width: 148.112px;
+		height: 19px;
+		left: 258px;
+		top: 0.247px;
+		overflow: visible;
+	}
+	#CHeck_cu {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.CHeck_cu {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.358px;
+		left: 0px;
+		top: 5.635px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_copy_cv {
+		display: none;
+		position: absolute;
+		width: 14px;
+		height: 13px;
+		left: -2.221px;
+		top: 3.887px;
+		overflow: visible;
+	}
+	#Pediatric_Speciality_cw {
+		transform: translate(-5889.221px, -5002.113px) matrix(1,0,0,1,5911.333,5002.1138) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 127px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#X_copy_3_cx {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 2.562px;
+		top: 5.669px;
+		display: none;
+		overflow: visible;
+	}
+	#X_cy {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_cz {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_cz {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_c {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_c {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accepts_Medicaid {
+		position: absolute;
+		width: 141.747px;
+		height: 19px;
+		left: 506px;
+		top: 0.317px;
+		overflow: visible;
+	}
+	#Check_c {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Check_c {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.359px;
+		left: 0px;
+		top: 5.634px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_copy_2_c {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 2.562px;
+		top: 5.599px;
+		display: none;
+		overflow: visible;
+	}
+	#X_c {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_c {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_c {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_da {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_da {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accepts_Medicaid_da {
+		transform: translate(-6063.221px, -5002.184px) matrix(1,0,0,1,6085.9678,5002.1841) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#Taking_New_Patiens {
+		position: absolute;
+		width: 157.501px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Check_da {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Check_da {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.359px;
+		left: 0px;
+		top: 5.633px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_da {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: -0.249px;
+		top: 4.916px;
+		display: none;
+		overflow: visible;
+	}
+	#X_db {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_dc {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_dc {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_dd {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_dd {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Taking_New_Patients_de {
+		transform: translate(-5707.031px, -5001.866px) matrix(1,0,0,1,5727.5332,5001.8662) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 138px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#Map {
+		position: absolute;
+		width: 1029px;
+		height: 894px;
+		left: 808px;
+		top: 95px;
+		overflow: visible;
+	}
+	#Route {
+		transform: matrix(1,0,0,1,1143.7981,304.87) rotate(87deg);
+		transform-origin: center;
+		position: absolute;
+		width: 354.228px;
+		height: 358.072px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_3 {
+		opacity: 0.705;
+		fill: transparent;
+		stroke: rgba(86,166,224,1);
+		stroke-width: 20px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_3 {
+		overflow: visible;
+		position: absolute;
+		width: 377.708px;
+		height: 382.741px;
+		left: 20.679px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ellipse_2 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(80,80,80,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 25.223px;
+		height: 25.224px;
+		left: 17.282px;
+		top: 347.26px;
+	}
+	#Ellipse_3 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(80,80,80,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_3 {
+		position: absolute;
+		overflow: visible;
+		width: 25.223px;
+		height: 25.224px;
+		left: 42.505px;
+		top: 54.675px;
+	}
+	#Dentist {
+		position: absolute;
+		width: 94px;
+		height: 124.222px;
+		left: 1141px;
+		top: 224px;
+		overflow: visible;
+	}
+	#Path_1 {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1 {
+		overflow: visible;
+		position: absolute;
+		width: 94px;
+		height: 124.222px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1 {
+		overflow: visible;
+		position: absolute;
+		width: 75px;
+		height: 70px;
+		left: 9.5px;
+		top: 10.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Travel_Route {
+		position: absolute;
+		width: 200.893px;
+		height: 91px;
+		left: 1501.107px;
+		top: 392.905px;
+		overflow: visible;
+	}
+	#Path_4 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_4 {
+		overflow: visible;
+		position: absolute;
+		width: 200.893px;
+		height: 91px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Travel_Time_20min_Walking {
+		left: 42.893px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 137px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Home {
+		position: absolute;
+		width: 103px;
+		height: 149.603px;
+		left: 1115px;
+		top: 497.896px;
+		overflow: visible;
+	}
+	#Path_2 {
+		fill: rgba(206,86,86,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2 {
+		overflow: visible;
+		position: absolute;
+		width: 103px;
+		height: 149.604px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ellipse_1 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_1 {
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		height: 52px;
+		left: 25px;
+		top: 27px;
+	}
+	#Filters_ck {
+		position: absolute;
+		width: 653px;
+		height: 57.348px;
+		left: 117.348px;
+		top: 124.836px;
+		overflow: visible;
+	}
+	#Distance_cl {
+		position: absolute;
+		width: 143.24px;
+		height: 25.01px;
+		left: 526.022px;
+		top: 7.664px;
+		display: none;
+		overflow: visible;
+	}
+	#Bubble__cm {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bubble__cm {
+		position: absolute;
+		overflow: visible;
+		width: 144.24px;
+		height: 26.01px;
+		left: 0px;
+		top: 0px;
+	}
+	#Distance_Near_to_Far_cn {
+		left: 11.196px;
+		top: 3.043px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		line-height: 60.21369552612305px;
+		margin-top: -23.520972728729248px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.17175006866455px;
+		color: rgba(255,255,255,1);
+	}
+	#Rating_Highest_to_Lowest_co {
+		position: absolute;
+		width: 143.24px;
+		height: 25.01px;
+		left: 526.022px;
+		top: 38.645px;
+		display: none;
+		overflow: visible;
+	}
+	#Bubble__cp {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bubble__cp {
+		position: absolute;
+		overflow: visible;
+		width: 144.24px;
+		height: 26.01px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rating_High_to_Low_cq {
+		left: 15.196px;
+		top: 3.109px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 60.21369552612305px;
+		margin-top: -23.520972728729248px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.17175006866455px;
+		color: rgba(255,255,255,1);
+	}
+	#Sort_cr {
+		display: none;
+		left: 525.979px;
+		top: -21.277px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 64px;
+		margin-top: -23px;
+		text-align: left;
+		font-family: Roboto-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#Select_a_Dentist_to_call_until_cs {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 654px;
+		white-space: nowrap;
+		line-height: 64px;
+		margin-top: -20.5px;
+		text-align: left;
+		font-family: Roboto-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 23px;
+		color: rgba(255,255,255,1);
+	}
+	#Prediatric_Specialty_ct {
+		position: absolute;
+		width: 148.112px;
+		height: 19px;
+		left: 262.652px;
+		top: 38.277px;
+		overflow: visible;
+	}
+	#CHeck_cu {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.CHeck_cu {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.358px;
+		left: 0px;
+		top: 5.635px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_copy_cv {
+		display: none;
+		position: absolute;
+		width: 14px;
+		height: 13px;
+		left: -2.221px;
+		top: 3.887px;
+		overflow: visible;
+	}
+	#Pediatric_Speciality_cw {
+		transform: translate(-5889.221px, -5002.113px) matrix(1,0,0,1,5911.333,5002.1138) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 127px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#X_copy_3_cx {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 2.562px;
+		top: 5.669px;
+		display: none;
+		overflow: visible;
+	}
+	#X_cy {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_cz {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_cz {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_c {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_c {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accepts_Medicaid_c {
+		position: absolute;
+		width: 141.747px;
+		height: 19px;
+		left: 510.652px;
+		top: 38.348px;
+		overflow: visible;
+	}
+	#Check_c {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Check_c {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.359px;
+		left: 0px;
+		top: 5.634px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_copy_2_c {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 2.562px;
+		top: 5.599px;
+		display: none;
+		overflow: visible;
+	}
+	#X_c {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_c {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_c {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_da {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_da {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accepts_Medicaid_da {
+		transform: translate(-6063.221px, -5002.184px) matrix(1,0,0,1,6085.9678,5002.1841) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#Taking_New_Patiens_c {
+		position: absolute;
+		width: 157.501px;
+		height: 19px;
+		left: 4.652px;
+		top: 38.03px;
+		overflow: visible;
+	}
+	#Check_da {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Check_da {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.359px;
+		left: 0px;
+		top: 5.633px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_da {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: -0.249px;
+		top: 4.916px;
+		display: none;
+		overflow: visible;
+	}
+	#X_db {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_dc {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_dc {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_dd {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_dd {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Taking_New_Patients_de {
+		transform: translate(-5707.031px, -5001.866px) matrix(1,0,0,1,5727.5332,5001.8662) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 138px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#Scroll_Line {
+		position: absolute;
+		width: 721.597px;
+		height: 891px;
+		left: 85.403px;
+		top: 97px;
+		overflow: visible;
+	}
+	#Sort_Filter_Frame {
+		position: absolute;
+		width: 721.193px;
+		height: 1px;
+		left: 0px;
+		top: 105.5px;
+		overflow: visible;
+	}
+	#Line_706 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_706 {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 106.077px;
+		left: 540.597px;
+		top: -105.622px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_706_copy {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_706_copy {
+		overflow: visible;
+		position: absolute;
+		width: 722.193px;
+		height: 1px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Middle_Line {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(128,128,128,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.Middle_Line {
+		overflow: visible;
+		position: absolute;
+		width: 4px;
+		height: 891px;
+		left: 721.597px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Scroll {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(99,99,99,1);
+		stroke-width: 2px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Scroll {
+		overflow: visible;
+		position: absolute;
+		width: 2px;
+		height: 40.957px;
+		left: 721.597px;
+		top: 7.99px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Dial {
+		position: absolute;
+		width: 227px;
+		height: 227px;
+		left: 333px;
+		top: 627px;
+		overflow: visible;
+	}
+	#n_ {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 158px;
+		top: 158px;
+		overflow: visible;
+	}
+	#n__dn {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__dn {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__do {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#n__dp {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 79px;
+		top: 158px;
+		overflow: visible;
+	}
+	#n__dq {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__dq {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__dr {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#n__ds {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 158px;
+		overflow: visible;
+	}
+	#n__dt {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__dt {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__du {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#n__dv {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 158px;
+		top: 79px;
+		overflow: visible;
+	}
+	#n__dw {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__dw {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__dx {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#n__dy {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 79px;
+		top: 79px;
+		overflow: visible;
+	}
+	#n__dz {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__dz {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__d {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#n__ea {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 79px;
+		overflow: visible;
+	}
+	#n__eb {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__eb {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__ec {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#n__ed {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 158px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n__ee {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__ee {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__ef {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#n__eg {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 79px;
+		top: 0px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Dentist_Search_3;
+		cursor: pointer;
+	}
+	#n__eh {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__eh {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__ei {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#n__ej {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n__ek {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__ek {
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		height: 69px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__el {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_1 {
+		position: absolute;
+		width: 668px;
+		height: 631px;
+		left: 123px;
+		top: 349px;
+		overflow: visible;
+	}
+	#Mask_Group_4 {
+		position: absolute;
+		width: 668px;
+		height: 631px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Dr_Listings {
+		position: absolute;
+		width: 1753px;
+		height: 786px;
+		left: 84px;
+		top: 202px;
+		overflow: visible;
+	}
+	#SWATCH {
+		position: absolute;
+		width: 317px;
+		height: 147px;
+		left: 1542px;
+		top: 36px;
+		display: none;
+		overflow: visible;
+	}
+	#Rectangle_6 {
+		fill: rgba(20,22,30,1);
+	}
+	.Rectangle_6 {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_6_copy {
+		fill: rgba(76,78,87,1);
+	}
+	.Rectangle_6_copy {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 83px;
+		top: 0px;
+	}
+	#Rectangle_6_copy_2 {
+		fill: rgba(181,184,190,1);
+	}
+	.Rectangle_6_copy_2 {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 166px;
+		top: 0px;
+	}
+	#Rectangle_6_copy_3 {
+		fill: rgba(68,140,203,1);
+	}
+	.Rectangle_6_copy_3 {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 0px;
+		top: 79px;
+	}
+	#Rectangle_6_copy_4 {
+		fill: rgba(121,172,217,1);
+	}
+	.Rectangle_6_copy_4 {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 83px;
+		top: 79px;
+	}
+	#Rectangle_6_copy_5 {
+		fill: rgba(179,206,230,1);
+	}
+	.Rectangle_6_copy_5 {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 166px;
+		top: 78px;
+	}
+	#Rectangle_6_copy_6 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_6_copy_6 {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 249px;
+		top: 78px;
+	}
+}
+@media (min-width: 0px) {
+	.mediaViewInfo {
+		--web-view-name: Option 1;
+		--web-view-id: Option_1;
+		--web-scale-on-resize: true;
+		--web-show-navigation-controls: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Option_1 {
+		position: absolute;
+		display: block;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Option 1;
+		--web-view-id: Option_1;
+		--web-scale-on-resize: true;
+		--web-show-navigation-controls: true;
+		--web-enable-deep-linking: true;
+	}
+	#Background_eq {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Left_Scroll_BG_er {
+		opacity: 0.6;
+		fill: rgba(0,0,0,1);
+	}
+	.Left_Scroll_BG_er {
+		position: absolute;
+		overflow: visible;
+		width: 1752.97px;
+		height: 785.99px;
+		left: 84.01px;
+		top: 203.01px;
+	}
+	#Filters_es {
+		position: absolute;
+		width: 1752.97px;
+		height: 107px;
+		left: 84.01px;
+		top: 96px;
+		overflow: visible;
+	}
+	#Distance_et {
+		position: absolute;
+		width: 143.24px;
+		height: 25.01px;
+		left: 559.36px;
+		top: 36.5px;
+		display: none;
+		overflow: visible;
+	}
+	#Bubble__eu {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bubble__eu {
+		position: absolute;
+		overflow: visible;
+		width: 144.24px;
+		height: 26.01px;
+		left: 0px;
+		top: 0px;
+	}
+	#Distance_Near_to_Far_ev {
+		left: 11.196px;
+		top: 3.043px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		line-height: 60.21369552612305px;
+		margin-top: -23.520972728729248px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.17175006866455px;
+		color: rgba(255,255,255,1);
+	}
+	#Rating_Highest_to_Lowest_ew {
+		position: absolute;
+		width: 143.24px;
+		height: 25.01px;
+		left: 559.36px;
+		top: 67.48px;
+		display: none;
+		overflow: visible;
+	}
+	#Bubble__ex {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bubble__ex {
+		position: absolute;
+		overflow: visible;
+		width: 144.24px;
+		height: 26.01px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rating_High_to_Low_ey {
+		left: 15.196px;
+		top: 3.109px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 60.21369552612305px;
+		margin-top: -23.520972728729248px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.17175006866455px;
+		color: rgba(255,255,255,1);
+	}
+	#Sort_ez {
+		display: none;
+		left: 559.317px;
+		top: 7.559px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 64px;
+		margin-top: -23px;
+		text-align: left;
+		font-family: Roboto-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#Left-Top_e {
+		opacity: 0.8;
+		fill: rgba(0,0,0,1);
+	}
+	.Left-Top_e {
+		position: absolute;
+		overflow: visible;
+		width: 1752.97px;
+		height: 107px;
+		left: 0px;
+		top: 0px;
+	}
+	#Select_a_Dentist_to_call_until_e {
+		left: 33.338px;
+		top: 28.836px;
+		position: absolute;
+		overflow: visible;
+		width: 654px;
+		white-space: nowrap;
+		line-height: 64px;
+		margin-top: -20.5px;
+		text-align: left;
+		font-family: Roboto-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 23px;
+		color: rgba(255,255,255,1);
+	}
+	#Right_Side_e {
+		position: absolute;
+		width: 647.747px;
+		height: 19.318px;
+		left: 37.99px;
+		top: 66.866px;
+		overflow: visible;
+	}
+	#Prediatric_Specialty_e {
+		position: absolute;
+		width: 148.112px;
+		height: 19px;
+		left: 258px;
+		top: 0.247px;
+		overflow: visible;
+	}
+	#CHeck_e {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.CHeck_e {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.358px;
+		left: 0px;
+		top: 5.635px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_copy_e {
+		display: none;
+		position: absolute;
+		width: 14px;
+		height: 13px;
+		left: -2.221px;
+		top: 3.887px;
+		overflow: visible;
+	}
+	#Pediatric_Speciality_e {
+		transform: translate(-5889.221px, -5002.113px) matrix(1,0,0,1,5911.333,5002.1138) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 127px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#X_copy_3_e {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 2.562px;
+		top: 5.669px;
+		display: none;
+		overflow: visible;
+	}
+	#X_e {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_e {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_e {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_fa {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_fa {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accepts_Medicaid_fb {
+		position: absolute;
+		width: 141.747px;
+		height: 19px;
+		left: 506px;
+		top: 0.317px;
+		overflow: visible;
+	}
+	#Check_fc {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Check_fc {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.359px;
+		left: 0px;
+		top: 5.634px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_copy_2_fd {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 2.562px;
+		top: 5.599px;
+		display: none;
+		overflow: visible;
+	}
+	#X_fe {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_ff {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_ff {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_fg {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_fg {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accepts_Medicaid_fh {
+		transform: translate(-6063.221px, -5002.184px) matrix(1,0,0,1,6085.9678,5002.1841) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#Taking_New_Patiens_fi {
+		position: absolute;
+		width: 157.501px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Check_fj {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Check_fj {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.359px;
+		left: 0px;
+		top: 5.633px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_fk {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: -0.249px;
+		top: 4.916px;
+		display: none;
+		overflow: visible;
+	}
+	#X_fl {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_fm {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_fm {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_fn {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_fn {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Taking_New_Patients_fo {
+		transform: translate(-5707.031px, -5001.866px) matrix(1,0,0,1,5727.5332,5001.8662) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 138px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#Map_fp {
+		position: absolute;
+		width: 1029px;
+		height: 894px;
+		left: 808px;
+		top: 95px;
+		overflow: visible;
+	}
+	#Route_fq {
+		transform: matrix(1,0,0,1,1271.0045,310.7923) rotate(87deg);
+		transform-origin: center;
+		position: absolute;
+		width: 190.665px;
+		height: 752.903px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_3_fr {
+		opacity: 0.705;
+		fill: transparent;
+		stroke: rgba(86,166,224,1);
+		stroke-width: 20px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_3_fr {
+		overflow: visible;
+		position: absolute;
+		width: 760.594px;
+		height: 228.601px;
+		left: 15.334px;
+		top: 12.611px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ellipse_2_fs {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(80,80,80,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_2_fs {
+		position: absolute;
+		overflow: visible;
+		width: 25.223px;
+		height: 25.224px;
+		left: 8.723px;
+		top: 204.584px;
+	}
+	#Ellipse_3_ft {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(80,80,80,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_3_ft {
+		position: absolute;
+		overflow: visible;
+		width: 25.223px;
+		height: 25.224px;
+		left: 727.904px;
+		top: 0px;
+	}
+	#Travel_Route_fu {
+		position: absolute;
+		width: 200.893px;
+		height: 91px;
+		left: 1428.107px;
+		top: 641.744px;
+		overflow: visible;
+	}
+	#Path_4_fv {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_4_fv {
+		overflow: visible;
+		position: absolute;
+		width: 200.893px;
+		height: 91px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Travel_Time_20min_Walking_fw {
+		left: 42.893px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 137px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#All_Offices {
+		position: absolute;
+		width: 901.745px;
+		height: 454.038px;
+		left: 892px;
+		top: 266.98px;
+		overflow: visible;
+	}
+	#Component_7__20 {
+		opacity: 0;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 398.99px;
+		overflow: visible;
+	}
+	#Group_3 {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_f {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_f {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_f {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_f {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.209px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__21 {
+		position: absolute;
+		width: 107.49px;
+		height: 142.049px;
+		left: 794.255px;
+		top: 176.293px;
+		overflow: visible;
+	}
+	#Group_3_f {
+		position: absolute;
+		width: 107.49px;
+		height: 142.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_ga {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_ga {
+		overflow: visible;
+		position: absolute;
+		width: 107.49px;
+		height: 142.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_ga {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_ga {
+		overflow: visible;
+		position: absolute;
+		width: 90.338px;
+		height: 85.764px;
+		left: 8.576px;
+		top: 10.863px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__22 {
+		opacity: 0;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 524.172px;
+		top: 371.465px;
+		overflow: visible;
+	}
+	#Group_3_ga {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_gb {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_gb {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_gb {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_gb {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.211px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__23 {
+		opacity: 0;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 534.172px;
+		top: 302.768px;
+		overflow: visible;
+	}
+	#Group_3_gb {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_gc {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_gc {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_gd {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_gd {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.211px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__24 {
+		opacity: 0;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 132.172px;
+		top: 0.001px;
+		overflow: visible;
+	}
+	#Group_3_gf {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_gg {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_gg {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_gh {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_gh {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.21px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__25 {
+		opacity: 0;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 123.172px;
+		top: 45.001px;
+		overflow: visible;
+	}
+	#Group_3_gj {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_gk {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_gk {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_gl {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_gl {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.21px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Scroll_Line_gm {
+		position: absolute;
+		width: 724.597px;
+		height: 1px;
+		left: 85.403px;
+		top: 202.5px;
+		overflow: visible;
+	}
+	#Sort_Filter_Frame_gn {
+		position: absolute;
+		width: 724.597px;
+		height: 1px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_706_go {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_706_go {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 106.077px;
+		left: 543.147px;
+		top: -105.622px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_706_copy_gp {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_706_copy_gp {
+		overflow: visible;
+		position: absolute;
+		width: 725.597px;
+		height: 1px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Middle_Line_gq {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(128,128,128,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.Middle_Line_gq {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		width: 4px;
+		height: 891px;
+		left: 724.597px;
+		top: -105.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Scroll_gr {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(99,99,99,1);
+		stroke-width: 2px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Scroll_gr {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		width: 2px;
+		height: 40.957px;
+		left: 724.597px;
+		top: -97.51px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Dr_Listings_gs {
+		position: absolute;
+		width: 1753px;
+		height: 786px;
+		left: 87px;
+		top: 202px;
+		overflow: visible;
+	}
+	#Home_gt {
+		position: absolute;
+		width: 100px;
+		height: 144.603px;
+		left: 960px;
+		top: 637px;
+		overflow: visible;
+	}
+	#Path_2_gu {
+		fill: rgba(206,86,86,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2_gu {
+		overflow: visible;
+		position: absolute;
+		width: 100px;
+		height: 144.604px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ellipse_1_gv {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_1_gv {
+		position: absolute;
+		overflow: visible;
+		width: 52px;
+		height: 50px;
+		left: 24px;
+		top: 26px;
+	}
+	#n__Text {
+		left: 161px;
+		top: 349px;
+		position: absolute;
+		overflow: visible;
+		width: 612px;
+		height: 288px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#SWATCH_gx {
+		position: absolute;
+		width: 317px;
+		height: 147px;
+		left: 1542px;
+		top: 36px;
+		display: none;
+		overflow: visible;
+	}
+	#Rectangle_6_gy {
+		fill: rgba(20,22,30,1);
+	}
+	.Rectangle_6_gy {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_6_copy_gz {
+		fill: rgba(76,78,87,1);
+	}
+	.Rectangle_6_copy_gz {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 83px;
+		top: 0px;
+	}
+	#Rectangle_6_copy_2_g {
+		fill: rgba(181,184,190,1);
+	}
+	.Rectangle_6_copy_2_g {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 166px;
+		top: 0px;
+	}
+	#Rectangle_6_copy_3_g {
+		fill: rgba(68,140,203,1);
+	}
+	.Rectangle_6_copy_3_g {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 0px;
+		top: 79px;
+	}
+	#Rectangle_6_copy_4_g {
+		fill: rgba(121,172,217,1);
+	}
+	.Rectangle_6_copy_4_g {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 83px;
+		top: 79px;
+	}
+	#Rectangle_6_copy_5_g {
+		fill: rgba(179,206,230,1);
+	}
+	.Rectangle_6_copy_5_g {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 166px;
+		top: 78px;
+	}
+	#Rectangle_6_copy_6_g {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_6_copy_6_g {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 249px;
+		top: 78px;
+	}
+}
+@media (min-width: 0px) {
+	.mediaViewInfo {
+		--web-view-name: Dentist Proto;
+		--web-view-id: Dentist_Proto;
+		--web-scale-on-resize: true;
+		--web-show-navigation-controls: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Dentist_Proto {
+		position: absolute;
+		display: block;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Dentist Proto;
+		--web-view-id: Dentist_Proto;
+		--web-scale-on-resize: true;
+		--web-show-navigation-controls: true;
+		--web-enable-deep-linking: true;
+	}
+	#Background_g {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Left_Scroll_BG_g {
+		opacity: 0.6;
+		fill: rgba(0,0,0,1);
+	}
+	.Left_Scroll_BG_g {
+		position: absolute;
+		overflow: visible;
+		width: 1752.97px;
+		height: 785.99px;
+		left: 84.01px;
+		top: 203.01px;
+	}
+	#Filters_g {
+		position: absolute;
+		width: 1752.97px;
+		height: 107px;
+		left: 84.01px;
+		top: 96px;
+		overflow: visible;
+	}
+	#Distance_ha {
+		position: absolute;
+		width: 143.24px;
+		height: 25.01px;
+		left: 559.36px;
+		top: 36.5px;
+		display: none;
+		overflow: visible;
+	}
+	#Bubble__hb {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bubble__hb {
+		position: absolute;
+		overflow: visible;
+		width: 144.24px;
+		height: 26.01px;
+		left: 0px;
+		top: 0px;
+	}
+	#Distance_Near_to_Far_hc {
+		left: 11.196px;
+		top: 3.043px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		line-height: 60.21369552612305px;
+		margin-top: -23.520972728729248px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.17175006866455px;
+		color: rgba(255,255,255,1);
+	}
+	#Rating_Highest_to_Lowest_hd {
+		position: absolute;
+		width: 143.24px;
+		height: 25.01px;
+		left: 559.36px;
+		top: 67.48px;
+		display: none;
+		overflow: visible;
+	}
+	#Bubble__he {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bubble__he {
+		position: absolute;
+		overflow: visible;
+		width: 144.24px;
+		height: 26.01px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rating_High_to_Low_hf {
+		left: 15.196px;
+		top: 3.109px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 60.21369552612305px;
+		margin-top: -23.520972728729248px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.17175006866455px;
+		color: rgba(255,255,255,1);
+	}
+	#Sort_hg {
+		display: none;
+		left: 559.317px;
+		top: 7.559px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 64px;
+		margin-top: -23px;
+		text-align: left;
+		font-family: Roboto-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#Left-Top_hh {
+		opacity: 0.8;
+		fill: rgba(0,0,0,1);
+	}
+	.Left-Top_hh {
+		position: absolute;
+		overflow: visible;
+		width: 1752.97px;
+		height: 107px;
+		left: 0px;
+		top: 0px;
+	}
+	#Select_a_Dentist_to_call_until_hi {
+		left: 33.338px;
+		top: 28.836px;
+		position: absolute;
+		overflow: visible;
+		width: 654px;
+		white-space: nowrap;
+		line-height: 64px;
+		margin-top: -20.5px;
+		text-align: left;
+		font-family: Roboto-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 23px;
+		color: rgba(255,255,255,1);
+	}
+	#Right_Side_hj {
+		position: absolute;
+		width: 647.747px;
+		height: 19.318px;
+		left: 37.99px;
+		top: 66.866px;
+		overflow: visible;
+	}
+	#Prediatric_Specialty_hk {
+		position: absolute;
+		width: 148.112px;
+		height: 19px;
+		left: 258px;
+		top: 0.247px;
+		overflow: visible;
+	}
+	#CHeck_hl {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.CHeck_hl {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.358px;
+		left: 0px;
+		top: 5.635px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_copy_hm {
+		display: none;
+		position: absolute;
+		width: 14px;
+		height: 13px;
+		left: -2.221px;
+		top: 3.887px;
+		overflow: visible;
+	}
+	#Pediatric_Speciality_hn {
+		transform: translate(-5889.221px, -5002.113px) matrix(1,0,0,1,5911.333,5002.1138) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 127px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#X_copy_3_ho {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 2.562px;
+		top: 5.669px;
+		display: none;
+		overflow: visible;
+	}
+	#X_hp {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_hq {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_hq {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_hr {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_hr {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accepts_Medicaid_hs {
+		position: absolute;
+		width: 141.747px;
+		height: 19px;
+		left: 506px;
+		top: 0.317px;
+		overflow: visible;
+	}
+	#Check_ht {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Check_ht {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.359px;
+		left: 0px;
+		top: 5.634px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_copy_2_hu {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 2.562px;
+		top: 5.599px;
+		display: none;
+		overflow: visible;
+	}
+	#X_hv {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_hw {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_hw {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_hx {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_hx {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accepts_Medicaid_hy {
+		transform: translate(-6063.221px, -5002.184px) matrix(1,0,0,1,6085.9678,5002.1841) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#Taking_New_Patiens_hz {
+		position: absolute;
+		width: 157.501px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Check_h {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(179,206,230,1);
+		stroke-width: 4px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Check_h {
+		overflow: visible;
+		position: absolute;
+		width: 20.906px;
+		height: 14.359px;
+		left: 0px;
+		top: 5.633px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#X_h {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: -0.249px;
+		top: 4.916px;
+		display: none;
+		overflow: visible;
+	}
+	#X_ia {
+		position: absolute;
+		width: 10.436px;
+		height: 10.436px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_631_h {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_h {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_631_copy_h {
+		fill: rgba(68,140,203,1);
+		stroke: rgba(211,7,7,1);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_631_copy_h {
+		overflow: visible;
+		position: absolute;
+		width: 13.936px;
+		height: 13.936px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Taking_New_Patients_h {
+		transform: translate(-5707.031px, -5001.866px) matrix(1,0,0,1,5727.5332,5001.8662) rotate(0deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 138px;
+		white-space: nowrap;
+		line-height: 22.241455078125px;
+		margin-top: -3.478177547454834px;
+		text-align: left;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15.285099983215332px;
+		color: rgba(255,255,255,1);
+	}
+	#Map_h {
+		position: absolute;
+		width: 1029px;
+		height: 894px;
+		left: 810px;
+		top: 93px;
+		overflow: visible;
+	}
+	#All_Offices_h {
+		position: absolute;
+		width: 586.656px;
+		height: 481.562px;
+		left: 980px;
+		top: 182.184px;
+		overflow: visible;
+	}
+	#Component_7__14 {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 398.989px;
+		overflow: visible;
+	}
+	#Group_3_h {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_ia {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_ia {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_ib {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_ib {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.21px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__15 {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 545px;
+		top: 426.514px;
+		overflow: visible;
+	}
+	#Group_3_id {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_ie {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_ie {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_if {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_if {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.21px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__16 {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 524.172px;
+		top: 371.465px;
+		overflow: visible;
+	}
+	#Group_3_ih {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_ii {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_ii {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_ij {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_ij {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.21px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__17 {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 534.172px;
+		top: 302.768px;
+		overflow: visible;
+	}
+	#Group_3_il {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_im {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_im {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_in {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_in {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.21px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__18 {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 132.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_3_ip {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_iq {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_iq {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_ir {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_ir {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.21px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_7__19 {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 123.172px;
+		top: 45px;
+		overflow: visible;
+	}
+	#Group_3_it {
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1_iu {
+		fill: rgba(86,166,224,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1_iu {
+		overflow: visible;
+		position: absolute;
+		width: 41.656px;
+		height: 55.049px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_1_iv {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Polygon_1_iv {
+		overflow: visible;
+		position: absolute;
+		width: 35.009px;
+		height: 33.236px;
+		left: 3.323px;
+		top: 4.21px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Scroll_Line_iw {
+		position: absolute;
+		width: 724.597px;
+		height: 1px;
+		left: 85.403px;
+		top: 202.5px;
+		overflow: visible;
+	}
+	#Sort_Filter_Frame_ix {
+		position: absolute;
+		width: 724.597px;
+		height: 1px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line_706_iy {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_706_iy {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 106.077px;
+		left: 543.147px;
+		top: -105.622px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_706_copy_iz {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_706_copy_iz {
+		overflow: visible;
+		position: absolute;
+		width: 725.597px;
+		height: 1px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Middle_Line_i {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(128,128,128,1);
+		stroke-width: 4px;
+		stroke-linejoin: miter;
+		stroke-linecap: square;
+		stroke-miterlimit: 100;
+		shape-rendering: auto;
+	}
+	.Middle_Line_i {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		width: 4px;
+		height: 891px;
+		left: 724.597px;
+		top: -105.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Scroll_i {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(99,99,99,1);
+		stroke-width: 2px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Scroll_i {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		width: 2px;
+		height: 40.957px;
+		left: 724.597px;
+		top: -97.51px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Dr_Listings_i {
+		position: absolute;
+		width: 1753px;
+		height: 786px;
+		left: 87px;
+		top: 202px;
+		overflow: visible;
+	}
+	#Home_i {
+		position: absolute;
+		width: 42px;
+		height: 60.603px;
+		left: 998px;
+		top: 735px;
+		overflow: visible;
+	}
+	#Path_2_i {
+		fill: rgba(206,86,86,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_2_i {
+		overflow: visible;
+		position: absolute;
+		width: 42px;
+		height: 60.604px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ellipse_1_i {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_1_i {
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		height: 21px;
+		left: 10px;
+		top: 11px;
+	}
+	#SWATCH_i {
+		position: absolute;
+		width: 317px;
+		height: 147px;
+		left: 1542px;
+		top: 36px;
+		display: none;
+		overflow: visible;
+	}
+	#Rectangle_6_i {
+		fill: rgba(20,22,30,1);
+	}
+	.Rectangle_6_i {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_6_copy_i {
+		fill: rgba(76,78,87,1);
+	}
+	.Rectangle_6_copy_i {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 83px;
+		top: 0px;
+	}
+	#Rectangle_6_copy_2_i {
+		fill: rgba(181,184,190,1);
+	}
+	.Rectangle_6_copy_2_i {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 166px;
+		top: 0px;
+	}
+	#Rectangle_6_copy_3_ja {
+		fill: rgba(68,140,203,1);
+	}
+	.Rectangle_6_copy_3_ja {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 0px;
+		top: 79px;
+	}
+	#Rectangle_6_copy_4_jb {
+		fill: rgba(121,172,217,1);
+	}
+	.Rectangle_6_copy_4_jb {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 83px;
+		top: 79px;
+	}
+	#Rectangle_6_copy_5_jc {
+		fill: rgba(179,206,230,1);
+	}
+	.Rectangle_6_copy_5_jc {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 166px;
+		top: 78px;
+	}
+	#Rectangle_6_copy_6_jd {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_6_copy_6_jd {
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		height: 68px;
+		left: 249px;
+		top: 78px;
+	}
+	#n__Text_je {
+		opacity: 0;
+		left: 161px;
+		top: 349px;
+		position: absolute;
+		overflow: visible;
+		width: 612px;
+		height: 288px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+}

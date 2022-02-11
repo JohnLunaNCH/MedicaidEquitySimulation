@@ -1,0 +1,34 @@
+[{
+	"item":"Honey Oat Loops", 
+	"category":"Breakfast", 
+	"aisle":"Breakfast", 
+	"GrocerStorePrice":4.00, 
+	"GasStationPrice":5.00,
+	"tooth":-1,
+	"mood":1,
+	"energy":0,
+	"Description":"Part of a well balanced breakfast"
+},
+{
+	"item":"Captain Sugar Blasts", 
+	"category":"Breakfast", 
+	"aisle":"Breakfast", 
+	"GrocerStorePrice":5.00, 
+	"GasStationPrice":6.00,
+	"tooth":-3,
+	"mood":3,
+	"energy":0,
+	"Description":"A jolly good time! Golden treasures with 3 different colored sugar cannon ball buffs."
+},
+{
+	"item":"Other Cereal Example", 
+	"category":"Breakfast", 
+	"aisle":"Breakfast", 
+	"GrocerStorePrice":5.00, 
+	"GasStationPrice":6.00,
+	"tooth":-3,
+	"mood":3,
+	"energy":0,
+	"Description":"A jolly good time! Golden treasures with 3 different colored sugar cannon ball buffs."
+}
+]

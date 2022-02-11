@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medicaid Equity Simulation</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/animation.css" rel="stylesheet" type="text/css">
+
+<!-- jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- d3 library -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--> 
+<script>var __adobewebfontsappname__="dreamweaver"</script> 
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script> 
+
+<!-- my scripts -->
+<script type="text/javascript" src="scripts/cookieControl.js"></script> 
+
+<script type="text/javascript" src="scripts/stats.js"></script> 
+<script type="text/javascript" src="scripts/actions.js"></script> 
+<script type="text/javascript" src="scripts/purchasing.js"></script> 
+	<!--<script type="text/javascript" src="scripts/require.js"></script> -->
+	<!--<script type="text/javascript" src="json/test.json"></script>-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> 
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// --> 
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+	//$(document).ready( function() {    
+  //      $("#Maps_1").load("adobexd/Maps_1.html");
+	//});	
+</script>
+</head>
+<body id="body">
+
+<!-- Main Container -->
+<div class="container"> 
+  
+  <!-- Stats -->  
+  <header class="header-container">
+    <stats class="stats-hidden stats-visible">
+      <ul>
+        <li>Energy <div id="energy"> </div></li>
+        <li>Mood <div id="mood"> </div></li>
+        <li>Tooth <div id="tooth"> </div></li>
+        <li>Money <div id="money"> </div></li>
+      </ul>
+    </stats>
+  </header>
+  
+  <!-- Hero Section -->  
+  <section class="hero">
+	  <div>
+		  <img src="images/Family.png" class="hero_image">
+	  </div>
+    <div class="align-bottom">
+      <h2 class="hero_header">MES <span class="light">Medicaid Equity Simulation</span></h2>
+      <p class="tagline"></p>
+    </div>
+    <div> <a class="start-Button" onClick="addHeight(this)">Start</a> </div>
+    <buffer></buffer>
+
+  </section>
+
+  <!-- Test Section -->
+    <section class="banner grocery-blur" id="Ch2-Sct1">
+		<div id="MapSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 2%">
+			<div class="subContainer" style="height:100%;">
+				<div style="display: flex; flex-flow: row wrap; justify-content: space-evenly; height: 100%;">
+					<div class="map-dentist" style="width: 500px; overflow: hidden;">
+						<div class="interactiveMap" style="background-image: url(../images/Map_Mask.png); background-repeat: no-repeat; border-radius: 15px; width: 100%; height: 90%; position: relative;">
+							<div id="svg-location" class="Aldi test1"></div>
+						</div>
+						<div class="mapKey" style="width: 100%; height: 10%">
+							<div style="display: flex; flex-flow: row; justify-content: left;">
+								<div class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> Healthy Options</div>
+								<div class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Time Cost</div>
+								<div class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> Monetary Cost</div>
+							</div>
+						</div>
+					</div>
+					<div class="description" style="width: 500px; overflow: hidden; justify-content: center;">
+						<div  style="width: 500px; flex: 0 1 auto; padding: 2%; display: flex; flex-flow: column; ">
+							<div>Choose from the grocery stores on the map to help decide which best meets your needs.</div>
+							<div style="display: flex; flex-flow: row; justify-content: center;">
+								<div class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> Healthy Options</div>
+								<div class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Time Cost</div>
+								<div class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> Monetary Cost</div>
+							</div>
+						</div>
+					</div>
+					<div class="clickedText" style="width: 0px; overflow: hidden;">
+						<span style="width: 500px;" class="innerText">Test Text</span>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+<!--
+  <section class="banner grocery-blur" id="Ch2-Sct1">
+		<div id="MapSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 2%">
+			<div class="subContainer" style="height:100%;">
+				<div style="display: flex; flex-flow: row wrap; justify-content: left; height: 100%;">
+					<div class="map" style="width: 500px; flex: 2 0 auto;">
+						<div class="interactiveMap" style="background-image: url(../images/Map_Mask.png); background-size: cover; background-repeat: no-repeat; border-radius: 15px; width: 100%; height: 90%;"></div>
+						<div class="mapKey" style="width: 100%; height: 10%"><div style="display: flex; flex-flow: row; justify-content: left;">
+							<div class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> Healthy Options</div>
+							<div class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Time Cost</div>
+							<div class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> Monetary Cost</div>
+					</div></div>
+					</div>
+					<div class="description" style="width: 500px; flex: 0 1 auto; padding: 2%; display: flex; flex-flow: row; justify-content: left;">
+						<div style="flex: 2 0 auto;width: 350px;text-align: center;">
+						    	<img src="images/svg_path_toAldi.svg">
+						</div>
+						<div style="display: flex; flex-flow: row; justify-content: center;">
+							<div>
+								Discount Super Market
+								<br>
+								The super market will provide you with the best selection of fresh produce and overall more affordable prices when compared to picking up something quick from the gas station market.
+								<div class="keyItem">
+									<img class="mediumIcon" src="../images/Broccoli.png"> The Super Market offers a wide variety of healthy options.</div>
+								<div class="keyItem">
+									<img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 1hr. 40min. - 2hr. 40min.</div>
+								<div class="keyItem">
+									<img class="mediumIcon" src="../images/Dollar.png"> The prices are mid range compared to other local options.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+  -->
+  <!-- Chapter 1: Background Image Section -->
+  <section class="banner" id="Ch1-Sct1">
+    <buffer></buffer>
+    <h2 class="parallax"> Section Title </h2>
+    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
+	  <buffer></buffer>
+	  <!-- examples of how to use the stat adjuster function -->
+	  <!-- COOKIES DO NOT WORK ON CHROME FOR LOCAL FILES -->
+	  <div> <button onClick="callAction('eatFakeSandwich')">Eat a Fake Sandwich</button></div>
+	  <div> <button onClick="callAction('eatSandwich')">Eat a Real Sandwich</button></div>
+	  <div> <button onClick="callAction('attendScienceFair')">Skip work to go to science fair?</button></div>
+	  <div> <button onClick="callAction('skipScienceFair')">Skip science fair to go to work?</button></div>
+	  <div><a onclick="adjustEnergy(1);adjustMood(-1);adjustMoney(-1);">Adjust Three Things</a></div>
+	  <div><a onclick="setEnergy(0);setMood(0);setMoney(0);setTooth(0);">Reset Values</a></div>
+	  <buffer></buffer>
+    <div> <a class="Ch1-Sct1-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 1: Black Background Section -->
+  <section class="banner livingroom" id="Ch1-Sct2">
+    <buffer></buffer>
+    <div class="square-wrapper">
+      <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
+    </div>
+    <div><button onclick="toggleLocation()">Toggle Location</button></div>
+    <div><button onClick="populateAisle('Breakfast')">Populate Breakfast Aisle</button></div>
+    <div id="purchasingTotals"></div>
+    <div id="BreakfastAisle"></div>
+    <div id="itemDescription"></div>
+	  <buffer></buffer>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 2: Background Image Section -->
+  <section class="banner livingroom-blur" id="Ch2-Sct1">
+    <buffer></buffer>
+		<div id="MapSection">
+			<!-- 
+
+			<iframe src="adobexd/Maps_1.html" style="width: calc(100% + 28px); height: 800px; margin: 0px -14px; border: none;" scrolling="no" sandbox="allow-downloads allow-forms allow-popups-to-escape-sandbox allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; autoplay; clipboard-write; camera; encrypted-media; fullscreen; geolocation; gyroscope; magnetometer; microphone; midi; vr"></iframe>
+
+		-->
+		</div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 2: Black Background Section -->
+  <section class="banner grocery" id="Ch2-Sct2">
+    <buffer></buffer>
+    <div class="square-wrapper2">
+      <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
+    </div>
+	  <buffer></buffer>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 3: Background Image Section -->
+  <section class="banner">
+    <h2 class="parallax"> Section Title </h2>
+    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 3: Black Background Section -->
+  <section class="narration">
+    <buffer></buffer>
+    <div class="square-wrapper">
+      <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
+    </div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 4: Background Image Section -->
+  <section class="banner2">
+    <h2 class="parallax"> Section Title </h2>
+    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 4: Black Background Section -->
+  <section class="narration">
+    <buffer></buffer>
+    <div class="square-wrapper2">
+      <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
+    </div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 5: Background Image Section -->
+  <section class="banner">
+    <h2 class="parallax"> Section Title </h2>
+    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 5: Black Background Section -->
+  <section class="narration">
+    <div class="square-wrapper">
+      <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
+    </div>
+  </section>
+	
+  <!-- Chapter 6: Background Image Section -->
+  <section class="banner2">
+    <h2 class="parallax"> Section Title </h2>
+    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 6: Black Background Section -->
+  <section class="narration">
+    <div class="square-wrapper2">
+      <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
+    </div>
+  </section>
+</div>
+<script type="text/javascript" src="scripts/myScripts.js"></script> 
+<script type="text/javascript" src="scripts/map_dentist.js"></script> 
+<!-- observer script to animate revealing hidden things --> 
+<script>
+	// Check if IntersectionObserver is supported
+	if ('IntersectionObserver' in window) {
+		console.log("Your browser supports IntersectionObserver");
+	} else {
+		console.log("Your browser does not support IntersectionObserver");
+	}
+	setVariables();
+	
+	// Remove the transition class
+	const square = document.querySelector('.square');
+	square.classList.remove('square-transition');
+	
+	const square2 = document.querySelector('.square2');
+	square2.classList.remove('square-transition2');
+	
+	const stats = document.querySelector('.stats-hidden');
+	stats.classList.remove('stats-visible');
+	
+	// Create the observers
+	const observer1 = new IntersectionObserver(entries => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  square.classList.add('square-transition');
+		  return;
+		}
+
+		square.classList.remove('square-transition');
+	  });
+	});
+
+	const observer2 = new IntersectionObserver(entries => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  square2.classList.add('square-transition2');
+		  return;
+		}
+
+		square2.classList.remove('square-transition2');
+	  });
+	});
+	
+	const observerStats = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting){
+				stats.classList.remove('stats-visible');
+				return;
+			}
+			
+			stats.classList.add('stats-visible');
+		});
+	});
+	
+	// launch observers
+	observer1.observe(document.querySelector('.square-wrapper'));
+	observer2.observe(document.querySelector('.square-wrapper2'));
+	observerStats.observe(document.querySelector('.hero_header'));
+
+	console.log("Got to end of script");
+</script>
+</body>
+</html>

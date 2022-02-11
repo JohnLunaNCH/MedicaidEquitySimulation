@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="298.94" height="656.252" viewBox="0 0 298.94 656.252">
+  <defs>
+    <image id="image" width="14" height="23" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAXCAYAAAA7kX6CAAAABHNCSVQICAgIfAhkiAAAAdhJREFUOE+Nk00oplEYhn2khsJCirCSIiUpC6UMCqmZUPJXEhZjNtJoJooFCz8LO5SGSTFNIqzY+ImSJEUyI8vRYCRNCqWZb67763w6vb1vnLp6nnPOfZ//4/P7/SEuJZS2SWiAPXgDl7bO52EsRbRsCQfIO19iLEC0Zgl7yPteYvQh0iw1sG+WfPucMQrBJ4iBIfjpdgjOPb5FNAJJRnxD1LIPnOagMc4YqlxGH6PtvZdxhY4S+G0OQdeQY8RTxEYv4zkd8ZABx7AB+Ub8jahZN22zlvqKhnv4B8ofHcYl6mXwDvQoAkXGNOJ3+AWJpn2d+Nrkc8QKCAPdpe40YJRAwh3INeIFYrnJtcdF+AoR0AITMuro1TFu0MgdoAegcgR5kAK9MAxrbm+1nY4PoCW2GfMusRj+mHpgqcFcMQFOQK9nGrZh1DLrMdyp7jTO0FYHOtks0NW0WuZ+8i6nsZCGVTP60+mZuvbWDfqTyRo4OGM4Fb3HdDiFTHiw9qAtnIE+eDXMBo0fqQwaoWbW9TiLPrY+uP5pkYya+gdEwhdocjGpqRZ0lyqpMs6TVMIVaKnXHkZd/gVEw5CMf0m09nprRA9vyGc6muFcRj2tWJjwUlvt2eRbcPgfL92gLWuSYlkAAAAASUVORK5CYII="/>
+  </defs>
+  <g id="Directions_-_Right" data-name="Directions - Right" transform="translate(-6425.611 -1121.241)">
+    <g id="Store_Icon_copy_2" data-name="Store Icon copy 2" transform="translate(6557 1664)">
+      <g id="Store_Icon" data-name="Store Icon">
+        <rect id="Rectangle_7" data-name="Rectangle 7" width="31" height="32" rx="5.833" fill="#448ccb"/>
+        <path id="Polygon_1" data-name="Polygon 1" d="M14.715,7.34a1.137,1.137,0,0,1,2.177,0L18.636,12.7l5.378.149a1.192,1.192,0,0,1,.69,2.108l-4.317,3.591,1.522,5.564a1.156,1.156,0,0,1-1.778,1.282L15.8,22.159l-4.327,3.232A1.156,1.156,0,0,1,9.7,24.109l1.522-5.564L6.9,14.954a1.192,1.192,0,0,1,.69-2.108l5.379-.149Z" fill="#fff"/>
+      </g>
+    </g>
+    <use id="Walker_3" data-name="Walker 3" transform="translate(6537 1590)" xlink:href="#image"/>
+    <path id="Line_5" data-name="Line 5" d="M6572.2,1610.435v0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Dot_5" data-name="Dot 5" d="M6570.389,1600.04a2.271,2.271,0,1,1,2.271,2.32A2.3,2.3,0,0,1,6570.389,1600.04Z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Line_2" data-name="Line 2" d="M6572.2,1300.39v0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Dot_2" data-name="Dot 2" d="M6570.389,1287a2.271,2.271,0,1,1,2.271,2.32A2.3,2.3,0,0,1,6570.389,1287Z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Line_1" data-name="Line 1" d="M6572.2,1161v0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <image id="Bus_1" data-name="Bus 1" width="20" height="23" transform="translate(6535 1276)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAABHNCSVQICAgIfAhkiAAAAapJREFUOE/Vlc8rRFEUx2dGfmywUkxkZCNKdkiJNOzIr41SUxYW/At2/gLZSqyUmFjJj2JB2FhgYYOEjRJWmsH4fKd763l6eY8s5tSnc8+593znvnPfuxPOZDIhrACOoEmBsTR+E94cOQ3zoAfyHfkTxi2QChvBVoIDV+EWcbcrZ0P9UNw1J41DK9hOsGcWaMsv8A778OEqjBC3mZ0W4xXLOqQhwXIGMzAMKzAGzx47c6dLSMzBEKzChARTDGw/Ghmf+hSzyxoYnJkg28PsqRirwV8HFIyx/srW5Iags4e1bP0y4COrTbYmrUeuIHFvRBL4hYCCo6xfNDVR+x7ag9Ful5xN/kG8mvkR0JcmC7sFA27u2/IcFNThPJgHqcMXevTglfyFmSvDR716OMBE0kyu4Xs9BNfJ95m5fry+4y+HojtP99ws7Oi0YBrqPQTPyU+B3o4umDTjiD3lDRK6NP9i2xTHrWAlwTLo1v2NHVM0CLdWUCI6gHmw96Mf4QSL9FcxDo8qcArGiO01pB76sScWlUIn7P67oC6JO9D3XORne6y5gSpoBvUx9AnOppn05VeHvgAAAABJRU5ErkJggg=="/>
+    <use id="Walker_1" data-name="Walker 1" transform="translate(6538 1145)" xlink:href="#image"/>
+    <path id="Home_Icon" data-name="Home Icon" d="M6572.643,1155.564h0c-2.219-3.7-4.081-6.608-5.576-8.946l-.007-.011-.005-.009a67.12,67.12,0,0,1-4.438-7.525,13.926,13.926,0,0,1-1.338-6.206,11.51,11.51,0,0,1,11.365-11.624,11.164,11.164,0,0,1,8.036,3.4,11.682,11.682,0,0,1,3.329,8.219c0,4.686-1.685,7.321-5.755,13.687l-.017.027c-1.5,2.347-3.368,5.267-5.592,8.984Zm0-27.684a5.541,5.541,0,1,0,5.408,5.54A5.483,5.483,0,0,0,6572.641,1127.88Z" fill="#f54c00"/>
+    <text id="Walk_to_bus_stop." data-name="Walk to bus stop." transform="translate(6591.551 1220.525)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">Walk to bus stop.</tspan></text>
+    <text id="Walk_to_store." data-name="Walk to store." transform="translate(6591.551 1604.16)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">Walk to store.</tspan></text>
+    <text id="_7_min" data-name="7 min" transform="translate(6554.951 1220.525)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="-35.633" y="0">7 min</tspan></text>
+    <text id="_12_min" data-name="12 min" transform="translate(6554.951 1456.522)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="-43.695" y="0">12 min</tspan></text>
+    <text id="_4_min" data-name="4 min" transform="translate(6554.951 1643.173)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="-35.633" y="0">4 min</tspan></text>
+    <text id="Bus_runs_every_30_minutes" data-name="Bus runs every
+ 30 minutes" transform="translate(6519.611 1284)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="-93.339" y="0">Bus runs every</tspan><tspan x="-74.925" y="15.64" xml:space="preserve"> 30 minutes</tspan></text>
+    <text id="Wait_for_bus._Next_bus_in_23_min._" data-name="Wait for bus.
+(Next bus in 23 min.)" transform="translate(6591.551 1281.623)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">Wait for bus.</tspan><tspan x="0" y="15.64">(Next bus in 23 min.)</tspan></text>
+    <text id="Ride_bus_3_stops." data-name="Ride bus 3 stops." transform="translate(6592.459 1456.522)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">Ride bus 3 stops.</tspan></text>
+    <text id="Estimated_Travel_Time_23_-_53_minutes" data-name="Estimated Travel Time
+23 - 53 minutes" transform="translate(6452.107 1709.493)" fill="#fff" font-size="14.528" font-family="MyriadPro-Regular, Myriad Pro"><tspan x="54.24" y="11">Estimated Travel Time</tspan><tspan font-family="Roboto-Regular, Roboto"><tspan x="69.844" y="28.434">23 - 53 minutes</tspan></tspan></text>
+  </g>
+</svg>

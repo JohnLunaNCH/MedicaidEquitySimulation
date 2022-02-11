@@ -6,10 +6,15 @@ var totalHealth = 0;
 var totalMood = 0;
 
 //assign JSON data to global variable
-d3.json("json/items.json", function(data) {
-	items = data;
-	//console.log(items);
-});
+(async function() {
+  try {
+    const jsonresponse = await d3.json("/../json/items.json");
+    items = jsonresponse;
+    console.log(items);
+  } catch(error) {
+    console.log(error);
+  }
+})();
 
 function toggleLocation (){
 	isGroceryStore = !isGroceryStore;

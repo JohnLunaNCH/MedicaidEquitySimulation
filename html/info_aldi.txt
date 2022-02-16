@@ -1,0 +1,15 @@
+<div class="description" style="width: 500px; flex: 0 1 auto; padding: 2%; display: flex; flex-flow: row; justify-content: left;">
+    <div style="flex: 2 0 auto;width: 350px;text-align: center;">
+        <img src="images/svg_path_toAldi.svg">
+    </div>
+    <div style="display: flex; flex-flow: row; justify-content: center;">
+        <div>
+            Discount Super Market
+            <br>
+            The super market will provide you with the best selection of fresh produce and overall more affordable prices when compared to picking up something quick from the gas station market.
+            <div class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> The Super Market offers a wide variety of healthy options.</div>
+            <div class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 1hr. 40min. - 2hr. 40min.</div>
+            <div class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are mid range compared to other local options.</div>
+        </div>
+    </div>
+</div>

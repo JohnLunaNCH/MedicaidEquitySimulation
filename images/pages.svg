@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700	610">
+	<g id="pages_bills">
+		<rect id="bills-page05-highlight" class="highlight" 
+			width="344" height="444" transform="translate(2 116) rotate(-3)" />
+		<image id="bills-page05" class="bills" 
+			width="340" height="440" transform="translate(4 118) rotate(-3)" xlink:href="images/page05.png"/>
+		
+		<rect id="bills-page02-highlight" class="highlight" 
+			width="370" height="438" transform="translate(218 18) rotate(3)" />
+		<image id="bills-page02" class="bills" 
+			width="362" height="430" transform="translate(222 22) rotate(3)" xlink:href="images/page02.png"/>
+		
+		<rect id="bills-page03-highlight" class="highlight" 
+			width="320" height="442" transform="translate(66 50) rotate(-1)" />
+		<image id="bills-page03" class="bills" 
+			width="312" height="434" transform="translate(70 54) rotate(-1)" xlink:href="images/page03.png"/>
+		
+		<rect id="bills-page04-highlight" class="highlight" 
+			width="333" height="427" transform="translate(359 103) rotate(6)" />
+		<image id="bills-page04" class="bills" 
+			width="327" height="423" transform="translate(362 105) rotate(6)" xlink:href="images/page04.png"/>
+		
+		<rect id="bills-page01-highlight" class="highlight" 
+			width="340" height="438" transform="translate(127 162) rotate(1)" />
+		<image id="bills-page01" class="bills" 
+			width="334" height="432" transform="translate(129 165) rotate(1)" xlink:href="images/page01.png"/>
+	</g>
+	<use xlink:href="#bills-page01" id="selected-highlight"/>
+	<use xlink:href="#bills-page01" id="selected"/>
+</svg>

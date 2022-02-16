@@ -1,0 +1,27 @@
+[{
+	"action":"eatFakeSandwich", 
+	"energy":0, 
+	"mood":-10, 
+	"tooth":-5, 
+	"money":-10
+},
+{
+	"action":"eatSandwich", 
+	"energy":10, 
+	"mood":50, 
+	"tooth":-1, 
+	"money":-200
+},
+{
+	"action":"attendScienceFair", 
+	"energy":-5, 
+	"mood":5, 
+	"tooth":0, 
+	"money":-200
+},{
+	"action":"skipScienceFair", 
+	"energy":0, 
+	"mood":-5, 
+	"tooth":0, 
+	"money":200
+}]

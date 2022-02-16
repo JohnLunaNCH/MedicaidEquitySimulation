@@ -175,6 +175,11 @@ a {
 	cursor: pointer;
 }
 
+.highlight {
+	fill:  dodgerblue;
+    display: none;
+}
+
 .hidden {
 	display: none;
 }

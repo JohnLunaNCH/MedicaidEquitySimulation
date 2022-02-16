@@ -66,13 +66,77 @@
       <h2 class="hero_header">MES <span class="light">Medicaid Equity Simulation</span></h2>
       <p class="tagline"></p>
     </div>
-    <div> <a class="start-Button" onClick="addHeight(this)">Start</a> </div>
+    <div style="height: 1em;"> <a class="start-Button" onClick="addHeight(this)">Start</a> </div>
     <buffer></buffer>
 
   </section>
 
   <!-- Test Section -->
-    <section class="banner grocery-blur" id="Ch2-Sct1">
+    <section class="banner grocery-blur" id="ChX-SctX">
+  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 2%">
+  		<div class="subContainer" style="height:100%;">
+  			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
+  				<div style="display: flex; flex-flow: row; justify-content: space-evenly;height:100%;">
+  					<div id="MapToGrocery" class="interactiveMap" style="width: 60vw; max-width: 70vh; align-self: center;"></div>
+  					<div id="map-description" style="width: 30vw; overflow: hidden"></div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+
+  <section class="banner grocery-blur" id="Ch2-Sct1">
+  	<div id="BillsSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 2%">
+  		<div class="subContainer" style="height:100%;">
+  			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;">
+  				<div> test text</div>
+  				<div style="display: flex; flex-flow: row; justify-content: space-evenly;">
+  					<div id="svg-container" style="width: 60vw; max-width: 70vh;"></div>
+  					<div id="bill-description" style="width: 30vw; overflow: hidden"></div>
+  				</div>
+  				<div> test text</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+
+  <!-- Chapter 1: Background Image Section -->
+  <section class="banner" id="Ch1-Sct1">
+    <buffer></buffer>
+    <h2 class="parallax"> Section Title </h2>
+    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
+	  <buffer></buffer>
+	  <!-- examples of how to use the stat adjuster function -->
+	  <!-- COOKIES DO NOT WORK ON CHROME FOR LOCAL FILES -->
+	  <div> <button onClick="callAction('eatFakeSandwich')">Eat a Fake Sandwich</button></div>
+	  <div> <button onClick="callAction('eatSandwich')">Eat a Real Sandwich</button></div>
+	  <div> <button onClick="callAction('attendScienceFair')">Skip work to go to science fair?</button></div>
+	  <div> <button onClick="callAction('skipScienceFair')">Skip science fair to go to work?</button></div>
+	  <div><a onclick="adjustEnergy(1);adjustMood(-1);adjustMoney(-1);">Adjust Three Things</a></div>
+	  <div><a onclick="setEnergy(0);setMood(0);setMoney(0);setTooth(0);">Reset Values</a></div>
+	  <buffer></buffer>
+    <div style="height: 1em;"> <a class="Ch1-Sct1-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 1: Black Background Section -->
+  <section class="banner livingroom" id="Ch1-Sct2">
+    <buffer></buffer>
+    <div class="square-wrapper">
+      <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
+    </div>
+    <div><button onclick="toggleLocation()">Toggle Location</button></div>
+    <div><button onClick="populateAisle('Breakfast')">Populate Breakfast Aisle</button></div>
+    <div id="purchasingTotals"></div>
+    <div id="BreakfastAisle"></div>
+    <div id="itemDescription"></div>
+	  <buffer></buffer>
+    <div style="height: 1em;"> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+	
+  <!-- Chapter 2: Background Image Section -->
+  <section class="banner livingroom-blur" id="Ch2-Sct1">
 		<div id="MapSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 2%">
 			<div class="subContainer" style="height:100%;">
 				<div style="display: flex; flex-flow: row wrap; justify-content: space-evenly; height: 100%;">
@@ -104,53 +168,7 @@
 				</div>
 			</div>
 		</div>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-
-  <!-- Chapter 1: Background Image Section -->
-  <section class="banner" id="Ch1-Sct1">
-    <buffer></buffer>
-    <h2 class="parallax"> Section Title </h2>
-    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
-	  <buffer></buffer>
-	  <!-- examples of how to use the stat adjuster function -->
-	  <!-- COOKIES DO NOT WORK ON CHROME FOR LOCAL FILES -->
-	  <div> <button onClick="callAction('eatFakeSandwich')">Eat a Fake Sandwich</button></div>
-	  <div> <button onClick="callAction('eatSandwich')">Eat a Real Sandwich</button></div>
-	  <div> <button onClick="callAction('attendScienceFair')">Skip work to go to science fair?</button></div>
-	  <div> <button onClick="callAction('skipScienceFair')">Skip science fair to go to work?</button></div>
-	  <div><a onclick="adjustEnergy(1);adjustMood(-1);adjustMoney(-1);">Adjust Three Things</a></div>
-	  <div><a onclick="setEnergy(0);setMood(0);setMoney(0);setTooth(0);">Reset Values</a></div>
-	  <buffer></buffer>
-    <div> <a class="Ch1-Sct1-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 1: Black Background Section -->
-  <section class="banner livingroom" id="Ch1-Sct2">
-    <buffer></buffer>
-    <div class="square-wrapper">
-      <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
-    </div>
-    <div><button onclick="toggleLocation()">Toggle Location</button></div>
-    <div><button onClick="populateAisle('Breakfast')">Populate Breakfast Aisle</button></div>
-    <div id="purchasingTotals"></div>
-    <div id="BreakfastAisle"></div>
-    <div id="itemDescription"></div>
-	  <buffer></buffer>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 2: Background Image Section -->
-  <section class="banner livingroom-blur" id="Ch2-Sct1">
-    <buffer></buffer>
-		<div id="MapSection">
-			<!-- 
-
-			<iframe src="adobexd/Maps_1.html" style="width: calc(100% + 28px); height: 800px; margin: 0px -14px; border: none;" scrolling="no" sandbox="allow-downloads allow-forms allow-popups-to-escape-sandbox allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; autoplay; clipboard-write; camera; encrypted-media; fullscreen; geolocation; gyroscope; magnetometer; microphone; midi; vr"></iframe>
-
-		-->
-		</div>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+    <div style="height: 1em;"> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 	
   <!-- Chapter 2: Black Background Section -->
@@ -225,6 +243,8 @@
 </div>
 <script type="text/javascript" src="scripts/myScripts.js"></script> 
 <script type="text/javascript" src="scripts/map_dentist.js"></script> 
+<script type="text/javascript" src="scripts/mapToGroceryStores.js"></script> 
+<script type="text/javascript" src="scripts/bills.js"></script> 
 <!-- observer script to animate revealing hidden things --> 
 <script>
 	// Check if IntersectionObserver is supported

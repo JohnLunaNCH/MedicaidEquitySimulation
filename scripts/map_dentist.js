@@ -4,10 +4,10 @@ var innerText = d3.select("#MapSection").select(".innerText");
 var box = d3.select("#MapSection").select(".map-dentist");
 var description = d3.select("#MapSection").select(".description");
 
-var aldiText;
-$.get('/../html/info_aldi.txt', function (response){
-    aldiText = response;
-});
+// var aldiText;
+// $.get('/../html/info_aldi.txt', function (response){
+//     aldiText = response;
+// });
 const transitionSpeed = 500;
 
 box.transition().duration(transitionSpeed).style("width", "500px");

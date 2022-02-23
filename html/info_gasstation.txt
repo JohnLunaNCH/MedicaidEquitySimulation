@@ -5,14 +5,11 @@
     <div style="display: flex;flex-flow: column;justify-content: space-between;">
         <div>
             <h1 class="map-description-header">
-                <div>Discount Super Market</div>
+                <div>Gas Station</div>
                 <div>
-                    <img class="mediumIcon" src="../images/Broccoli.png">
-                    <img class="mediumIcon" src="../images/Broccoli.png">
                     <img class="mediumIcon" src="../images/Broccoli.png">
                 </div>
                 <div>
-                    <img class="mediumIcon" src="../images/Time.png">
                     <img class="mediumIcon" src="../images/Time.png">
                 </div>
                 <div>
@@ -21,11 +18,11 @@
                 </div>
             </h1>
             <p>
-            The super market will provide you with the best selection of fresh produce and overall more affordable prices when compared to picking up something quick from the gas station market.
+            The Gas Station is very close to the house and is easy to walk to. While convenient, there are fewer healthy choices and it is more expensive than other budget options.
             </p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> The Super Market offers a wide variety of healthy options.</p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 1hr. 40min. - 2hr. 40min.</p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are mid range compared to other local options.</p>
+            <p class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> The Gas Station has snacks, sodas, and those hot dogs that rotate under a warm light.</p>
+            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 30 min.</p>
+            <p class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are high for what you get.</p>
         </div>
         <div class="continue-to-store">
             <button>Continue To Store</button>

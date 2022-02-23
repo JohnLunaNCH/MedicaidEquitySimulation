@@ -1,31 +1,27 @@
-let translateExtent = class {
-            lowX;
-            lowY;
-            highX;
-            highY;
-            constructor(){
-               
-            }
-        }
+let MapTarget = class {
+    button;
+    highlight;
+    path;
+    html;
+    constructor(button){
+        this.button = button;
+    }
+}
+let aldi  = new MapTarget(), 
+    gasstation = new MapTarget(),
+    cvs = new MapTarget(),
+    cornerstore = new MapTarget();
 
-let groceryMapExtents = new translateExtent();
+var 
+    handleZoom_mtg = (e) => d3.select(".interactiveMap").attr('transform', e.transform);
 
-var aldi, gasstation, cvs, cornerstore;
-var aldiHighlight, gasstationHighlight, cvsHighlight, cornerstoreHighlight;
-var aldiPath, gasstationPath, cvsPath, cornerstorePath;
-
-var handleZoom_mtg = (e) => d3.select("#MapToGrocery").attr('transform', e.transform);
-
-var zoom_mtg = d3.zoom()
+var 
+    zoom_mtg = d3.zoom()
         .scaleExtent([0.5, 5])
         .translateExtent([[0, 0], [1, 1]])
         .on('zoom', handleZoom_mtg);
 
 var container, trans;
-
-var aldiText;
-var cornerstoreText;
-var gasstationText;
 
 $.get('/../html/info_aldi.txt', function (response){
     aldiText = response;
@@ -41,11 +37,11 @@ $.get('/../html/info_gasstation.txt', function (response){
 d3.xml("images/mapmask.svg")
     .then(data => {
         //insert the svg code
-        d3.select("#MapToGrocery")
+        d3.select(".interactiveMap")
             .node().append(data.documentElement);
 
         //assign the container and main transform
-        container = d3.select("#MapToGrocery").select('svg');
+        container = d3.select(".interactiveMap").select('svg');
         trans = container.select('#map');
 
         //fix the illustrator file
@@ -123,7 +119,7 @@ d3.xml("images/mapmask.svg")
                 toggleMap(false);
                 d3.select("#map-description-container")
                 //.text("You clicked the map.");
-                .html("<div style=\"line-height: 50vh;\">Click on a destination to get more information.</div>");
+                .html("You clicked the map.");
             });
 
         //find the offset of the transform in the svg
@@ -134,12 +130,6 @@ d3.xml("images/mapmask.svg")
         const posY = Number(matrix[5].substring(0, matrix[5].length - 1));
         const maxX = width + posX;
         const maxY = height + posY;
-        console.log(width);
-        console.log(height);
-        console.log(posX);
-        console.log(posY);
-        console.log(maxX);
-        console.log(maxY);
 
         trans.attr("transform", "translate(0, 0) scale(1)");
 
@@ -147,29 +137,7 @@ d3.xml("images/mapmask.svg")
         initializeMap(posX, posY, maxX, maxY);
     });
 
-function initializeMap(lowX, lowY, highX, highY){
-    handleZoom_mtg = (e) => trans.attr('transform', e.transform);
-    groceryMapExtents.lowY = lowY;
-    groceryMapExtents.lowX = lowX;
-    groceryMapExtents.highY = highY;
-    groceryMapExtents.highX = highX;
-
-    zoom_mtg = d3.zoom()
-        .scaleExtent([0.7, 2])
-        .translateExtent([[lowX, lowY], [highX, highY]])
-        .on('zoom', handleZoom_mtg);
-    
-    container.call(zoom_mtg);
-    //moveMap(0.8, 0, 0);     
-    toggleMap(false);
-}
-
-
 function moveMap(scale, x, y){
-    const posX = (x < groceryMapExtents.highX) ? 
-    ((x > groceryMapExtents.lowX) ? x : groceryMapExtents.lowX) : groceryMapExtents.highX;
-    const posY = (y < groceryMapExtents.highY) ? 
-    ((y > groceryMapExtents.lowY) ? y : groceryMapExtents.lowY) : groceryMapExtents.highY;;
     container
         .transition()
         .duration(transitionSpeed)
@@ -177,15 +145,27 @@ function moveMap(scale, x, y){
             zoom_mtg.transform,
             d3.zoomIdentity
                 .scale(scale)
-                .translate(posX, posY)
+                .translate(x, y)
             );
+}
+
+function initializeMap(lowX, lowY, highX, highY){
+    handleZoom_mtg = (e) => trans.attr('transform', e.transform);
+
+    zoom_mtg = d3.zoom()
+        .scaleExtent([0.5, 5])
+        .translateExtent([[lowX, lowY], [highX, highY]])
+        .on('zoom', handleZoom_mtg);
+    
+    container.call(zoom_mtg);
+    moveMap(1, 0, 0);     
 }
 
 function mapButtons (button, id, highlight, path, html){
     button
         .on("mouseover", function(){
-            highlight.style("display", "block");
-            d3.select(this).style("cursor", "pointer");
+            highlight.style("display", "block");        
+            //path.style("display", "block"); 
         })
         .on("mouseout", function(){
             if (path.style("display") == "block"){
@@ -193,7 +173,7 @@ function mapButtons (button, id, highlight, path, html){
             } else {
                 highlight.style("display", "none");
             }
-            d3.select(this).style("cursor", "default");         
+         
         })
         .on("click", function(e) {
             //populate map specific description
@@ -223,18 +203,18 @@ function disableAllPaths (){
 }
 
 function toggleMap (pathOn, path, event){
-    var w = (pathOn) ? "30vw" : "40vw";
+    var w = (pathOn) ? "30vw" : "60vw";
     d3.select("#groceryMapContainer")
         .transition()
         .duration(transitionSpeed)
         .style("width", w);
     if (pathOn){
         const bounds = path.node().getBBox();
-        moveMap(0.8,
+        moveMap(0.9,
             -(bounds.x) / 2,
             -(bounds.y - 300) / 2
             );
     } else {
-        moveMap(0.8, 0, 0);
+        moveMap(1, 0, 0);
     }
 }

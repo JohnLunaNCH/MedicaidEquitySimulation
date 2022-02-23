@@ -47,7 +47,6 @@ header {
     overflow-y: hidden;
     position: fixed;
     top: 0px;
-    right: 5%;
     z-index: 1;
 }
 stats {
@@ -116,9 +115,10 @@ section.banner, section.banner2, section.narration{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    padding-top: 5vh;
+    /*padding-top: 5vh;
     padding-left: 5vw;
-    padding-right: 5vw;
+    padding-right: 5vw;*/
+    padding: 5vh 2em 0px 2em;
 	margin-bottom: 5vh;
 	background-attachment: fixed;
     background-size: cover;
@@ -127,8 +127,7 @@ section.banner, section.banner2, section.narration{
 
 /* Icons */
 .keyItem{
-	width: 150px;
-	text-align: center;
+	padding: 0 2em 0 2em;
 }
 img.mediumIcon {
 max-height: 20px;
@@ -159,6 +158,9 @@ width:  auto;
 .schedulingBackground{
 	background-image: url(../images/bg_scheduling.png);
 }
+.dentist-blur{
+	background-image: url(../images/bg_dentist01_blur.png);
+}
 
 /* Other */
 .parallax {
@@ -171,6 +173,14 @@ width:  auto;
     float: left;
     font-weight: lighter;
 }
+.map-description{
+	width: 100%;
+	flex: 0 1 auto;
+	/*padding: 2%;*/
+	display: flex;
+	flex-flow: row;
+	justify-content: left;
+}
 a {
 	cursor: pointer;
 }
@@ -182,4 +192,76 @@ a {
 
 .hidden {
 	display: none;
+}
+
+/*Dentist Map*/
+#dentistMapContainer{
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 0 20px 20px 0;
+	overflow: hidden;
+}
+.dentist-list-header{
+	border-bottom: thin solid black;
+	height: 4em;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 2%;
+}
+#dentist-list-container{
+	height: 66.3vh;
+	position: relative;
+	overflow-y: auto;
+}
+.dentist-list-item{
+	height: 6em;
+	background-color: rgba(0,0,0,0.25);
+	padding: 10px;
+	border-bottom: thin solid rgba(0, 0, 0, 0.25);
+}
+.dentist-list-item h1{
+	margin: 0px;
+}
+#dentist-description-container{
+	width: 50%;
+	overflow: hidden; 
+	position: relative;
+	border-radius: 20px 0px 0px 20px; 
+	background-color: rgba(0, 0, 0, 0.25);
+}
+.map-description-header{
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	font-size:  1em;
+	font-weight: bold;
+	margin: 0px;
+}
+.map-description-header div{
+	flex:  1 1 auto;
+}
+#map-description-container{
+	overflow: hidden;
+	padding: 0 0 0 2em;
+}
+.route-image{
+	max-width: 20vw;
+	max-height: 70vh;
+}
+.continue-to-store{
+	text-align: center;
+}
+.continue-to-store button{
+	padding: 1em 2em;
+	color: white;
+	background-color: #59A5DB;
+	border-radius: 15px;
+	border: 4px solid rgba(0, 0, 0, 0);
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+}
+.continue-to-store button:hover {
+	border-color: #005A9C;
 }

@@ -73,12 +73,25 @@
 
   <!-- Test Section -->
     <section class="banner grocery-blur" id="ChX-SctX">
-  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 2%">
+  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em">
   		<div class="subContainer" style="height:100%;">
   			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
-  				<div style="display: flex; flex-flow: row; justify-content: space-evenly;height:100%;">
-  					<div id="MapToGrocery" class="interactiveMap" style="width: 60vw; max-width: 70vh; align-self: center;"></div>
-  					<div id="map-description" style="width: 30vw; overflow: hidden"></div>
+  				<div style="display: flex; flex-flow: row; height:100%;">
+  					<div id="groceryMapContainer" style="width: 40vw">
+	  					<div style="width: 100%;max-width: 70vh;overflow: hidden;border-radius: 20px;height: 60vh;align-self: center;">
+	  						<div id="MapToGrocery" class="interactiveMap" style="width: 60vw; max-width: 70vh; align-self: center;"></div>
+	  					</div>
+							<div class="mapKey" style="width: 100%; height: 10%; max-width: 70vh;">
+								<div style="display: flex; flex-flow: row wrap; justify-content: center;">
+									<div class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> Healthy Options</div>
+									<div class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Time Cost</div>
+									<div class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> Monetary Cost</div>
+								</div>
+							</div>
+  					</div>
+  					<div id="map-description-container">
+  						<div style="line-height: 50vh;">Click on a destination to get more information.</div>
+  					</div>
   				</div>
   			</div>
   		</div>
@@ -86,21 +99,82 @@
   	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-  <section class="banner grocery-blur" id="Ch2-Sct1">
-  	<div id="BillsSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 2%">
+  <section class="banner livingroom-blur" id="Ch2-Sct1">
+  	<div id="BillsSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 1em">
   		<div class="subContainer" style="height:100%;">
   			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;">
-  				<div> test text</div>
   				<div style="display: flex; flex-flow: row; justify-content: space-evenly;">
   					<div id="svg-container" style="width: 60vw; max-width: 70vh;"></div>
   					<div id="bill-description" style="width: 30vw; overflow: hidden"></div>
   				</div>
-  				<div> test text</div>
   			</div>
   		</div>
   	</div>
   	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
+
+      <section class="banner dentist-blur" id="ChX-SctX">
+	  	<div id="MapToDentistSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 0px">
+	  		<div class="subContainer" style="height:100%; width:100%">
+	  			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
+	  				<div style="display: flex; flex-flow: row; height:100%;">
+	  					<div id="dentist-description-container">
+	  						<div class="dentist-list-header">This is the heading</div>
+	  						<div id="dentist-list-container">
+	  							<div class="dentist-list-item" id="location1">
+	  								<h1>Dentist 1</h1>
+	  								<div>
+	  									Hours:</br>
+	  									Distance:</br>
+	  									Travel Time (Bus):
+	  								</div>
+	  							</div>
+	  							<div class="dentist-list-item" id="location2">
+	  								<h1>Dentist 2</h1>
+	  								<div>
+	  									Hours:</br>
+	  									Distance:</br>
+	  									Travel Time (Bus):
+	  								</div>
+	  							</div>
+	  							<div class="dentist-list-item" id="location3">
+	  								<h1>Dentist 3</h1>
+	  								<div>
+	  									Hours:</br>
+	  									Distance:</br>
+	  									Travel Time (Bus):
+	  								</div>
+	  							</div>
+	  							<div class="dentist-list-item" id="location4">
+	  								<h1>Dentist 4</h1>
+	  								<div>
+	  									Hours:</br>
+	  									Distance:</br>
+	  									Travel Time (Bus):
+	  								</div>
+	  							</div>
+	  							<div class="dentist-list-item" id="location5">
+	  								<h1>Dentist 5</h1>
+	  								<div>
+	  									Hours:</br>
+	  									Distance:</br>
+	  									Travel Time (Bus):
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div id="dentist-description"></div>
+	  					</div>
+	  					<div id="dentistMapContainer">
+		  					<div style="width: 100%; overflow: hidden; height: 100%;align-self: center;">
+		  						<div id="MapToDentist" class="interactiveMap" style="height: 100%; align-self: center;"></div>
+		  					</div>
+	  					</div>  					
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
+  	</section>
 
   <!-- Chapter 1: Background Image Section -->
   <section class="banner" id="Ch1-Sct1">
@@ -132,42 +206,6 @@
     <div id="BreakfastAisle"></div>
     <div id="itemDescription"></div>
 	  <buffer></buffer>
-    <div style="height: 1em;"> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 2: Background Image Section -->
-  <section class="banner livingroom-blur" id="Ch2-Sct1">
-		<div id="MapSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 2%">
-			<div class="subContainer" style="height:100%;">
-				<div style="display: flex; flex-flow: row wrap; justify-content: space-evenly; height: 100%;">
-					<div class="map-dentist" style="width: 500px; overflow: hidden;">
-						<div class="interactiveMap" style="background-image: url(../images/Map_Mask.png); background-repeat: no-repeat; border-radius: 15px; width: 100%; height: 90%; position: relative;">
-							<div id="svg-location" class="Aldi test1"></div>
-						</div>
-						<div class="mapKey" style="width: 100%; height: 10%">
-							<div style="display: flex; flex-flow: row; justify-content: left;">
-								<div class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> Healthy Options</div>
-								<div class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Time Cost</div>
-								<div class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> Monetary Cost</div>
-							</div>
-						</div>
-					</div>
-					<div class="description" style="width: 500px; overflow: hidden; justify-content: center;">
-						<div  style="width: 500px; flex: 0 1 auto; padding: 2%; display: flex; flex-flow: column; ">
-							<div>Choose from the grocery stores on the map to help decide which best meets your needs.</div>
-							<div style="display: flex; flex-flow: row; justify-content: center;">
-								<div class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> Healthy Options</div>
-								<div class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Time Cost</div>
-								<div class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> Monetary Cost</div>
-							</div>
-						</div>
-					</div>
-					<div class="clickedText" style="width: 0px; overflow: hidden;">
-						<span style="width: 500px;" class="innerText">Test Text</span>
-					</div>
-				</div>
-			</div>
-		</div>
     <div style="height: 1em;"> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 	
@@ -243,7 +281,8 @@
 </div>
 <script type="text/javascript" src="scripts/myScripts.js"></script> 
 <script type="text/javascript" src="scripts/map_dentist.js"></script> 
-<script type="text/javascript" src="scripts/mapToGroceryStores.js"></script> 
+<script type="text/javascript" src="scripts/mapToGroceryStores.js"></script>
+<script type="text/javascript" src="scripts/mapToDentist.js"></script> 
 <script type="text/javascript" src="scripts/bills.js"></script> 
 <!-- observer script to animate revealing hidden things --> 
 <script>

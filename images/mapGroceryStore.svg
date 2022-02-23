@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 838.4 838.4" style="enable-background:new 0 0 838.4 838.4;" xml:space="preserve">
+	 viewBox="0 0 2114.3 1104.7" style="enable-background:new 0 0 2114.3 1104.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#005A9C;stroke-width:7;stroke-miterlimit:10;}
 	.st1{fill:#59A5DB;}
 	.st2{display:none;fill:#717171;}
 	.st3{fill:#FFFFFF;}
-	.st4{display:none;}
-	.st5{display:inline;fill:none;}
-	.st6{display:inline;}
-	.st7{font-family:'MyriadPro-Regular';}
-	.st8{font-size:12px;}
-	.st9{display:inline;fill:none;stroke:#005A9C;stroke-width:7;stroke-miterlimit:10;}
-	.st10{fill:#CF5656;}
+	.st4{fill:none;}
+	.st5{font-family:'MyriadPro-Regular';}
+	.st6{font-size:12px;}
+	.st7{fill:#CF5656;}
 </style>
 <symbol  id="button-highlight" viewBox="-27.5 -36.4 54.9 72.9">
-	<path class="st0" d="M-18.9,31.8c-2.2,0-3.9-1.8-3.9-3.9V-9.9c0-2.2,1.8-3.9,3.9-3.9h7.8L0.6-28.4l9.1,14.6h9.2
-		c2.2,0,3.9,1.8,3.9,3.9v37.7c0,2.2-1.8,3.9-3.9,3.9H-18.9 M-18.9,32.9h37.7c2.8,0,5.1-2.3,5.1-5.1V-9.9c0-2.8-2.3-5.1-5.1-5.1h-8.5
-		L0.7-30.4L-11.6-15h-7.3c-2.8,0-5.1,2.3-5.1,5.1v37.7C-24,30.7-21.7,32.9-18.9,32.9z"/>
+	<path class="st0" d="M-18.8,31.8c-2.2,0-3.9-1.8-3.9-3.9V-9.9c0-2.2,1.8-3.9,3.9-3.9h7.8L0.7-28.4l9.1,14.6H19
+		c2.2,0,3.9,1.8,3.9,3.9v37.7c0,2.2-1.8,3.9-3.9,3.9L-18.8,31.8 M-18.8,32.9h37.7c2.8,0,5.1-2.3,5.1-5.1V-9.9c0-2.8-2.3-5.1-5.1-5.1
+		h-8.5L0.8-30.4L-11.6-15h-7.3c-2.8,0-5.1,2.3-5.1,5.1v37.7C-24,30.7-21.7,32.9-18.8,32.9z"/>
 </symbol>
-<symbol  id="starMarker" viewBox="-24 -31.7 47.9 63.3">
-	<g id="Group_3_00000160149820777792933290000007723513598614627503_">
-		<g id="Path_1_00000124146176802424038220000012575472134014165636_">
-			<path class="st1" d="M0.7-30.7l-11.8,14.8l-0.2,0.2h-0.3h-7.3c-2.5,0-4.5,2-4.5,4.5v37.7c0,2.5,2,4.5,4.5,4.5h37.7
-				c2.5,0,4.5-2,4.5-4.5v-37.7c0-2.5-2-4.5-4.5-4.5h-8.5H10L9.8-16L0.7-30.7z"/>
-			<path class="st2" d="M-18.9,30.5c-2.2,0-3.9-1.8-3.9-3.9v-37.7c0-2.2,1.8-3.9,3.9-3.9h7.8L0.6-29.7l9.1,14.6h9.2
-				c2.2,0,3.9,1.8,3.9,3.9v37.7c0,2.2-1.8,3.9-3.9,3.9H-18.9 M-18.9,31.7h37.7c2.8,0,5.1-2.3,5.1-5.1v-37.7c0-2.8-2.3-5.1-5.1-5.1
-				h-8.5L0.7-31.7l-12.3,15.4h-7.3c-2.8,0-5.1,2.3-5.1,5.1v37.7C-24,29.4-21.7,31.7-18.9,31.7z"/>
+<symbol  id="starMarker" viewBox="-24 -31.7 47.9 63.4">
+	<g id="Group_3_00000058574199912084458910000014888263931110087615_">
+		<g id="Path_1_00000078733414767700993300000006651228578641388952_">
+			<path class="st1" d="M0.8-30.7l-11.8,14.8l-0.2,0.2h-0.3h-7.3c-2.5,0-4.5,2-4.5,4.5v37.7c0,2.5,2,4.5,4.5,4.5h37.7
+				c2.5,0,4.5-2,4.5-4.5v-37.7c0-2.5-2-4.5-4.5-4.5h-8.5h-0.3L9.9-16L0.8-30.7z"/>
+			<path class="st2" d="M-18.8,30.5c-2.2,0-3.9-1.8-3.9-3.9v-37.7c0-2.2,1.8-3.9,3.9-3.9h7.8L0.7-29.7l9.1,14.6H19
+				c2.2,0,3.9,1.8,3.9,3.9v37.7c0,2.2-1.8,3.9-3.9,3.9h-37.8 M-18.8,31.7h37.7c2.8,0,5.1-2.3,5.1-5.1v-37.7c0-2.8-2.3-5.1-5.1-5.1
+				h-8.5L0.8-31.7l-12.3,15.4h-7.3c-2.8,0-5.1,2.3-5.1,5.1v37.7C-24,29.4-21.7,31.7-18.8,31.7z"/>
 		</g>
-		<g id="Polygon_1_00000119817668246165405050000000491638140782316441_" transform="translate(3.324 4.21)">
-			<path class="st3" d="M6.1-12.9c-0.3,0-0.6,0.1-0.8,0.3l-7.4,5.1c-0.3,0.2-0.7,0.4-1.1,0.4s-0.8-0.1-1.1-0.4l-7.4-5.1
+		<g id="Polygon_1_00000052803696077747254620000010997633863642026918_" transform="translate(3.324 4.21)">
+			<path class="st3" d="M6.2-12.9c-0.3,0-0.6,0.1-0.8,0.3l-7.4,5.1c-0.3,0.2-0.7,0.4-1.1,0.4S-4-7.2-4.2-7.5l-7.4-5.1
 				c-0.3-0.2-0.5-0.3-0.8-0.3c-0.5,0-0.9,0.2-1.2,0.6c-0.3,0.4-0.3,0.8-0.2,1.3l2.6,8.6c0.2,0.8,0,1.7-0.7,2.2l-7.2,5.5
 				C-20,5.7-20,6.4-19.9,6.9c0.2,0.5,0.6,1,1.3,1l9,0.2c0.8,0,1.6,0.6,1.8,1.3l3,8.5c0.3,0.7,0.9,1,1.4,1s1.1-0.3,1.4-1l3-8.5
-				c0.3-0.8,1-1.3,1.8-1.3l9-0.2c0.7,0,1.2-0.5,1.3-1c0.2-0.5,0.1-1.1-0.5-1.6L5.6-0.2C4.9-0.7,4.6-1.6,4.9-2.4L7.5-11
-				c0.1-0.4,0.1-0.9-0.2-1.3C7-12.7,6.5-12.9,6.1-12.9z"/>
-			<path class="st2" d="M-3.3,18.6c-0.4,0-0.9-0.2-1.1-0.8l-3-8.5c-0.3-0.9-1.2-1.5-2.1-1.5l-9-0.2c-0.6,0-0.9-0.4-1.1-0.8
-				c-0.1-0.4-0.1-0.9,0.4-1.3l7.2-5.5c0.8-0.6,1.1-1.6,0.8-2.5l-2.6-8.6c-0.1-0.4,0-0.7,0.2-1c0.2-0.3,0.6-0.5,0.9-0.5
-				c0.2,0,0.4,0.1,0.6,0.2l7.4,5.1C-4.2-7-3.8-6.9-3.3-6.9S-2.4-7-2-7.3l7.4-5.1c0.2-0.1,0.4-0.2,0.6-0.2c0.4,0,0.7,0.2,0.9,0.5
-				c0.2,0.3,0.3,0.6,0.2,1L4.6-2.5C4.3-1.6,4.7-0.6,5.4,0l7.2,5.5c0.5,0.4,0.5,0.9,0.4,1.3c-0.1,0.4-0.5,0.8-1.1,0.8l-9,0.2
-				c-0.9,0-1.8,0.6-2.1,1.5l-3,8.5C-2.4,18.4-2.9,18.6-3.3,18.6 M-3.3,19.2c0.7,0,1.4-0.4,1.6-1.1l3-8.5c0.2-0.7,0.9-1.1,1.6-1.1
-				l9-0.2c1.6,0,2.3-2.1,1-3.1L5.8-0.4C5.2-0.9,5-1.6,5.2-2.3l2.6-8.6c0.5-1.6-1.3-2.8-2.6-1.9l-7.4,5.1c-0.6,0.4-1.4,0.4-2,0
-				l-7.4-5.1c-1.3-0.9-3.1,0.4-2.6,1.9l2.6,8.6c0.2,0.7,0,1.4-0.6,1.9L-19.6,5c-1.3,1-0.6,3.1,1,3.1l9,0.2c0.7,0,1.3,0.5,1.6,1.1
-				l3,8.5C-4.7,18.8-4,19.2-3.3,19.2z"/>
+				c0.3-0.8,1-1.3,1.8-1.3l9-0.2c0.7,0,1.2-0.5,1.3-1c0.2-0.5,0.1-1.1-0.5-1.6l-7-5.5C5-0.7,4.7-1.6,5-2.4L7.6-11
+				c0.1-0.4,0.1-0.9-0.2-1.3C7.1-12.7,6.6-12.9,6.2-12.9z"/>
+			<path class="st2" d="M-3.2,18.6c-0.4,0-0.9-0.2-1.1-0.8l-3-8.5c-0.3-0.9-1.2-1.5-2.1-1.5l-9-0.2c-0.6,0-0.9-0.4-1.1-0.8
+				c-0.1-0.4-0.1-0.9,0.4-1.3L-12,0c0.8-0.6,1.1-1.6,0.8-2.5l-2.6-8.6c-0.1-0.4,0-0.7,0.2-1s0.6-0.5,0.9-0.5c0.2,0,0.4,0.1,0.6,0.2
+				l7.4,5.1C-4.1-7-3.7-6.9-3.2-6.9S-2.3-7-1.9-7.3l7.4-5.1c0.2-0.1,0.4-0.2,0.6-0.2c0.4,0,0.7,0.2,0.9,0.5c0.2,0.3,0.3,0.6,0.2,1
+				L4.7-2.5C4.4-1.6,4.8-0.6,5.5,0l7.2,5.5c0.5,0.4,0.5,0.9,0.4,1.3s-0.5,0.8-1.1,0.8l-9,0.2C2,7.8,1.1,8.4,0.8,9.3l-3,8.5
+				C-2.3,18.4-2.8,18.6-3.2,18.6 M-3.2,19.2c0.7,0,1.4-0.4,1.6-1.1l3-8.5C1.6,8.9,2.3,8.5,3,8.5l9-0.2c1.6,0,2.3-2.1,1-3.1L5.9-0.4
+				C5.2-0.9,5.1-1.6,5.2-2.3l2.6-8.6c0.5-1.6-1.3-2.8-2.6-1.9l-7.4,5.1c-0.6,0.4-1.4,0.4-2,0l-7.4-5.1c-1.3-0.9-3.1,0.4-2.6,1.9
+				l2.6,8.6c0.2,0.7,0,1.4-0.6,1.9L-19.6,5c-1.3,1-0.6,3.1,1,3.1l9,0.2c0.7,0,1.3,0.5,1.6,1.1l3,8.5C-4.6,18.8-3.9,19.2-3.2,19.2z"
+				/>
 		</g>
 	</g>
 </symbol>
 <g id="map">
 	
-		<image style="overflow:visible;opacity:0.5;enable-background:new    ;" width="2942" height="1711" id="map-background" xlink:href="map-background.png"  transform="matrix(1 0 0 1 -655.871 -671.3871)">
+		<image style="overflow:visible;enable-background:new    ;" width="2412" height="1280" id="map-background" xlink:href="aldi-map-background.png"  transform="matrix(0.8812 0 0 0.8812 -8.3871 -16.0253)">
 	</image>
-	<g id="aldi-paths" class="st4">
-		<rect x="575.2" y="532.3" class="st5" width="75.5" height="51.1"/>
-		<text transform="matrix(1 0 0 1 575.226 540.7783)" class="st6"><tspan x="0" y="0" class="st7 st8">Test Text</tspan><tspan x="0" y="14.4" class="st7 st8">Blah BLah Blah</tspan></text>
-		<polyline id="path" class="st9" points="535,634.5 718.8,586.8 732.4,680.5 491.1,764.9 		"/>
+	<g id="aldi-paths">
+		<rect x="1222.4" y="650" class="st4" width="75.5" height="51.1"/>
+		<text transform="matrix(1 0 0 1 1222.4518 658.4557)" class="st5 st6">Test Text</text>
+		<text transform="matrix(1 0 0 1 1222.4518 672.8557)" class="st5 st6">Blah BLah Blah</text>
+		<polyline id="path" class="st0" points="1182.2,752.2 1366,704.5 1379.6,798.2 1138.3,882.6 		"/>
 	</g>
 	
-		<use xlink:href="#button-highlight"  width="54.9" height="72.9" id="aldi-highlight" x="-27.5" y="-36.4" transform="matrix(1 0 0 -1 453.9108 783.7579)" style="display:none;overflow:visible;"/>
+		<use xlink:href="#button-highlight"  width="54.9" height="72.9" id="aldi-highlight" x="-27.5" y="-36.4" transform="matrix(1 0 0 -1 1101.0865 901.4603)" style="display:none;overflow:visible;"/>
 	
-		<use xlink:href="#starMarker"  width="47.9" height="63.3" id="aldi" x="-24" y="-31.7" transform="matrix(1 0 0 -1 454.4239 782.0526)" style="overflow:visible;"/>
-	<g id="cornerstore-paths" class="st4">
-		<rect x="575.2" y="532.3" class="st5" width="75.5" height="51.1"/>
-		<text transform="matrix(1 0 0 1 575.226 540.7783)" class="st6"><tspan x="0" y="0" class="st7 st8">Test Text</tspan><tspan x="0" y="14.4" class="st7 st8">Blah BLah Blah</tspan></text>
-		<polyline id="cornerstore-path" class="st9" points="535,634.5 718.8,586.8 696,435.9 385.5,512.5 		"/>
+		<use xlink:href="#starMarker"  width="47.9" height="63.4" id="aldi" x="-24" y="-31.7" transform="matrix(1 0 0 -1 1101.5997 899.73)" style="overflow:visible;"/>
+	<g id="cornerstore-paths">
+		<rect x="1222.4" y="650" class="st4" width="75.5" height="51.1"/>
+		<text transform="matrix(1 0 0 1 1222.4518 658.4557)" class="st5 st6">Test Text</text>
+		<text transform="matrix(1 0 0 1 1222.4518 672.8557)" class="st5 st6">Blah BLah Blah</text>
+		<polyline id="cornerstore-path" class="st0" points="1182.2,752.2 1366,704.5 1343.2,553.6 1032.7,630.2 		"/>
 	</g>
 	
-		<use xlink:href="#button-highlight"  width="54.9" height="72.9" id="cornerstore-highlight" x="-27.5" y="-36.4" transform="matrix(1 0 0 -1 353.1192 503.5766)" style="display:none;overflow:visible;"/>
+		<use xlink:href="#button-highlight"  width="54.9" height="72.9" id="cornerstore-highlight" x="-27.5" y="-36.4" transform="matrix(1 0 0 -1 1000.295 621.2791)" style="overflow:visible;"/>
 	
-		<use xlink:href="#starMarker"  width="47.9" height="63.3" id="cornerstore" x="-24" y="-31.7" transform="matrix(1 0 0 -1 353.4121 501.8504)" style="overflow:visible;"/>
-	<g id="cvs-paths" class="st4">
-		<rect x="575.2" y="532.3" class="st5" width="75.5" height="51.1"/>
-		<text transform="matrix(1 0 0 1 575.226 540.7783)" class="st6"><tspan x="0" y="0" class="st7 st8">Test Text</tspan><tspan x="0" y="14.4" class="st7 st8">Blah BLah Blah</tspan></text>
-		<polyline id="cvs-path" class="st9" points="535,634.5 718.8,586.8 634.8,27.9 213.7,92.9 		"/>
+		<use xlink:href="#starMarker"  width="47.9" height="63.4" id="cornerstore" x="-24" y="-31.7" transform="matrix(1 0 0 -1 1000.5879 619.5278)" style="overflow:visible;"/>
+	<g id="cvs-paths">
+		<rect x="1222.4" y="650" class="st4" width="75.5" height="51.1"/>
+		<text transform="matrix(1 0 0 1 1222.4518 658.4557)" class="st5 st6">Test Text</text>
+		<text transform="matrix(1 0 0 1 1222.4518 672.8557)" class="st5 st6">Blah BLah Blah</text>
+		<polyline id="cvs-path" class="st0" points="1182.2,752.2 1366,704.5 1282,145.6 860.9,210.6 		"/>
 	</g>
 	
-		<use xlink:href="#button-highlight"  width="54.9" height="72.9" id="cvs-highlight" x="-27.5" y="-36.4" transform="matrix(1 0 0 -1 183.2312 91.8546)" style="display:none;overflow:visible;"/>
+		<use xlink:href="#button-highlight"  width="54.9" height="72.9" id="cvs-highlight" x="-27.5" y="-36.4" transform="matrix(1 0 0 -1 830.407 209.5571)" style="overflow:visible;"/>
 	
-		<use xlink:href="#starMarker"  width="47.9" height="63.3" id="cvs" x="-24" y="-31.7" transform="matrix(1 0 0 -1 183.6864 90.9158)" style="overflow:visible;"/>
-	<g id="gasstation-paths" class="st4">
-		<rect x="575.2" y="532.3" class="st5" width="75.5" height="51.1"/>
-		<text transform="matrix(1 0 0 1 575.226 540.7783)" class="st6"><tspan x="0" y="0" class="st7 st8">Test Text</tspan><tspan x="0" y="14.4" class="st7 st8">Blah BLah Blah</tspan></text>
-		<polyline id="gasstation-path" class="st9" points="535,634.5 718.8,586.8 732.4,680.5 748.6,674.9 		"/>
+		<use xlink:href="#starMarker"  width="47.9" height="63.4" id="cvs" x="-24" y="-31.7" transform="matrix(1 0 0 -1 830.8622 208.5932)" style="overflow:visible;"/>
+	<g id="gasstation-paths">
+		<rect x="1222.4" y="650" class="st4" width="75.5" height="51.1"/>
+		<text transform="matrix(1 0 0 1 1222.4518 658.4557)" class="st5 st6">Test Text</text>
+		<text transform="matrix(1 0 0 1 1222.4518 672.8557)" class="st5 st6">Blah BLah Blah</text>
+		<polyline id="gasstation-path" class="st0" points="1182.2,752.2 1366,704.5 1379.6,798.2 1395.8,792.6 		"/>
 	</g>
 	
-		<use xlink:href="#button-highlight"  width="54.9" height="72.9" id="gasstation-highlight" x="-27.5" y="-36.4" transform="matrix(1 0 0 -1 748.4418 638.7701)" style="display:none;overflow:visible;"/>
+		<use xlink:href="#button-highlight"  width="54.9" height="72.9" id="gasstation-highlight" x="-27.5" y="-36.4" transform="matrix(1 0 0 -1 1395.6176 756.4725)" style="overflow:visible;"/>
 	
-		<use xlink:href="#starMarker"  width="47.9" height="63.3" id="gasstation" x="-24" y="-31.7" transform="matrix(1 0 0 -1 748.4418 637.4964)" style="overflow:visible;"/>
+		<use xlink:href="#starMarker"  width="47.9" height="63.4" id="gasstation" x="-24" y="-31.7" transform="matrix(1 0 0 -1 1395.6176 755.1738)" style="overflow:visible;"/>
 	<g id="Home">
-		<path class="st10" d="M533.1,627.9c-2.1-3.4-4-6.6-6-9.6c-3.8-6-7.1-11.2-9.4-16c-2.5-5.1-3.6-9.4-3.6-13.5c0-2.7,0.5-5.3,1.6-7.8
-			c1-2.4,2.5-4.5,4.4-6.4c1.9-1.8,4.1-3.3,6.5-4.3c2.5-1,5.2-1.6,8-1.6c2.8,0,5.5,0.5,8,1.6c2.4,1,4.6,2.5,6.5,4.3
-			c1.9,1.8,3.4,4,4.4,6.4c1.1,2.5,1.6,5.1,1.6,7.8c0,3.5-1.1,7.2-3.5,11.5c-2.2,4-5.2,8.2-8.7,13.1
-			C540,617.7,536.5,622.5,533.1,627.9z"/>
-		<ellipse class="st3" cx="534.7" cy="589.8" rx="11" ry="10.5"/>
+		<path class="st7" d="M1180.3,745.6c-2.1-3.4-4-6.6-6-9.6c-3.8-6-7.1-11.2-9.4-16c-2.5-5.1-3.6-9.4-3.6-13.5c0-2.7,0.5-5.3,1.6-7.8
+			c1-2.4,2.5-4.5,4.4-6.4c1.9-1.8,4.1-3.3,6.5-4.3c2.5-1,5.2-1.6,8-1.6c2.8,0,5.5,0.5,8,1.6c2.4,1,4.6,2.5,6.5,4.3s3.4,4,4.4,6.4
+			c1.1,2.5,1.6,5.1,1.6,7.8c0,3.5-1.1,7.2-3.5,11.5c-2.2,4-5.2,8.2-8.7,13.1C1187.2,735.4,1183.7,740.2,1180.3,745.6z"/>
+		<ellipse class="st3" cx="1181.9" cy="707.5" rx="11" ry="10.5"/>
 	</g>
 </g>
 </svg>

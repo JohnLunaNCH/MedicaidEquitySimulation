@@ -5,9 +5,8 @@
     <div style="display: flex;flex-flow: column;justify-content: space-between;">
         <div>
             <h1 class="map-description-header">
-                <div>Discount Super Market</div>
+                <div>Corner Store</div>
                 <div>
-                    <img class="mediumIcon" src="../images/Broccoli.png">
                     <img class="mediumIcon" src="../images/Broccoli.png">
                     <img class="mediumIcon" src="../images/Broccoli.png">
                 </div>
@@ -16,16 +15,15 @@
                     <img class="mediumIcon" src="../images/Time.png">
                 </div>
                 <div>
-                    <img class="mediumIcon" src="../images/Dollar.png">
                     <img class="mediumIcon" src="../images/Dollar.png">
                 </div>
             </h1>
             <p>
-            The super market will provide you with the best selection of fresh produce and overall more affordable prices when compared to picking up something quick from the gas station market.
+            The Corner Store is a similar time cost when compared to the Super Market. The food costs less but there are not as many healthy options.
             </p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> The Super Market offers a wide variety of healthy options.</p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 1hr. 40min. - 2hr. 40min.</p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are mid range compared to other local options.</p>
+            <p class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> The corner store has mostly snacks and some frozen foods.</p>
+            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 30min.</p>
+            <p class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are affordable.</p>
         </div>
         <div class="continue-to-store">
             <button>Continue To Store</button>

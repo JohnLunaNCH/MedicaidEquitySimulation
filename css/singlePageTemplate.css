@@ -28,7 +28,7 @@ body {
 	overflow: hidden;
 }
 buffer {
-	height: 10vh;
+	height: 2em;
 }
 body::-webkit-scrollbar {
 	display: none;
@@ -221,6 +221,11 @@ a {
 .dentist-list-item h1{
 	margin: 0px;
 }
+#dentist-description{
+	display: flex;
+	flex-flow:  column;
+	height: 50vh;
+}
 #dentist-description-container{
 	width: 50%;
 	overflow: hidden; 
@@ -264,4 +269,35 @@ a {
 }
 .continue-to-store button:hover {
 	border-color: #005A9C;
+}
+.Continue-Button {
+	height: 3em;
+}
+
+.callContainer{
+	width: 100%;
+	height: 300px;
+	flex: 0 1 auto;
+	background-color: black;
+}
+
+.callbutton{
+	padding: 0.5em 1em;
+	color: white;
+	background-color: #59A5DB;
+	border-radius: 15px;
+	border: 4px solid rgba(0, 0, 0, 0);
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	margin:  0 1em;
+	cursor: pointer;
+}
+
+.callbutton:hover {
+	border-color: #005A9C;
+}
+
+#callVid{
+	height: 300px;
 }

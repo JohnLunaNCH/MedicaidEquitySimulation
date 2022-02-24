@@ -1,34 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="298.94" height="656.252" viewBox="0 0 298.94 656.252">
-  <defs>
-    <image id="image" width="14" height="23" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAXCAYAAAA7kX6CAAAABHNCSVQICAgIfAhkiAAAAdhJREFUOE+Nk00oplEYhn2khsJCirCSIiUpC6UMCqmZUPJXEhZjNtJoJooFCz8LO5SGSTFNIqzY+ImSJEUyI8vRYCRNCqWZb67763w6vb1vnLp6nnPOfZ//4/P7/SEuJZS2SWiAPXgDl7bO52EsRbRsCQfIO19iLEC0Zgl7yPteYvQh0iw1sG+WfPucMQrBJ4iBIfjpdgjOPb5FNAJJRnxD1LIPnOagMc4YqlxGH6PtvZdxhY4S+G0OQdeQY8RTxEYv4zkd8ZABx7AB+Ub8jahZN22zlvqKhnv4B8ofHcYl6mXwDvQoAkXGNOJ3+AWJpn2d+Nrkc8QKCAPdpe40YJRAwh3INeIFYrnJtcdF+AoR0AITMuro1TFu0MgdoAegcgR5kAK9MAxrbm+1nY4PoCW2GfMusRj+mHpgqcFcMQFOQK9nGrZh1DLrMdyp7jTO0FYHOtks0NW0WuZ+8i6nsZCGVTP60+mZuvbWDfqTyRo4OGM4Fb3HdDiFTHiw9qAtnIE+eDXMBo0fqQwaoWbW9TiLPrY+uP5pkYya+gdEwhdocjGpqRZ0lyqpMs6TVMIVaKnXHkZd/gVEw5CMf0m09nprRA9vyGc6muFcRj2tWJjwUlvt2eRbcPgfL92gLWuSYlkAAAAASUVORK5CYII="/>
-  </defs>
-  <g id="Directions_-_Right" data-name="Directions - Right" transform="translate(-6425.611 -1121.241)">
-    <g id="Store_Icon_copy_2" data-name="Store Icon copy 2" transform="translate(6557 1664)">
-      <g id="Store_Icon" data-name="Store Icon">
-        <rect id="Rectangle_7" data-name="Rectangle 7" width="31" height="32" rx="5.833" fill="#448ccb"/>
-        <path id="Polygon_1" data-name="Polygon 1" d="M14.715,7.34a1.137,1.137,0,0,1,2.177,0L18.636,12.7l5.378.149a1.192,1.192,0,0,1,.69,2.108l-4.317,3.591,1.522,5.564a1.156,1.156,0,0,1-1.778,1.282L15.8,22.159l-4.327,3.232A1.156,1.156,0,0,1,9.7,24.109l1.522-5.564L6.9,14.954a1.192,1.192,0,0,1,.69-2.108l5.379-.149Z" fill="#fff"/>
-      </g>
-    </g>
-    <use id="Walker_3" data-name="Walker 3" transform="translate(6537 1590)" xlink:href="#image"/>
-    <path id="Line_5" data-name="Line 5" d="M6572.2,1610.435v0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Dot_5" data-name="Dot 5" d="M6570.389,1600.04a2.271,2.271,0,1,1,2.271,2.32A2.3,2.3,0,0,1,6570.389,1600.04Z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-    <path id="Line_2" data-name="Line 2" d="M6572.2,1300.39v0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Dot_2" data-name="Dot 2" d="M6570.389,1287a2.271,2.271,0,1,1,2.271,2.32A2.3,2.3,0,0,1,6570.389,1287Z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-    <path id="Line_1" data-name="Line 1" d="M6572.2,1161v0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <image id="Bus_1" data-name="Bus 1" width="20" height="23" transform="translate(6535 1276)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAABHNCSVQICAgIfAhkiAAAAapJREFUOE/Vlc8rRFEUx2dGfmywUkxkZCNKdkiJNOzIr41SUxYW/At2/gLZSqyUmFjJj2JB2FhgYYOEjRJWmsH4fKd763l6eY8s5tSnc8+593znvnPfuxPOZDIhrACOoEmBsTR+E94cOQ3zoAfyHfkTxi2QChvBVoIDV+EWcbcrZ0P9UNw1J41DK9hOsGcWaMsv8A778OEqjBC3mZ0W4xXLOqQhwXIGMzAMKzAGzx47c6dLSMzBEKzChARTDGw/Ghmf+hSzyxoYnJkg28PsqRirwV8HFIyx/srW5Iags4e1bP0y4COrTbYmrUeuIHFvRBL4hYCCo6xfNDVR+x7ag9Ful5xN/kG8mvkR0JcmC7sFA27u2/IcFNThPJgHqcMXevTglfyFmSvDR716OMBE0kyu4Xs9BNfJ95m5fry+4y+HojtP99ws7Oi0YBrqPQTPyU+B3o4umDTjiD3lDRK6NP9i2xTHrWAlwTLo1v2NHVM0CLdWUCI6gHmw96Mf4QSL9FcxDo8qcArGiO01pB76sScWlUIn7P67oC6JO9D3XORne6y5gSpoBvUx9AnOppn05VeHvgAAAABJRU5ErkJggg=="/>
-    <use id="Walker_1" data-name="Walker 1" transform="translate(6538 1145)" xlink:href="#image"/>
-    <path id="Home_Icon" data-name="Home Icon" d="M6572.643,1155.564h0c-2.219-3.7-4.081-6.608-5.576-8.946l-.007-.011-.005-.009a67.12,67.12,0,0,1-4.438-7.525,13.926,13.926,0,0,1-1.338-6.206,11.51,11.51,0,0,1,11.365-11.624,11.164,11.164,0,0,1,8.036,3.4,11.682,11.682,0,0,1,3.329,8.219c0,4.686-1.685,7.321-5.755,13.687l-.017.027c-1.5,2.347-3.368,5.267-5.592,8.984Zm0-27.684a5.541,5.541,0,1,0,5.408,5.54A5.483,5.483,0,0,0,6572.641,1127.88Z" fill="#f54c00"/>
-    <text id="Walk_to_bus_stop." data-name="Walk to bus stop." transform="translate(6591.551 1220.525)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">Walk to bus stop.</tspan></text>
-    <text id="Walk_to_store." data-name="Walk to store." transform="translate(6591.551 1604.16)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">Walk to store.</tspan></text>
-    <text id="_7_min" data-name="7 min" transform="translate(6554.951 1220.525)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="-35.633" y="0">7 min</tspan></text>
-    <text id="_12_min" data-name="12 min" transform="translate(6554.951 1456.522)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="-43.695" y="0">12 min</tspan></text>
-    <text id="_4_min" data-name="4 min" transform="translate(6554.951 1643.173)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="-35.633" y="0">4 min</tspan></text>
-    <text id="Bus_runs_every_30_minutes" data-name="Bus runs every
- 30 minutes" transform="translate(6519.611 1284)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="-93.339" y="0">Bus runs every</tspan><tspan x="-74.925" y="15.64" xml:space="preserve"> 30 minutes</tspan></text>
-    <text id="Wait_for_bus._Next_bus_in_23_min._" data-name="Wait for bus.
-(Next bus in 23 min.)" transform="translate(6591.551 1281.623)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">Wait for bus.</tspan><tspan x="0" y="15.64">(Next bus in 23 min.)</tspan></text>
-    <text id="Ride_bus_3_stops." data-name="Ride bus 3 stops." transform="translate(6592.459 1456.522)" fill="#fff" font-size="14.663" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">Ride bus 3 stops.</tspan></text>
-    <text id="Estimated_Travel_Time_23_-_53_minutes" data-name="Estimated Travel Time
-23 - 53 minutes" transform="translate(6452.107 1709.493)" fill="#fff" font-size="14.528" font-family="MyriadPro-Regular, Myriad Pro"><tspan x="54.24" y="11">Estimated Travel Time</tspan><tspan font-family="Roboto-Regular, Roboto"><tspan x="69.844" y="28.434">23 - 53 minutes</tspan></tspan></text>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 298.9 656.3" style="enable-background:new 0 0 298.9 656.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#448CCB;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st5{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st6{fill:#F54C00;}
+	.st7{font-family:'Roboto-Italic';}
+	.st8{font-size:14.663px;}
+	.st9{font-family:'MyriadPro-Regular';}
+	.st10{font-size:14.528px;}
+	.st11{font-family:'Roboto-Regular';}
+	.st12{fill:none;stroke:#FFFFFF;stroke-width:3;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-dasharray:3.9277,3.9277;}
+	.st14{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st15{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-dasharray:4.0287,4.0287;}
+</style>
+<g id="Layer_2_00000008128903649863876050000000327583457004504751_" class="st0">
+	<rect x="-10" y="-12" class="st1" width="360" height="678"/>
+</g>
+<g id="Layer_1_00000077285201571468906120000010550506389845961915_">
+	<g id="Directions_-_Right" transform="translate(-6425.611 -1121.241)">
+		<g id="Store_Icon_copy_2" transform="translate(6557 1664)">
+			<g id="Store_Icon">
+				<path id="Rectangle_7" class="st2" d="M5.8,0h19.3C28.4,0,31,2.6,31,5.8v20.3c0,3.2-2.6,5.8-5.8,5.8H5.8C2.6,32,0,29.4,0,26.2
+					V5.8C0,2.6,2.6,0,5.8,0z"/>
+				<path id="Polygon_1" class="st3" d="M14.7,7.3c0.2-0.6,0.8-0.9,1.4-0.8c0.4,0.1,0.6,0.4,0.8,0.8l1.7,5.4l5.4,0.1
+					c0.7,0,1.2,0.6,1.1,1.3c0,0.3-0.2,0.6-0.4,0.8l-4.3,3.6l1.5,5.6c0.2,0.6-0.2,1.3-0.8,1.4c-0.3,0.1-0.7,0-1-0.2l-4.3-3.2
+					l-4.3,3.2c-0.5,0.4-1.2,0.2-1.6-0.3c-0.2-0.3-0.3-0.7-0.2-1l1.5-5.6L6.9,15c-0.5-0.4-0.6-1.2-0.2-1.7C7,13,7.3,12.9,7.6,12.8
+					l5.4-0.1L14.7,7.3z"/>
+			</g>
+		</g>
+		<g id="Walker_3" transform="translate(6537 1590)">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="14" height="23" id="image" xlink:href="B8F14F1E.png"  transform="matrix(1 0 0 1 6537 1590)">
+			</image>
+		</g>
+		<path id="Line_5" class="st4" d="M6572.2,1610.4L6572.2,1610.4z"/>
+		<path id="Dot_5" class="st5" d="M6570.4,1600c0-1.3,1.1-2.2,2.3-2.2c1.3,0,2.2,1.1,2.2,2.3c0,1.2-1,2.2-2.3,2.2
+			C6571.4,1602.3,6570.4,1601.3,6570.4,1600z"/>
+		<path id="Line_2" class="st4" d="M6572.2,1300.4L6572.2,1300.4z"/>
+		<path id="Dot_2" class="st5" d="M6570.4,1287c0-1.3,1.1-2.2,2.3-2.2c1.3,0,2.2,1.1,2.2,2.3c0,1.2-1,2.2-2.3,2.2
+			C6571.4,1289.3,6570.4,1288.3,6570.4,1287z"/>
+		<path id="Line_1" class="st4" d="M6572.2,1161L6572.2,1161z"/>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="20" height="23" id="Bus_1" xlink:href="B8F14F22.png"  transform="matrix(1 0 0 1 6535 1276)">
+		</image>
+		<g id="Walker_1" transform="translate(6538 1145)">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="14" height="23" id="image_00000121252939610917833850000001881411971881209220_" xlink:href="B8F14F25.png"  transform="matrix(1 0 0 1 6538 1145)">
+			</image>
+		</g>
+		<path id="Home_Icon" class="st6" d="M6572.6,1155.6L6572.6,1155.6c-2.2-3.7-4.1-6.6-5.6-8.9l0,0l0,0c-1.6-2.4-3.1-4.9-4.4-7.5
+			c-0.9-1.9-1.4-4.1-1.3-6.2c-0.1-6.3,5-11.5,11.4-11.6c3,0,5.9,1.2,8,3.4c2.1,2.2,3.3,5.1,3.3,8.2c0,4.7-1.7,7.3-5.8,13.7l0,0
+			C6576.7,1148.9,6574.9,1151.8,6572.6,1155.6L6572.6,1155.6z M6572.6,1127.9c-3.1-0.1-5.6,2.3-5.7,5.4s2.3,5.6,5.4,5.7
+			s5.6-2.3,5.7-5.4v-0.1C6578.1,1130.4,6575.7,1127.9,6572.6,1127.9L6572.6,1127.9z"/>
+		<text transform="matrix(1 0 0 1 6591.5508 1220.525)" class="st3 st7 st8">Walk to bus stop.</text>
+		<text transform="matrix(1 0 0 1 6591.5508 1604.16)" class="st3 st7 st8">Walk to store.</text>
+		<text transform="matrix(1 0 0 1 6519.3184 1220.525)" class="st3 st7 st8">7 min</text>
+		<text transform="matrix(1 0 0 1 6511.2563 1456.522)" class="st3 st7 st8">30 min</text>
+		<text transform="matrix(1 0 0 1 6519.3184 1643.173)" class="st3 st7 st8">4 min</text>
+		<text transform="matrix(1 0 0 1 6426.272 1284)" class="st3 st7 st8">Bus runs every</text>
+		<text transform="matrix(1 0 0 1 6444.686 1299.64)" class="st3 st7 st8"> 30 minutes</text>
+		<text transform="matrix(1 0 0 1 6591.5508 1281.623)" class="st3 st7 st8">Wait for bus.</text>
+		<text transform="matrix(1 0 0 1 6591.5508 1297.2631)" class="st3 st7 st8">(Next bus in 23 min.)</text>
+		<text transform="matrix(1 0 0 1 6592.459 1456.522)" class="st3 st7 st8">Ride bus 8 stops.</text>
+		<text transform="matrix(1 0 0 1 6506.3472 1720.493)" class="st3 st9 st10">Estimated Travel Time</text>
+		<text transform="matrix(1 0 0 1 6521.9512 1737.927)" class="st3 st11 st10">41 - 71 minutes</text>
+	</g>
+	<g>
+		<g>
+			<line class="st12" x1="146.6" y1="53.1" x2="146.6" y2="55.1"/>
+			<line class="st13" x1="146.6" y1="59.1" x2="146.6" y2="151.4"/>
+			<line class="st12" x1="146.6" y1="153.3" x2="146.6" y2="155.3"/>
+		</g>
+	</g>
+	<line class="st14" x1="146.6" y1="177.8" x2="146.6" y2="466.5"/>
+	<g>
+		<g>
+			<line class="st12" x1="146.6" y1="492.1" x2="146.6" y2="494.1"/>
+			<line class="st15" x1="146.6" y1="498.1" x2="146.6" y2="528.3"/>
+			<line class="st12" x1="146.6" y1="530.4" x2="146.6" y2="532.4"/>
+		</g>
+	</g>
+</g>
 </svg>

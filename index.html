@@ -40,11 +40,8 @@
 </script>
 </head>
 <body id="body">
-
-
 <!-- Main Container -->
-<div class="container"> 
-  
+<div class="container">   
   <!-- Stats -->  
   <header class="header-container">
     <stats class="stats-hidden stats-visible">
@@ -68,11 +65,27 @@
     </div>
     <div style="height: 1em;"> <a class="start-Button" onClick="addHeight(this)">Start</a> </div>
     <buffer></buffer>
-
   </section>
 
-  <!-- Test Section -->
-    <section class="banner grocery-blur" id="ChX-SctX">
+    <!-- Chapter 1: narration -->
+  <section class="narration">
+    <buffer></buffer>
+    <div class="square-wrapper2">
+      <div class="square2 square-transition2"> Beyond the Clinic Section </div>
+    </div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+
+  <section class="narration">
+    <buffer></buffer>
+    <div class="square-wrapper2">
+      <div class="square2 square-transition2"> You are almost out of groceries. </div>
+    </div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+
+<!-- Chapter 1: grocery map -->
+<section class="banner grocery-blur" id="ChX-SctX">
   	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em">
   		<div class="subContainer" style="height:100%;">
   			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
@@ -99,6 +112,16 @@
   	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 
+<!-- Chapter 2: Bills Narration -->
+  <section class="narration">
+    <buffer></buffer>
+    <div class="square-wrapper">
+      <div class="square square-transition"> You have bills to pay. </div>
+    </div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+
+<!-- Bills -->
   <section class="banner livingroom-blur" id="Ch2-Sct1">
   	<div id="BillsSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 1em">
   		<div class="subContainer" style="height:100%;">
@@ -113,13 +136,32 @@
   	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-      <section class="banner dentist-blur" id="ChX-SctX">
+  <!-- Science Fair -->
+    <section class="narration">
+    <buffer></buffer>
+    <div class="square-wrapper">
+      <div class="square square-transition">Science Fair </div>
+    </div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+
+  <!-- Scheduling Dentist -->
+    <section class="narration">
+    <buffer></buffer>
+    <div class="square-wrapper">
+      <div class="square square-transition"> Scheduling a dentist. </div>
+    </div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
+
+<!-- Dentist Map Section -->
+  <section class="banner dentist-blur" id="ChX-SctX">
 	  	<div id="MapToDentistSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 0px">
 	  		<div class="subContainer" style="height:100%; width:100%">
 	  			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
 	  				<div style="display: flex; flex-flow: row; height:100%;">
 	  					<div id="dentist-description-container">
-	  						<div class="dentist-list-header">This is the heading</div>
+	  						<div class="dentist-list-header">Dentist Selection</div>
 	  						<div id="dentist-list-container">
 	  							<div class="dentist-list-item" id="location1">
 	  								<h1>Dentist 1</h1>
@@ -175,6 +217,14 @@
 	  	</div>
 	  	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
   	</section>
+
+  	  <section class="narration">
+    <buffer></buffer>
+    <div class="square-wrapper">
+      <div class="square square-transition"> Outro </div>
+    </div>
+    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  </section>
 
   <!-- Chapter 1: Background Image Section -->
   <section class="banner" id="Ch1-Sct1">

@@ -43,6 +43,11 @@ $.get('/../html/location5.txt', function (response){
     location5.html = response;
 });
 
+var videoHtml;
+$.get('/../html/location1.txt', function (response){
+    videoHtml = response;
+});
+
 
 d3.xml("images/dentist-mapmask.svg")
     .then(data => {
@@ -234,10 +239,16 @@ function clickedButton(e, path, highlight, id, html){
             var copy = document.getElementById(id).innerHTML;
 
             d3.select("#dentist-description")
-                .style("display", "block")
-                .html("<div class=\"dentist-list-item\">" + copy + "</div>" + html + "</br><button onClick=\"ResetMap_dentist()\">End Call</button>");
+                .style("display", "flex")
+                .html("<div class=\"dentist-list-item\">" + copy + "</div>" 
+                    + videoHtml
+                    // + html 
+                    //+ "<button onClick=\"CallDentist(d3.select(this).parent, " + id + ")\">Call Dentist</button>"
+                    );
             d3.select("#dentist-list-container")
                 .style("display", "none");
+            console.log(id);
+            d3.select("#button-calldentist").attr("onClick", "CallDentist(\"" + String(id) + "\")");
 
             //disable all paths and enable the target path
             disableAllPaths_dentist();
@@ -246,6 +257,21 @@ function clickedButton(e, path, highlight, id, html){
 
             //animate map movement
             toggleMap_dentist(true, path.select('path'), e);
+}
+
+var numberofcalls = 0;
+
+function CallDentist(location){
+    numberofcalls ++;
+    var answer = "-answer.mp4";
+    if (numberofcalls > 3){
+        //call dentist who will talk
+        answer = "-noanswer.mp4";   
+    }
+    const vidElement = d3.select('#callVid');
+    vidElement.select('source').attr("src", "videos/" + location + answer);
+    vidElement.node().load();
+    vidElement.node().play();
 }
 
 function disableAllPaths_dentist (){
@@ -266,14 +292,14 @@ function toggleMap_dentist (pathOn, path, event){
 
     if (pathOn){
         const bounds = path.node().getBBox();
-        console.log(bounds);
+        //console.log(bounds);
         var i;
         if (bounds.width > bounds.height){
-            console.log("based on width");
+            //console.log("based on width");
             i = interpolator(1.2, 1.5, ((bounds.width - 424)/ -127));
         }
         else{
-            console.log("based on height");
+            //console.log("based on height");
             i = interpolator(0.9, 1.4, ((bounds.height - 762)/ -571));
         }
          
@@ -298,5 +324,16 @@ function ResetMap_dentist(){
         .style("display", "block");
     d3.select("#dentist-description")
         .style("display", "none");
+    d3.select('#callVid').node().pause();
+    d3.select('#callVid').node().currentTime = 0;
     isClicked_dentist = false;
+}
+
+
+function playPause(v){
+    if(v.paused){
+        v.play();
+    } else{
+        v.pause();
+    }
 }

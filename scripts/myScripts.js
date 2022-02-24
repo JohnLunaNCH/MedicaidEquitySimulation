@@ -10,7 +10,9 @@ function addHeight(obj) {
    h -= ((chapter - 1) * 10);
 	container.style.height = h + "vh";
    //console.log("container height equals: " + h);
-	obj.classList.add('hidden');
+   if (obj){
+   	obj.classList.add('hidden');
+   }
 
 	scrollBy(container, (window.innerHeight * (chapter - 1)), scrollDuration, easeInOutCubic)	
 }

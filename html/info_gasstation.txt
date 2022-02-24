@@ -1,6 +1,6 @@
 <div class="map-description">
-    <div style="flex: 2 0 auto;width: 350px;text-align: center;">
-        <img class="route-image" src="images/svg_path_toAldi.svg">
+    <div style="flex: 2 0 auto;width: 270px;text-align: center;">
+        <img class="route-image" src="images/svg_path_toGasStation.svg">
     </div>
     <div style="display: flex;flex-flow: column;justify-content: space-between;">
         <div>
@@ -21,7 +21,7 @@
             The Gas Station is very close to the house and is easy to walk to. While convenient, there are fewer healthy choices and it is more expensive than other budget options.
             </p>
             <p class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> The Gas Station has snacks, sodas, and those hot dogs that rotate under a warm light.</p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 30 min.</p>
+            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 15 min.</p>
             <p class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are high for what you get.</p>
         </div>
         <div class="continue-to-store">

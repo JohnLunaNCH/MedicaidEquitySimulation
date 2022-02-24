@@ -1,5 +1,5 @@
 <div class="map-description">
-    <div style="flex: 2 0 auto;width: 350px;text-align: center;">
+    <div style="flex: 2 0 auto;width: 270px;text-align: center;">
         <img class="route-image" src="images/svg_path_toAldi.svg">
     </div>
     <div style="display: flex;flex-flow: column;justify-content: space-between;">
@@ -14,6 +14,7 @@
                 <div>
                     <img class="mediumIcon" src="../images/Time.png">
                     <img class="mediumIcon" src="../images/Time.png">
+                    <img class="mediumIcon" src="../images/Time.png">
                 </div>
                 <div>
                     <img class="mediumIcon" src="../images/Dollar.png">
@@ -24,7 +25,7 @@
             The super market will provide you with the best selection of fresh produce and overall more affordable prices when compared to picking up something quick from the gas station market.
             </p>
             <p class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> The Super Market offers a wide variety of healthy options.</p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 1hr. 40min. - 2hr. 40min.</p>
+            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 1hr</p>
             <p class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are mid range compared to other local options.</p>
         </div>
         <div class="continue-to-store">

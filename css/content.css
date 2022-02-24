@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.darkbackground{
+    flex: 5 0 auto; /* this overides the flex display with the properties: grow shrink start-size */
+    background-color: hsla(0, 0%, 0%, 0.75); /* I prefer rgba, but hsla works too */
+    border-radius: 20px; /* I'm using 20px border radius for all background elements and 15px for foreground interactables */
+    padding: 1em; /* em is the height of the current font size*/
+}
+.flexContainer{
+	display: flex;
+}
+.flexContainer.row{
+	flex-flow: row;
+}
+.flexContainer.column{
+	flex-flow: column;
+}
+
+examplediv{
+	padding: 1em; /* This is just so there is some space for the examples. You can override this by using a standard div */
+}

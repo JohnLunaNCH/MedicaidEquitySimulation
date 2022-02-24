@@ -1,6 +1,6 @@
 <div class="map-description">
-    <div style="flex: 2 0 auto;width: 350px;text-align: center;">
-        <img class="route-image" src="images/svg_path_toAldi.svg">
+    <div style="flex: 2 0 auto;width: 270px;text-align: center;">
+        <img class="route-image" src="images/svg_path_toCornerStore.svg">
     </div>
     <div style="display: flex;flex-flow: column;justify-content: space-between;">
         <div>

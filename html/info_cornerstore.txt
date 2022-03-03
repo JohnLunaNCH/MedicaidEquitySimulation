@@ -7,23 +7,23 @@
             <h1 class="map-description-header">
                 <div>Corner Store</div>
                 <div>
-                    <img class="mediumIcon" src="../images/Broccoli.png">
-                    <img class="mediumIcon" src="../images/Broccoli.png">
+                    <img class="mediumIcon" src="images/Broccoli.png">
+                    <img class="mediumIcon" src="images/Broccoli.png">
                 </div>
                 <div>
-                    <img class="mediumIcon" src="../images/Time.png">
-                    <img class="mediumIcon" src="../images/Time.png">
+                    <img class="mediumIcon" src="images/Time.png">
+                    <img class="mediumIcon" src="images/Time.png">
                 </div>
                 <div>
-                    <img class="mediumIcon" src="../images/Dollar.png">
+                    <img class="mediumIcon" src="images/Dollar.png">
                 </div>
             </h1>
             <p>
             The Corner Store is a similar time cost when compared to the Super Market. The food costs less but there are not as many healthy options.
             </p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> The corner store has mostly snacks and some frozen foods.</p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Estimated Travel Time: 30min.</p>
-            <p class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are affordable.</p>
+            <p class="keyItem"><img class="mediumIcon" src="images/Broccoli.png"> The corner store has mostly snacks and some frozen foods.</p>
+            <p class="keyItem"><img class="mediumIcon" src="images/Time.png"> Estimated Travel Time: 30min.</p>
+            <p class="keyItem"><img class="mediumIcon" src="images/Dollar.png"> The prices are affordable.</p>
         </div>
         <div class="continue-to-store">
             <button onClick="StartShoppingSpree('cornerstore')">Continue To Store</button>

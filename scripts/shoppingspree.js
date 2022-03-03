@@ -46,7 +46,7 @@ function StartShoppingSpree(glocation) {
 	groceryLocation = glocation;
 	//change background based on location
 	d3.select('#Ch1-Sct2')
-		.style("background-image", "url(../images/exterior-" + groceryLocation + ".png)");
+		.style("background-image", "url(images/exterior-" + groceryLocation + ".png)");
 
 	d3.select("#MapToGrocerySection").select(".subContainer")
 		.transition()
@@ -154,7 +154,7 @@ function StartSpree(){
 
 	//change background based on location
 	d3.select('#Ch1-Sct2')
-		.style("background-image", "url(../images/interior-" + groceryLocation + ".png)");
+		.style("background-image", "url(images/interior-" + groceryLocation + ".png)");
 
 
 }

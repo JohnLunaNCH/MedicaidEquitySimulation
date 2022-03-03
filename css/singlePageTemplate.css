@@ -146,25 +146,25 @@ vertical-align: middle;
 
 /* Background Images */
 .livingroom {
-    background-image: url(images/bg_livingroom02.png);
+    background-image: url(../images/bg_livingroom02.png);
 }
 .livingroom-blur {
-    background-image: url(images/bg_livingroom02_blur.png);
+    background-image: url(../images/bg_livingroom02_blur.png);
 }
 .grocery-blur {
-	background-image: url(images/bg_grocery01_blur.png);	
+	background-image: url(../images/bg_grocery01_blur.png);	
 }
 .grocery {
-	background-image: url(images/bg_grocery01.png);	
+	background-image: url(../images/bg_grocery01.png);	
 }
 .banner-shopping{
-	background-image: url(images/bg_shopping.png);
+	background-image: url(../images/bg_shopping.png);
 }
 .schedulingBackground{
-	background-image: url(images/bg_scheduling.png);
+	background-image: url(../images/bg_scheduling.png);
 }
 .dentist-blur{
-	background-image: url(images/bg_dentist01_blur.png);
+	background-image: url(../images/bg_dentist01_blur.png);
 }
 
 /* Other */

@@ -5,7 +5,7 @@ var box = d3.select("#MapSection").select(".map-dentist");
 var description = d3.select("#MapSection").select(".description");
 
 // var aldiText;
-// $.get('/../html/info_aldi.txt', function (response){
+// $.get('html/info_aldi.txt', function (response){
 //     aldiText = response;
 // });
 const transitionSpeed = 500;

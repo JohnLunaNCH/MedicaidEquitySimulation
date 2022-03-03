@@ -23,7 +23,7 @@ function AddTime(){
 //assign JSON data to global variable
 (async function() {
 	  try {
-	    const jsonresponse = await d3.json("/../json/items.json");
+	    const jsonresponse = await d3.json("json/items.json");
 	    items = jsonresponse;
 	    console.log(items);
 	  } catch(error) {

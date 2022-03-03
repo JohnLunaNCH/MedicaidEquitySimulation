@@ -27,13 +27,13 @@ var aldiText;
 var cornerstoreText;
 var gasstationText;
 
-$.get('/../html/info_aldi.txt', function (response){
+$.get('html/info_aldi.txt', function (response){
     aldiText = response;
 });
-$.get('/../html/info_cornerstore.txt', function (response){
+$.get('html/info_cornerstore.txt', function (response){
     cornerstoreText = response;
 });
-$.get('/../html/info_gasstation.txt', function (response){
+$.get('html/info_gasstation.txt', function (response){
     gasstationText = response;
 });
 

@@ -28,7 +28,7 @@ var dentistContainer, dentistTransform;
 var descriptionDisplay;
 
 var videoHtml;
-$.get('/../html/location1.txt', function (response){
+$.get('html/location1.txt', function (response){
     videoHtml = response;
 });
 

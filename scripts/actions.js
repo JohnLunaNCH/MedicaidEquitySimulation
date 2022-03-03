@@ -2,7 +2,7 @@ var actions;
 
 (async function() {
   try {
-    const jsonresponse = await d3.json("/../json/actions.json");
+    const jsonresponse = await d3.json("json/actions.json");
     actions = jsonresponse;
     console.log(actions);
   } catch(error) {

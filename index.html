@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Medicaid Equity Simulation</title>
+<title>Equity Simulation</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <link href="css/animation.css" rel="stylesheet" type="text/css">
+<link href="css/content.css" rel="stylesheet" type="text/css">
 
 <!-- jquery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -14,7 +15,7 @@
 <!-- d3 library -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
 
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--> 
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. --> 
 <script>var __adobewebfontsappname__="dreamweaver"</script> 
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script> 
 
@@ -44,6 +45,13 @@
 <div class="container">   
   <!-- Stats -->  
   <header class="header-container">
+  	<shoppingspreeIcons>
+      <ul>
+          <li id="icon-list" style="display: none;"><img onClick="DisplayShoppingList(); //d3.select('#shoppingexplanation').remove();" class="mediumIcon" src="images/icon-shoppinglist.png"></li>
+          <li id="icon-time" style="display: none;"><img class="mediumIcon" src="images/icon-time.png"><div id="timeremaing" style="float: right;padding: 1.2em 0.5em 1.2em 0;">0 hr, 0 min have passed</div></li>
+          <li id="icon-checkout" style="display: none;"><img onClick="PreCheckOut();" class="mediumIcon" src="images/icon-cart.png"></li>
+      </ul>
+    </shoppingspreeIcons>
     <stats class="stats-hidden stats-visible">
       <ul>
         <li>Energy <div id="energy"> </div></li>
@@ -56,38 +64,43 @@
   
   <!-- Hero Section -->  
   <section class="hero">
-	  <div>
+	  <div class="align-bottom">
 		  <img src="images/Family.png" class="hero_image">
 	  </div>
     <div class="align-bottom">
       <h2 class="hero_header">MES <span class="light">Medicaid Equity Simulation</span></h2>
       <p class="tagline"></p>
     </div>
-    <div style="height: 1em;"> <a class="start-Button" onClick="addHeight(this)">Start</a> </div>
+    <div style="height: 1em;" class="align-bottom"> <a class="start-Button" onClick="addHeight(this)">Start</a> </div>
     <buffer></buffer>
   </section>
 
-    <!-- Chapter 1: narration -->
-  <section class="narration">
+    <!-- Intro: Narration -->
+<!--   <section class="narration" id="Intro">
     <buffer></buffer>
     <div class="square-wrapper2">
-      <div class="square2 square-transition2"> Beyond the Clinic Section </div>
+      <div class="square2 square-transition2"> Intro: Beyond the Clinic Section </div>
     </div>
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
+  </section> -->
 
-  <section class="narration">
+	<!-- Chapter 1 - Section 1: Narration -->
+<!--   <section class="narration">
     <buffer></buffer>
-    <div class="square-wrapper2">
+    <div class="square-wrapper2" id="Ch1-Sct1">
       <div class="square2 square-transition2"> You are almost out of groceries. </div>
     </div>
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-
+  </section> -->
+ 
 <!-- Chapter 1: grocery map -->
-<section class="banner grocery-blur" id="ChX-SctX">
-  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em">
-  		<div class="subContainer" style="height:100%;">
+<section class="banner grocery-blur" id="Ch1-Sct2">
+  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em; height: 50%;">
+
+  		
+  		<div class="subContainer">
+
+  			<!-- Grocery Directions SubSection -->
   			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
   				<div style="display: flex; flex-flow: row; height:100%;">
   					<div id="groceryMapContainer" style="width: 40vw">
@@ -103,27 +116,94 @@
 							</div>
   					</div>
   					<div id="map-description-container">
-  						<div style="line-height: 50vh;">Click on a destination to get more information.</div>
+  						<div>Click on a destination to get more information.</div>
   					</div>
   				</div>
   			</div>
+
+
+  			<!-- Shopping Spree Tutorial SubSection -->
+	  		<div id="shoppingspreeContainer">
+	  			<div class="shoppingspree-subcontainer">
+	  				<div class="panel" id="tutPanelLeft"><img src="images/poster-grocerybag.png"></div>
+	  				<div class="panel" id="tutPanelRight">Explanation</div>
+	  			</div>
+	  			<div id="tutorialNavigation">
+	          <svg viewBox="0 0 80 10" width="100%" height="30">
+		          <symbol id="circleButton" width="8" height="8" viewBox="0 0 2 2">
+		              <circle cx="1" cy="1" r="0.75" stroke="white" stroke-width="0.25"/>
+		          </symbol>
+		          <use id="button1" ison="false" href="#circleButton" x="5" fill-opacity="0" fill="white"/>
+		          <use id="button2" ison="false" href="#circleButton" x="20" fill-opacity="0" fill="white"/>
+		          <use id="button3" ison="false" href="#circleButton" x="35" fill-opacity="0" fill="white"/>
+		          <use id="button4" ison="false" href="#circleButton" x="50" fill-opacity="0" fill="white"/>
+		          <use id="button5" ison="false" href="#circleButton" x="65" fill-opacity="0" fill="white"/>
+	          </svg>
+	  			</div>
+	  		</div>
+
+
+	  		<!-- Shopping Spree SubSection -->
+	  		<div id="storeContainer" style="position: relative; height: 100%; left: 200vw; top: -150%">
+	    		<div id="shoppingexplanation" style="flex: 1 0 auto; padding: 0 2em;">
+    			<p>
+    				You found everything on your list. Now you need these last three things. Go get 'em! Click your list to see what's left.
+    			</p>
+    		</div>
+        <div id="aisle" style="display: flex; flex-flow: row; width: 100%; height: 60vh; overflow-y: auto;">        	
+            <div class="aisleColumn">
+            	<div class="aisleItem" id="aisleButton01"></div>
+            	<div class="aisleItem" id="aisleButton03"></div>
+            	<div class="aisleItem" id="aisleButton05"></div>
+            	<div class="aisleItem" id="aisleButton07"></div>
+            </div>
+            <div class="aisleColumn">
+            	<div class="aisleItem" id="aisleButton02"></div>
+            	<div class="aisleItem" id="aisleButton04"></div>
+            	<div class="aisleItem" id="aisleButton06"></div>
+            	<div class="aisleItem" id="aisleButton08"></div>
+            </div>
+        </div>
+
+        <div class="flexContainer row shoppinglistContainer" id="shoppinglist" onClick="d3.select('#shoppinglist').style('display', 'none');" style="display: none;">
+          <div style="width: 50vh; align-self: center; min-width: 250px;">
+          	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 275.52 400.32">
+              <defs>
+                  <style>.cls-1{opacity:0;}.cls-3{}</style>
+              </defs>
+              <image onClick="d3.select('#shoppinglist').style('display', 'none');" id="background" width="574" height="834" transform="scale(0.48)" xlink:href="images/shoppinglist1.png"/>
+              <path id="strike-soda" class="cls-1" d="M30.59,349.08c-.66-.14.12-.67.35-.79a3.26,3.26,0,0,1,2-.36,115.67,115.67,0,0,0,21.67,1.85c26.22.34,52.44.45,78.65.67.65,0,.55.36.18.67a3.36,3.36,0,0,1-2.05.55L109,351.48l-39.9-.34c-12.78-.11-25.9.52-38.49-2.06Z" transform="translate(0.11)"/>
+              <path id="strike-toothpaste" class="cls-1" d="M30.25,327.82c-1.32-.73,1.29-2.08,2.26-1.55,5.7,3.16,12.5,2.35,18.74,2,25.45-1.5,51.1-2.65,76.47.69,1.95.25.22,2.06-1.06,1.89-7.31-1-14.66-1.56-22-1.88-13-.55-26-.24-39,.38-6.44.3-12.87.75-19.31,1.06-5.49.26-11.19.15-16.11-2.58Z" transform="translate(0.11)"/>
+              <path id="strike-breakfast" class="cls-1" d="M34,304.9c-.46.05-1-.07-.71-.58s1.39-.67,1.93-.72q11.32-1.05,22.67-1.87,40.59-2.93,81.31-2.92c.44,0,1,0,.71.58s-1.41.72-1.93.72q-11.55,0-23.08.24-40.51.82-80.9,4.55Z" transform="translate(0.11)"/>
+              <rect onClick="PopulateAisle('Drinks');" id="button-soda" class="svgbutton cls-3" x="21.84" y="340.06" width="136.65" height="23.74" rx="7"/>
+          		<rect onClick="PopulateAisle('Toothpaste');" id="button-toothpaste" class="svgbutton cls-3" x="21.84" y="313.74" width="136.65" height="23.74" rx="7"/>
+          		<rect onClick="PopulateAisle('Breakfast');" id="button-breakfast" class="svgbutton cls-3" x="21.84" y="287.06" width="136.65" height="23.74" rx="7"/>
+          	</svg>            		
+        	</div>        	
+        </div>
+	    	</div>
+
+
   		</div>
+
+
+
   	</div>
   	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-<!-- Chapter 2: Bills Narration -->
-  <section class="narration">
-    <buffer></buffer>
-    <div class="square-wrapper">
-      <div class="square square-transition"> You have bills to pay. </div>
-    </div>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
+	<!-- Chapter 2: Bills Narration -->
+	  <section class="narration">
+	    <buffer></buffer>
+	    <div class="square-wrapper">
+	      <div class="square square-transition"> You have bills to pay. </div>
+	    </div>
+	    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+	</section>
 
-<!-- Bills -->
-  <section class="banner livingroom-blur" id="Ch2-Sct1">
-  	<div id="BillsSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 1em">
+	<!-- Bills -->
+  	<section class="banner livingroom-blur" id="Ch2-Sct1">
+  	<div id="BillsSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 1em; overflow: hidden;">
   		<div class="subContainer" style="height:100%;">
   			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;">
   				<div style="display: flex; flex-flow: row; justify-content: space-evenly;">
@@ -154,8 +234,8 @@
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-<!-- Dentist Map Section -->
-  <section class="banner dentist-blur" id="ChX-SctX">
+	<!-- Dentist Map Section -->
+  	<section class="banner dentist-blur" id="ChX-SctX">
 	  	<div id="MapToDentistSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 0px">
 	  		<div class="subContainer" style="height:100%; width:100%">
 	  			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
@@ -227,7 +307,7 @@
   </section>
 
   <!-- Chapter 1: Background Image Section -->
-  <section class="banner" id="Ch1-Sct1">
+  	<section class="banner" id="ChX-SctX">
     <buffer></buffer>
     <h2 class="parallax"> Section Title </h2>
     <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
@@ -245,7 +325,7 @@
   </section>
 	
   <!-- Chapter 1: Black Background Section -->
-  <section class="banner livingroom" id="Ch1-Sct2">
+  	<section class="banner livingroom" id="Ch1-Sct2">
     <buffer></buffer>
     <div class="square-wrapper">
       <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
@@ -260,7 +340,7 @@
   </section>
 	
   <!-- Chapter 2: Black Background Section -->
-  <section class="banner grocery" id="Ch2-Sct2">
+  	<section class="banner grocery" id="Ch2-Sct2">
     <buffer></buffer>
     <div class="square-wrapper2">
       <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
@@ -270,14 +350,14 @@
   </section>
 	
   <!-- Chapter 3: Background Image Section -->
-  <section class="banner">
+  	<section class="banner">
     <h2 class="parallax"> Section Title </h2>
     <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 	
   <!-- Chapter 3: Black Background Section -->
-  <section class="narration">
+  	<section class="narration">
     <buffer></buffer>
     <div class="square-wrapper">
       <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
@@ -286,14 +366,14 @@
   </section>
 	
   <!-- Chapter 4: Background Image Section -->
-  <section class="banner2">
+  	<section class="banner2">
     <h2 class="parallax"> Section Title </h2>
     <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 	
   <!-- Chapter 4: Black Background Section -->
-  <section class="narration">
+  	<section class="narration">
     <buffer></buffer>
     <div class="square-wrapper2">
       <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
@@ -302,38 +382,41 @@
   </section>
 	
   <!-- Chapter 5: Background Image Section -->
-  <section class="banner">
+  	<section class="banner">
     <h2 class="parallax"> Section Title </h2>
     <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 	
   <!-- Chapter 5: Black Background Section -->
-  <section class="narration">
+  	<section class="narration">
     <div class="square-wrapper">
       <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
     </div>
   </section>
 	
   <!-- Chapter 6: Background Image Section -->
-  <section class="banner2">
+  	<section class="banner2">
     <h2 class="parallax"> Section Title </h2>
     <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 	
   <!-- Chapter 6: Black Background Section -->
-  <section class="narration">
+  	<section class="narration">
     <div class="square-wrapper2">
       <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
     </div>
   </section>
 </div>
+
+
 <script type="text/javascript" src="scripts/myScripts.js"></script> 
 <script type="text/javascript" src="scripts/map_dentist.js"></script> 
 <script type="text/javascript" src="scripts/mapToGroceryStores.js"></script>
 <script type="text/javascript" src="scripts/mapToDentist.js"></script> 
 <script type="text/javascript" src="scripts/bills.js"></script> 
+<script type="text/javascript" src="scripts/shoppingspree.js"></script> 
 <!-- observer script to animate revealing hidden things --> 
 <script>
 	// Check if IntersectionObserver is supported
@@ -392,6 +475,20 @@
 	observer1.observe(document.querySelector('.square-wrapper'));
 	observer2.observe(document.querySelector('.square-wrapper2'));
 	observerStats.observe(document.querySelector('.hero_header'));
+
+
+
+	window.onload = function() {
+		setTimeout(function() {
+			// preload image
+			new Image().src = "images/interior-aldi.png";
+			new Image().src = "images/interior-gasstation.png";
+			new Image().src = "images/interior-cornerstore.png";
+			new Image().src = "images/exterior-gasstation.png";
+			new Image().src = "images/exterior-cornerstore.png";
+			new Image().src = "images/exterior-aldi.png";
+		}, 1000);
+	};
 
 	console.log("Got to end of script");
 </script>

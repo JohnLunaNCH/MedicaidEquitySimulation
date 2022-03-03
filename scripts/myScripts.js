@@ -53,12 +53,12 @@ var targetList = document.getElementsByClassName("banner");
 
 body.onscroll = function myFunction () {
    var scrolltotop = document.scrollingElement.scrollTop;
-   var windowHeight = window.innerHeight;
+   var windowHeight = window.innerHeight; // * 0.9;
    var xvalue = "center";
    var factor = 0.05;  
-  
+
    for (var i = 0; i < targetList.length; i ++){
-      var yvalue = (scrolltotop - (windowHeight * i)) * factor;
+      var yvalue = (scrolltotop - (windowHeight * i * 2)) * factor;
       var position = xvalue + " " + yvalue + "px";
       parralax(targetList[i], position);
    }

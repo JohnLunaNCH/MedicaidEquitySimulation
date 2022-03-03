@@ -27,22 +27,6 @@ var dentistContainer, dentistTransform;
 
 var descriptionDisplay;
 
-$.get('/../html/location1.txt', function (response){
-    location1.html = response;
-});
-$.get('/../html/location2.txt', function (response){
-    location2.html = response;
-});
-$.get('/../html/location3.txt', function (response){
-    location3.html = response;
-});
-$.get('/../html/location4.txt', function (response){
-    location4.html = response;
-});
-$.get('/../html/location5.txt', function (response){
-    location5.html = response;
-});
-
 var videoHtml;
 $.get('/../html/location1.txt', function (response){
     videoHtml = response;
@@ -104,35 +88,35 @@ d3.xml("images/dentist-mapmask.svg")
                         break;
                     case 'location1':
                         location1.button = d3.select(this);
-                        mapButtons_dentist(location1.button, id, location1.highlight, location1.path, location1.html);
+                        mapButtons_dentist(location1.button, id, location1.highlight, location1.path);
                         break;
                     case 'location2-highlight':
                         location2.highlight = d3.select(this);
                         break;
                     case 'location2':
                         location2.button = d3.select(this);
-                        mapButtons_dentist(location2.button, id, location2.highlight, location2.path, location2.html);
+                        mapButtons_dentist(location2.button, id, location2.highlight, location2.path);
                         break;
                     case 'location3-highlight':
                         location3.highlight = d3.select(this);
                         break;
                     case 'location3':
                         location3.button = d3.select(this);
-                        mapButtons_dentist(location3.button, id, location3.highlight, location3.path, location3.html);
+                        mapButtons_dentist(location3.button, id, location3.highlight, location3.path);
                         break;
                     case 'location4-highlight':
                         location4.highlight = d3.select(this);
                         break;
                     case 'location4':
                         location4.button = d3.select(this);
-                        mapButtons_dentist(location4.button, id, location4.highlight, location4.path, location4.html);
+                        mapButtons_dentist(location4.button, id, location4.highlight, location4.path);
                         break;
                     case 'location5-highlight':
                         location5.highlight = d3.select(this);
                         break;
                     case 'location5':
                         location5.button = d3.select(this);
-                        mapButtons_dentist(location5.button, id, location5.highlight, location5.path, location5.html);
+                        mapButtons_dentist(location5.button, id, location5.highlight, location5.path);
                         break;
                     default:
                         console.log("Uncaught element: " + id);
@@ -189,7 +173,7 @@ function initializeMap_dentist(lowX, lowY, highX, highY){
 
 var isClicked_dentist = false;
 
-function mapButtons_dentist (button, id, highlight, path, html){
+function mapButtons_dentist (button, id, highlight, path){
     button
         .on("mouseover", function(){
             if(!isClicked_dentist){
@@ -208,7 +192,7 @@ function mapButtons_dentist (button, id, highlight, path, html){
             }
         })
         .on("click", function(e) {
-            clickedButton(e, path, highlight, id, html);
+            clickedButton(e, path, highlight, id);
         });
     d3.select("#" + id)
         .on("mouseover", function(){
@@ -228,11 +212,11 @@ function mapButtons_dentist (button, id, highlight, path, html){
                 .style("cursor", "default");
         })
         .on("click", function(e){
-            clickedButton(e, path, highlight, id, html);            
+            clickedButton(e, path, highlight, id);            
         });
 }
 
-function clickedButton(e, path, highlight, id, html){
+function clickedButton(e, path, highlight, id){
             //populate map specific description
             //d3.select("#" + id)
             isClicked_dentist = true;
@@ -242,7 +226,6 @@ function clickedButton(e, path, highlight, id, html){
                 .style("display", "flex")
                 .html("<div class=\"dentist-list-item\">" + copy + "</div>" 
                     + videoHtml
-                    // + html 
                     //+ "<button onClick=\"CallDentist(d3.select(this).parent, " + id + ")\">Call Dentist</button>"
                     );
             d3.select("#dentist-list-container")

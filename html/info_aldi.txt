@@ -29,7 +29,7 @@
             <p class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> The prices are mid range compared to other local options.</p>
         </div>
         <div class="continue-to-store">
-            <button>Continue To Store</button>
+            <button onClick="StartShoppingSpree('aldi')">Continue To Store</button>
         </div>
     </div>
 </div>

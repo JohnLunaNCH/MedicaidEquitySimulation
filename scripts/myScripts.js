@@ -49,16 +49,20 @@ var easeInOutCubic = function(t) {
 }
 
 var body = document.getElementById("body");
-var targetList = document.getElementsByClassName("banner");
+var targetList = document.getElementsByTagName("section");
+// document.getElementsByClassName("banner");
 
 body.onscroll = function myFunction () {
    var scrolltotop = document.scrollingElement.scrollTop;
    var windowHeight = window.innerHeight; // * 0.9;
+   console.log(windowHeight);
    var xvalue = "center";
    var factor = 0.05;  
 
    for (var i = 0; i < targetList.length; i ++){
-      var yvalue = (scrolltotop - (windowHeight * i * 2)) * factor;
+      var yvalue = (scrolltotop - (windowHeight * i)) * factor;
+      yvalue += (4.15 * i);
+      yvalue -= ((834 - windowHeight)/200);
       var position = xvalue + " " + yvalue + "px";
       parralax(targetList[i], position);
    }

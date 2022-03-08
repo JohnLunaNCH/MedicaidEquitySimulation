@@ -76,28 +76,34 @@
   </section>
 
     <!-- Intro: Narration -->
-<!--   <section class="narration" id="Intro">
+  <section class="narration" id="Intro">
     <buffer></buffer>
     <div class="square-wrapper2">
       <div class="square2 square-transition2"> Intro: Beyond the Clinic Section </div>
+      
     </div>
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section> -->
+  </section>
 
 	<!-- Chapter 1 - Section 1: Narration -->
-<!--   <section class="narration">
-    <buffer></buffer>
-    <div class="square-wrapper2" id="Ch1-Sct1">
-      <div class="square2 square-transition2"> You are almost out of groceries. </div>
-    </div>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section> -->
+  <section class="banner intro-fridge">
+  	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
+			<div class="flexContainer column" style="justify-content: center; padding: 0 5vw; height: 100%;">
+				<div>
+					<h1 style="margin: 0 0 1em;">You are almost out of groceries</h1>
+					<ul>
+						<li><p>You need to buy food and household items</p></li>
+						<li><p>Use the map to plan your shopping trip</p></li>
+					</ul>
+				</div>
+			</div>
+	  </div>
+  	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
+  </section>
  
 <!-- Chapter 1: grocery map -->
 <section class="banner grocery-blur" id="Ch1-Sct2">
-  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em; height: 50%;">
-
-  		
+  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em; height: 50%;">  		
   		<div class="subContainer">
 
   			<!-- Grocery Directions SubSection -->
@@ -109,9 +115,9 @@
 	  					</div>
 							<div class="mapKey" style="width: 100%; height: 10%; max-width: 70vh;">
 								<div style="display: flex; flex-flow: row wrap; justify-content: center;">
-									<div class="keyItem"><img class="mediumIcon" src="images/Broccoli.png"> Healthy Options</div>
-									<div class="keyItem"><img class="mediumIcon" src="images/Time.png"> Time Cost</div>
-									<div class="keyItem"><img class="mediumIcon" src="images/Dollar.png"> Monetary Cost</div>
+									<div class="keyItem"><img class="mediumIcon" src="../images/Broccoli.png"> Healthy Options</div>
+									<div class="keyItem"><img class="mediumIcon" src="../images/Time.png"> Time Cost</div>
+									<div class="keyItem"><img class="mediumIcon" src="../images/Dollar.png"> Monetary Cost</div>
 								</div>
 							</div>
   					</div>
@@ -120,7 +126,6 @@
   					</div>
   				</div>
   			</div>
-
 
   			<!-- Shopping Spree Tutorial SubSection -->
 	  		<div id="shoppingspreeContainer">
@@ -142,64 +147,70 @@
 	  			</div>
 	  		</div>
 
-
 	  		<!-- Shopping Spree SubSection -->
 	  		<div id="storeContainer" style="position: relative; height: 100%; left: 200vw; top: -150%">
 	    		<div id="shoppingexplanation" style="flex: 1 0 auto; padding: 0 2em;">
-    			<p>
-    				You found everything on your list. Now you need these last three things. Go get 'em! Click your list to see what's left.
-    			</p>
-    		</div>
-        <div id="aisle" style="display: flex; flex-flow: row; width: 100%; height: 60vh; overflow-y: auto;">        	
-            <div class="aisleColumn">
-            	<div class="aisleItem" id="aisleButton01"></div>
-            	<div class="aisleItem" id="aisleButton03"></div>
-            	<div class="aisleItem" id="aisleButton05"></div>
-            	<div class="aisleItem" id="aisleButton07"></div>
-            </div>
-            <div class="aisleColumn">
-            	<div class="aisleItem" id="aisleButton02"></div>
-            	<div class="aisleItem" id="aisleButton04"></div>
-            	<div class="aisleItem" id="aisleButton06"></div>
-            	<div class="aisleItem" id="aisleButton08"></div>
-            </div>
-        </div>
+	    			<p>
+	    				You found everything on your list. Now you need these last three things. Go get 'em! Click your list to see what's left.
+	    			</p>
+	    		</div>
+	        <div id="aisle" style="display: flex; flex-flow: row; width: 100%; height: 60vh; overflow-y: auto;">        	
+	            <div class="aisleColumn">
+	            	<div class="aisleItem" id="aisleButton01"></div>
+	            	<div class="aisleItem" id="aisleButton03"></div>
+	            	<div class="aisleItem" id="aisleButton05"></div>
+	            	<div class="aisleItem" id="aisleButton07"></div>
+	            </div>
+	            <div class="aisleColumn">
+	            	<div class="aisleItem" id="aisleButton02"></div>
+	            	<div class="aisleItem" id="aisleButton04"></div>
+	            	<div class="aisleItem" id="aisleButton06"></div>
+	            	<div class="aisleItem" id="aisleButton08"></div>
+	            </div>
+	        </div>
 
-        <div class="flexContainer row shoppinglistContainer" id="shoppinglist" onClick="d3.select('#shoppinglist').style('display', 'none');" style="display: none;">
-          <div style="width: 50vh; align-self: center; min-width: 250px;">
-          	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 275.52 400.32">
-              <defs>
-                  <style>.cls-1{opacity:0;}.cls-3{}</style>
-              </defs>
-              <image onClick="d3.select('#shoppinglist').style('display', 'none');" id="background" width="574" height="834" transform="scale(0.48)" xlink:href="images/shoppinglist1.png"/>
-              <path id="strike-soda" class="cls-1" d="M30.59,349.08c-.66-.14.12-.67.35-.79a3.26,3.26,0,0,1,2-.36,115.67,115.67,0,0,0,21.67,1.85c26.22.34,52.44.45,78.65.67.65,0,.55.36.18.67a3.36,3.36,0,0,1-2.05.55L109,351.48l-39.9-.34c-12.78-.11-25.9.52-38.49-2.06Z" transform="translate(0.11)"/>
-              <path id="strike-toothpaste" class="cls-1" d="M30.25,327.82c-1.32-.73,1.29-2.08,2.26-1.55,5.7,3.16,12.5,2.35,18.74,2,25.45-1.5,51.1-2.65,76.47.69,1.95.25.22,2.06-1.06,1.89-7.31-1-14.66-1.56-22-1.88-13-.55-26-.24-39,.38-6.44.3-12.87.75-19.31,1.06-5.49.26-11.19.15-16.11-2.58Z" transform="translate(0.11)"/>
-              <path id="strike-breakfast" class="cls-1" d="M34,304.9c-.46.05-1-.07-.71-.58s1.39-.67,1.93-.72q11.32-1.05,22.67-1.87,40.59-2.93,81.31-2.92c.44,0,1,0,.71.58s-1.41.72-1.93.72q-11.55,0-23.08.24-40.51.82-80.9,4.55Z" transform="translate(0.11)"/>
-              <rect onClick="PopulateAisle('Drinks');" id="button-soda" class="svgbutton cls-3" x="21.84" y="340.06" width="136.65" height="23.74" rx="7"/>
-          		<rect onClick="PopulateAisle('Toothpaste');" id="button-toothpaste" class="svgbutton cls-3" x="21.84" y="313.74" width="136.65" height="23.74" rx="7"/>
-          		<rect onClick="PopulateAisle('Breakfast');" id="button-breakfast" class="svgbutton cls-3" x="21.84" y="287.06" width="136.65" height="23.74" rx="7"/>
-          	</svg>            		
-        	</div>        	
-        </div>
+	        <div class="flexContainer row shoppinglistContainer" id="shoppinglist" onClick="d3.select('#shoppinglist').style('display', 'none');" style="display: none;">
+	          <div style="width: 50vh; align-self: center; min-width: 250px;">
+	          	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 275.52 400.32">
+	              <defs>
+	                  <style>.cls-1{opacity:0;}.cls-3{}</style>
+	              </defs>
+	              <image onClick="d3.select('#shoppinglist').style('display', 'none');" id="background" width="574" height="834" transform="scale(0.48)" xlink:href="images/shoppinglist1.png"/>
+	              <path id="strike-soda" class="cls-1" d="M30.59,349.08c-.66-.14.12-.67.35-.79a3.26,3.26,0,0,1,2-.36,115.67,115.67,0,0,0,21.67,1.85c26.22.34,52.44.45,78.65.67.65,0,.55.36.18.67a3.36,3.36,0,0,1-2.05.55L109,351.48l-39.9-.34c-12.78-.11-25.9.52-38.49-2.06Z" transform="translate(0.11)"/>
+	              <path id="strike-toothpaste" class="cls-1" d="M30.25,327.82c-1.32-.73,1.29-2.08,2.26-1.55,5.7,3.16,12.5,2.35,18.74,2,25.45-1.5,51.1-2.65,76.47.69,1.95.25.22,2.06-1.06,1.89-7.31-1-14.66-1.56-22-1.88-13-.55-26-.24-39,.38-6.44.3-12.87.75-19.31,1.06-5.49.26-11.19.15-16.11-2.58Z" transform="translate(0.11)"/>
+	              <path id="strike-breakfast" class="cls-1" d="M34,304.9c-.46.05-1-.07-.71-.58s1.39-.67,1.93-.72q11.32-1.05,22.67-1.87,40.59-2.93,81.31-2.92c.44,0,1,0,.71.58s-1.41.72-1.93.72q-11.55,0-23.08.24-40.51.82-80.9,4.55Z" transform="translate(0.11)"/>
+	              <rect onClick="PopulateAisle('Drinks');" id="button-soda" class="svgbutton cls-3" x="21.84" y="340.06" width="136.65" height="23.74" rx="7"/>
+	          		<rect onClick="PopulateAisle('Toothpaste');" id="button-toothpaste" class="svgbutton cls-3" x="21.84" y="313.74" width="136.65" height="23.74" rx="7"/>
+	          		<rect onClick="PopulateAisle('Breakfast');" id="button-breakfast" class="svgbutton cls-3" x="21.84" y="287.06" width="136.65" height="23.74" rx="7"/>
+	          	</svg>            		
+	        	</div>        	
+        	</div>
 	    	</div>
 
-
   		</div>
-
-
-
   	</div>
   	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 
 	<!-- Chapter 2: Bills Narration -->
-	  <section class="narration">
-	    <buffer></buffer>
-	    <div class="square-wrapper">
-	      <div class="square square-transition"> You have bills to pay. </div>
-	    </div>
-	    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-	</section>
+  <section class="banner intro-calc">
+  	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
+			<div class="flexContainer column" style="justify-content: center; padding: 0 5vw; height: 100%;">
+				<div style="width: 33vw;">
+					<h1 style="margin: 0 0 1em;">You have bills to pay</h1>
+					<ul>
+						<li class="flexContainter row">
+							<p>Paying the bills will cost <b style="color:green">money</b></p>
+						</li>
+						<li class="flexContainter row">
+							<p>Every unpaid bill will reduce the household's <b style="color: green">emotional health</b></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+  	</div>
+  	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
+  </section>
 
 	<!-- Bills -->
   	<section class="banner livingroom-blur" id="Ch2-Sct1">
@@ -217,21 +228,49 @@
   </section>
 
   <!-- Science Fair -->
-    <section class="narration">
-    <buffer></buffer>
-    <div class="square-wrapper">
-      <div class="square square-transition">Science Fair </div>
-    </div>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  <section class="banner intro-science">
+  	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">	  
+			<div class="flexContainer column" style="justify-content: center; flex: 0 1 auto; width: 33vw; height: 100%; padding: 0 5vw;">
+				<h1 style="margin: 0 0 1em;">Science Fair</h1>
+				<div>Mia is a finalist in the county science fair. She really hopes you can support her at the fair.</div>
+				<ul>
+					<li>
+						<p>You decide to...</p>
+						<ol>
+							<li>
+								<p>Request time off work and attend...</p>
+								<ul>
+									<p>Miss 5 hours of work</br>
+									<b style="color: coral"> -$90 financial</b><b style="color: greenyellow"> +2 emotional health</b>
+									</p>
+								</ul>
+							</li>
+							<li>
+								<p>Tell Mia that you cannot afford not to work, and won't be able to cheer for her at the science fair...</p>
+								<ul>
+									<b style="color: coral"> -2 emotional health</b>
+								</ul>
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</div>	  
+  	</div>
+  	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-  <!-- Scheduling Dentist -->
-    <section class="narration">
-    <buffer></buffer>
-    <div class="square-wrapper">
-      <div class="square square-transition"> Scheduling a dentist. </div>
-    </div>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+  <!-- Dentist Narration Section -->
+  <section class="banner intro-lobby">
+  	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">		  
+				<div class="flexContainer column" style="justify-content: center; padding: 0 5vw; height: 100%;">
+					<div style="width: 33vw;">
+						<h1 style="margin: 0 0 1em;">Scheduling a dentist</h1>
+						<p>At dinner, Mia mentioned they learned about dental care at school today and the teacher asked the students when they had last visited a dentist. Mia couldn't answer because she couldn't remember.</p>
+						<p>You realize that your children have not had a dental appointment since moving to the current neighborhood. It has been 4 years since their last dental check-up. You decide to schedule a dental visit for the children.</p>
+					</div>
+				</div>
+  	</div>
+  	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
   </section>
 
 	<!-- Dentist Map Section -->
@@ -244,7 +283,7 @@
 	  						<div class="dentist-list-header">Dentist Selection</div>
 	  						<div id="dentist-list-container">
 	  							<div class="dentist-list-item" id="location1">
-	  								<h1>Dentist 1</h1>
+	  								<h1>Hilltop Dental Group</h1>
 	  								<div>
 	  									Hours:</br>
 	  									Distance:</br>
@@ -260,7 +299,7 @@
 	  								</div>
 	  							</div>
 	  							<div class="dentist-list-item" id="location3">
-	  								<h1>Dentist 3</h1>
+	  								<h1>Buckeye Dental</h1>
 	  								<div>
 	  									Hours:</br>
 	  									Distance:</br>
@@ -268,7 +307,7 @@
 	  								</div>
 	  							</div>
 	  							<div class="dentist-list-item" id="location4">
-	  								<h1>Dentist 4</h1>
+	  								<h1>Williams Dental Group</h1>
 	  								<div>
 	  									Hours:</br>
 	  									Distance:</br>
@@ -276,7 +315,7 @@
 	  								</div>
 	  							</div>
 	  							<div class="dentist-list-item" id="location5">
-	  								<h1>Dentist 5</h1>
+	  								<h1>Smith Family Dentistry</h1>
 	  								<div>
 	  									Hours:</br>
 	  									Distance:</br>
@@ -337,76 +376,6 @@
     <div id="itemDescription"></div>
 	  <buffer></buffer>
     <div style="height: 1em;"> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 2: Black Background Section -->
-  	<section class="banner grocery" id="Ch2-Sct2">
-    <buffer></buffer>
-    <div class="square-wrapper2">
-      <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
-    </div>
-	  <buffer></buffer>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 3: Background Image Section -->
-  	<section class="banner">
-    <h2 class="parallax"> Section Title </h2>
-    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 3: Black Background Section -->
-  	<section class="narration">
-    <buffer></buffer>
-    <div class="square-wrapper">
-      <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
-    </div>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 4: Background Image Section -->
-  	<section class="banner2">
-    <h2 class="parallax"> Section Title </h2>
-    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 4: Black Background Section -->
-  	<section class="narration">
-    <buffer></buffer>
-    <div class="square-wrapper2">
-      <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
-    </div>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 5: Background Image Section -->
-  	<section class="banner">
-    <h2 class="parallax"> Section Title </h2>
-    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 5: Black Background Section -->
-  	<section class="narration">
-    <div class="square-wrapper">
-      <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
-    </div>
-  </section>
-	
-  <!-- Chapter 6: Background Image Section -->
-  	<section class="banner2">
-    <h2 class="parallax"> Section Title </h2>
-    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
-    <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
-	
-  <!-- Chapter 6: Black Background Section -->
-  	<section class="narration">
-    <div class="square-wrapper2">
-      <div class="square2 square-transition2"> Lorem ipsum dolor sit amet </div>
-    </div>
   </section>
 </div>
 

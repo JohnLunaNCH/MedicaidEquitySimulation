@@ -301,14 +301,17 @@ function interpolator(a, b, t) {
 }
 
 function ResetMap_dentist(){
+    if (!d3.select('#callVid').empty()){
+        d3.select('#callVid').node().pause();
+        d3.select('#callVid').node().currentTime = 0;
+    }
     disableAllPaths_dentist();
     toggleMap_dentist(false);
     d3.select("#dentist-list-container")
         .style("display", "block");
     d3.select("#dentist-description")
         .style("display", "none");
-    d3.select('#callVid').node().pause();
-    d3.select('#callVid').node().currentTime = 0;
+
     isClicked_dentist = false;
 }
 

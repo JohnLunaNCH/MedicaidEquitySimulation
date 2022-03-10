@@ -1,0 +1,52 @@
+[
+  {
+    "page": "page01",
+    "Name": "Electricity",
+    "Icon": "none",
+    "Price": 300,
+    "Health": "",
+    "Mood": "",
+    "Energy": "",
+    "willPay": 0
+  },
+  {
+    "page": "page02",
+    "Name": "Water",
+    "Icon": "none",
+    "Price": 78.61,
+    "Health": "",
+    "Mood": "",
+    "Energy": "",
+    "willPay": 0
+  },
+  {
+    "page": "page03",
+    "Name": "Gas",
+    "Icon": "none",
+    "Price": 60,
+    "Health": "",
+    "Mood": "",
+    "Energy": "",
+    "willPay": 0
+  }, 
+  {
+    "page": "page04",
+    "Name": "Cable/Internet",
+    "Icon": "none",
+    "Price": 49.99,
+    "Health": "",
+    "Mood": "",
+    "Energy": "",
+    "willPay": 0
+  }, 
+  {
+    "page": "page05",
+    "Name": "Cell Phone",
+    "Icon": "none",
+    "Price": 79.99,
+    "Health": "",
+    "Mood": "",
+    "Energy": "",
+    "willPay": 0
+  }
+]

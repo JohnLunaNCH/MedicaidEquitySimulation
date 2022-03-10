@@ -25,7 +25,6 @@ function AddTime(){
 	  try {
 	    const jsonresponse = await d3.json("json/items.json");
 	    items = jsonresponse;
-	    console.log(items);
 	  } catch(error) {
 	    console.log(error);
 	  }

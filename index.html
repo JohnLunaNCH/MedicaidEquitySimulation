@@ -75,6 +75,9 @@
     <buffer></buffer>
   </section>
 
+<!-- Test Section -->
+  	
+
     <!-- Intro: Narration -->
   <section class="narration" id="Intro">
     <buffer></buffer>
@@ -199,10 +202,10 @@
 				<div style="width: 33vw;">
 					<h1 style="margin: 0 0 1em;">You have bills to pay</h1>
 					<ul>
-						<li class="flexContainter row">
+						<li class="flexContainer row">
 							<p>Paying the bills will cost <b style="color:green">money</b></p>
 						</li>
-						<li class="flexContainter row">
+						<li class="flexContainer row">
 							<p>Every unpaid bill will reduce the household's <b style="color: green">emotional health</b></p>
 						</li>
 					</ul>
@@ -213,13 +216,22 @@
   </section>
 
 	<!-- Bills -->
-  	<section class="banner livingroom-blur" id="Ch2-Sct1">
+  <section class="banner livingroom-blur" id="Ch2-Sct1">
   	<div id="BillsSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 1em; overflow: hidden;">
   		<div class="subContainer" style="height:100%;">
   			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;">
   				<div style="display: flex; flex-flow: row; justify-content: space-evenly;">
   					<div id="svg-container" style="width: 60vw; max-width: 70vh;"></div>
-  					<div id="bill-description" style="width: 30vw; overflow: hidden"></div>
+  					<div class="flexContainer column" style="width: 30vw;">
+  						<h1>Selected Bill</h1>
+  						<h1 id="bill-description"></h1>
+  						<div>
+	  						<button id="AddRemoveBillButton">Add Bill</button>
+  						</div>
+  						<div class="flexContainer row">
+  							<h1>Total: $</h1><h1 id="billTotal">0.00</h1>
+  						</div>
+  					</div>
   				</div>
   			</div>
   		</div>

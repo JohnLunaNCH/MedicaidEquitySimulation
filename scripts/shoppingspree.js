@@ -20,7 +20,7 @@ var page1, page2, page3, page4, page5;
 
 $.get('html/shopping-tutorial-page01.txt', function (response){
     page1 = response;
-    PopulateTutorialPage('button1');
+    
 });
 $.get('html/shopping-tutorial-page02.txt', function (response){
     page2 = response;
@@ -53,6 +53,7 @@ function StartShoppingSpree(glocation) {
 		.duration(s)
 		.style("left", "-100vw");
 
+	PopulateTutorialPage('button1');	
 }
 
 
@@ -107,11 +108,12 @@ function assignButton(button){
 function PopulateTutorialPage (page){
 	var p;
 	var flavortext;
-	if (groceryLocation == 'gassation'){
+	
+	if (groceryLocation == "gasstation"){
 		flavortext = "There's a big pyramid of water bottles clogging the entrance. The smell of warm rotating hot dogs and gasoline permeate every corner of this store."
-	} else if (groceryLocation == 'cornerstore') {
+	} else if (groceryLocation == "cornerstore") {
 		flavortext = "Seasonal items from the front aisle have spilled onto the floor. You hear a rhytmic beeping as the store's only cashier scans a steady flow of purchases."
-	} else {
+	} else if (groceryLocation == "aldi"){
 		flavortext = "Cheery, decorative homeware fills the entrance of this store. An over head speaker crackles on to announce that \"At Fresh Market every dollar adds up to real nutritional value!\""
 	}
 	switch (page){

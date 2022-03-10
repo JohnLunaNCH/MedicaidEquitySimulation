@@ -79,7 +79,7 @@ d3.xml("images/mapmask.svg")
         trans.selectAll('use')
             .each(function (d, i) {
                 var id = d3.select(this).attr("id");
-                //console.log (id);
+
                 switch (id){
                     case 'aldi-highlight':
                         aldiHighlight = d3.select(this);
@@ -134,12 +134,6 @@ d3.xml("images/mapmask.svg")
         const posY = Number(matrix[5].substring(0, matrix[5].length - 1));
         const maxX = width + posX;
         const maxY = height + posY;
-        console.log(width);
-        console.log(height);
-        console.log(posX);
-        console.log(posY);
-        console.log(maxX);
-        console.log(maxY);
 
         trans.attr("transform", "translate(0, 0) scale(1)");
 

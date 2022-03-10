@@ -81,7 +81,7 @@ d3.xml("images/dentist-mapmask.svg")
         dentistTransform.selectAll('use')
             .each(function (d, i) {
                 var id = d3.select(this).attr("id");
-                //console.log (id);
+               
                 switch (id){
                     case 'location1-highlight':
                         location1.highlight = d3.select(this);
@@ -230,7 +230,7 @@ function clickedButton(e, path, highlight, id){
                     );
             d3.select("#dentist-list-container")
                 .style("display", "none");
-            console.log(id);
+            
             d3.select("#button-calldentist").attr("onClick", "CallDentist(\"" + String(id) + "\")");
 
             //disable all paths and enable the target path
@@ -275,14 +275,14 @@ function toggleMap_dentist (pathOn, path, event){
 
     if (pathOn){
         const bounds = path.node().getBBox();
-        //console.log(bounds);
+        
         var i;
         if (bounds.width > bounds.height){
-            //console.log("based on width");
+            
             i = interpolator(1.2, 1.5, ((bounds.width - 424)/ -127));
         }
         else{
-            //console.log("based on height");
+            
             i = interpolator(0.9, 1.4, ((bounds.height - 762)/ -571));
         }
          

@@ -55,7 +55,7 @@ var targetList = document.getElementsByTagName("section");
 body.onscroll = function myFunction () {
    var scrolltotop = document.scrollingElement.scrollTop;
    var windowHeight = window.innerHeight; // * 0.9;
-   console.log(windowHeight);
+   
    var xvalue = "center";
    var factor = 0.05;  
 

@@ -80,6 +80,7 @@ section.hero{
 	justify-content: flex-end;
 	align-content: flex-end;
 	height: 100vh;
+	padding:  0 3em;
 }
 .align-top{
 	height: 100px;

@@ -5,9 +5,9 @@ var groceryLocation = "aldi";
 const nav = d3.select("#tutorialNavigation");
 assignButton(nav.select("#button1"));
 assignButton(nav.select("#button2"));
-assignButton(nav.select("#button3"));
-assignButton(nav.select("#button4"));
-assignButton(nav.select("#button5"));
+// assignButton(nav.select("#button3"));
+// assignButton(nav.select("#button4"));
+// assignButton(nav.select("#button5"));
 
 nav.select("#button1")
 	.style("fill-opacity", "1")
@@ -82,19 +82,23 @@ function assignButton(button){
                 .style("fill-opacity", "1")
                 .attr("ison", "true"); 
             PopulateTutorialPage(d3.select(this).attr("id"));
-            //if shopping list button2
             if (d3.select(this).attr("id") == "button2"){
             	d3.select('shoppingspreeicons').select('ul').selectAll('li').style("background-color", "unset");
             	//activate shopping list (if inactive)
             	d3.select("#icon-list")
             		.style("display", "block")
             		.style("background-color", "green");
+            	assignButton(nav.select("#button3"));
+            }
+            else if (d3.select(this).attr("id") == "button3"){
+            	assignButton(nav.select("#button4"));
             }
             else if (d3.select(this).attr("id") == "button4"){
             	d3.select('shoppingspreeicons').select('ul').selectAll('li').style("background-color", "unset");
             	//activate time remaining icon
             	d3.select("#icon-time").style("display", "block")
             		.style("background-color", "green");
+            	assignButton(nav.select("#button5"));
             }
             else if (d3.select(this).attr("id") == "button5"){
             	d3.select('shoppingspreeicons').select('ul').selectAll('li').style("background-color", "unset");
@@ -141,11 +145,6 @@ function PopulateTutorialPage (page){
 	if (page == "button1")
 		d3.select("#flavortext").html(flavortext);
 }
-var shoppingTime = 0;
-
-function AddToTime(){
-	shoppingTime ++;
-}
 
 function StartSpree(){
 	//slide in the newest panel, slide out the old, disable the first?
@@ -156,9 +155,12 @@ function StartSpree(){
 
 	//change background based on location
 	d3.select('#Ch1-Sct2')
-		.style("background-image", "url(images/interior-" + groceryLocation + ".png)");
-
-
+		.style(
+			"background-image",
+			"url(images/interior-" + groceryLocation + ".png)");
+	AddTime();
+	AddTime();
+	AddTime();
 }
 
 function ClickedItem (element){

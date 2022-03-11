@@ -77,6 +77,7 @@ function BillText (page){
             if (billsJson[i].willPay < 1){
                 d3.select('#AddRemoveBillButton')
                     .text("Add Bill")
+                    .classed("selectedButton", false)
                     .on("click", function(){
                         billsJson[index].willPay = 1;
                         AddBill(page);
@@ -84,6 +85,7 @@ function BillText (page){
             } else {
                 d3.select('#AddRemoveBillButton')
                     .text("Remove Bill")
+                    .classed("selectedButton", true)
                     .on("click", function(){
                         billsJson[index].willPay = 0;
                         RemoveBill(page);

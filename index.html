@@ -10,14 +10,18 @@
 <link href="css/content.css" rel="stylesheet" type="text/css">
 
 <!-- jquery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ -->
+<script src="scripts/jquery.min.js"></script>
 
 <!-- d3 library -->
-<script src="https://d3js.org/d3.v7.min.js"></script>
+<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+<script src="scripts/d3.v7.min.js"></script>
 
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. --> 
 <script>var __adobewebfontsappname__="dreamweaver"</script> 
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script> 
+<!-- <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>  -->
+<script src="scripts/source-sans-pro:n2:default.js" type="text/javascript"></script> 
 
 <!-- my scripts -->
 <script type="text/javascript" src="scripts/cookieControl.js"></script> 
@@ -93,7 +97,8 @@
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
 			<div class="flexContainer column" style="justify-content: center; padding: 0 5vw; height: 100%;">
 				<div style="width: 40vw;">
-					<h1 style="margin: 0 0 1em;">It's Monday morning. The kids are miraculously awake and getting ready for school. You pour them each a bowl of cereal and have just enough milk leftover to add to your coffee. The fridge is looking empty, besides some dangerously old takeout and a few loose packets of ketchup. You'll need to pick up some groceries today.</h1>
+					<h1 style="margin: 0 0 1em;">Monday Morning</h1>
+					<p>The kids are miraculously awake and getting ready for school. You pour them each a bowl of cereal and have just enough milk leftover to add to your coffee. The fridge is looking empty, besides some dangerously old takeout and a few loose packets of ketchup. You'll need to pick up some groceries today.</p>
 					<ul>
 						<li><p>You need to buy food and household items</p></li>
 						<li><p>Use the map on the next page to begin your shopping trip</p></li>
@@ -125,7 +130,7 @@
 							</div>
   					</div>
   					<div id="map-description-container">
-  						<div><h1>There are three local places that stock what you have on your shopping list. Click on one of the destinations <img name="bluestaricon" src="images/Store_Star.png" class="mediumIcon"> to get more information.</h1></div>
+  						<div><h1>Choose Your Store</h1><p>There are three local places that stock what you have on your shopping list. Click on one of the destinations <img name="bluestaricon" src="images/Store_Star.png" class="mediumIcon"> to get more information.</p></div>
   					</div>
   				</div>
   			</div>
@@ -153,9 +158,12 @@
 	  		<!-- Shopping Spree SubSection -->
 	  		<div id="storeContainer" style="position: relative; height: 100%; left: 200vw; top: -150%">
 	    		<div id="shoppingexplanation" style="flex: 1 0 auto; padding: 0 2em;">
-	    			<h1>
-	    				You spend some time roaming the store, and you've found almost everything on your list. Just three things left. Click the list icon (<img class="" src="images/icon-shoppinglist.png" style="padding: 0 0.5em;height: 1.5em;vertical-align: bottom;">) above to see what's left.
-	    			</h1>
+	    			<div style="width: 45vw;">
+					    <h1>In the Store</h1>
+					    <p>
+						    	You spend some time roaming the store, and you've found almost everything on your list. Just three things left. Click the list icon (<img class="" src="images/icon-shoppinglist.png" style="padding: 0 0.5em;height: 1.5em;vertical-align: bottom;">) above to see what's left.
+					    </p>
+						</div>
 	    		</div>
 	        <div id="aisle" style="display: flex; flex-flow: row; width: 100%; height: 60vh; overflow-y: auto;">        	
 	            <div class="aisleColumn">
@@ -200,7 +208,8 @@
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
 			<div class="flexContainer column" style="justify-content: center; padding: 0 5vw; height: 100%;">
 				<div style="width: 33vw;">
-					<h1 style="margin: 0 0 1em;">You have bills to pay</h1>
+					<h1 style="margin: 0 0 1em;">Tuesday Evening</h1>
+    			<p>The kids are fed and zoned out watching cartoons on one of those channels that always plays cartoons. You are sitting at a freshly cleared dining room table sorting through bills that are in various states of due (some in the state of "Over"). Rent is due before your next paycheck, so you'll have to choose which bills you can afford until then.</p>
 					<ul>
 						<li class="flexContainer row">
 							<p>Paying the bills will cost <b style="color:green">money</b></p>
@@ -243,29 +252,35 @@
   <section class="banner intro-science">
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">	  
 			<div class="flexContainer column" style="justify-content: center; flex: 0 1 auto; width: 33vw; height: 100%; padding: 0 5vw;">
-				<h1 style="margin: 0 0 1em;">Science Fair</h1>
-				<div>Mia is a finalist in the county science fair. She really hopes you can support her at the fair.</div>
-				<ul>
-					<li>
-						<p>You decide to...</p>
+				<h1 style="margin: 0 0 1em;">Thursday Morning</h1>
+				<div>You've made it to Thursday. The coffee is hot, there are groceries in the fridge, bills are paid (mostly), and as you start to think maybe you'll make it through the weekend, Mia hands you a piece of paper that reads "SCIENCE FAIR! Thursday, 3pm" You remember Mia is a finalist. She gives you a look, a look that you used to give your mom, that says, "A good parent would be there." And, though you hate to miss work, you know she's right.</div>
+				
+						<p>What do you do?</p>
 						<ol>
 							<li>
-								<p>Request time off work and attend...</p>
-								<ul>
-									<p>Miss 5 hours of work</br>
-									<b style="color: coral"> -$90 financial</b><b style="color: greenyellow"> +2 emotional health</b>
-									</p>
-								</ul>
+								<div  class="flexContainer row">
+									<div>
+										<p>Request time off work and attend...</p>
+										<p>
+											Miss 5 hours of work</br>
+											<b style="color: coral"> -$90 financial</b><b style="color: greenyellow"> +2 emotional health</b>
+										</p>
+									</div>
+									<button style="margin: 0 0 0 2em; height: 5em; align-self: center;" onClick="callAction('attendScienceFair');DisplayConclusion('intro-science');">Attend</button>
+								</div>
 							</li>
 							<li>
-								<p>Tell Mia that you cannot afford not to work, and won't be able to cheer for her at the science fair...</p>
-								<ul>
-									<b style="color: coral"> -2 emotional health</b>
-								</ul>
+								<div class="flexContainer row">
+									<div>
+										<p>Tell Mia that you cannot afford not to work, and won't be able to cheer for her at the science fair...</p>
+										<p>
+											<b style="color: coral"> -2 emotional health</b>
+										</p>
+									</div>
+									<button style="margin: 0 0 0 2em; height: 5em; align-self: center;" onClick="callAction('skipScienceFair');DisplayConclusion('intro-science');">Skip</button>
+								</div>
 							</li>
 						</ol>
-					</li>
-				</ul>
 			</div>	  
   	</div>
   	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
@@ -354,9 +369,8 @@
     <div class="square-wrapper">
       <div class="square square-transition"> Outro </div>
     </div>
-    <!-- <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div> -->
+    <div> <a href="module2.html">Go To Module 2</a> </div>
   </section>
-
 
   	<!-- <section class="banner" id="ChX-SctX">
     <buffer></buffer>
@@ -372,7 +386,7 @@
 	  <div><a onclick="setEnergy(0);setMood(0);setMoney(0);setTooth(0);">Reset Values</a></div>
 	  <buffer></buffer>
     <div style="height: 1em;"> <a class="Ch1-Sct1-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section>
+  	</section>
   	<section class="banner livingroom" id="Ch1-Sct2">
     <buffer></buffer>
     <div class="square-wrapper">
@@ -385,11 +399,12 @@
     <div id="itemDescription"></div>
 	  <buffer></buffer>
     <div style="height: 1em;"> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  </section> -->
+  	</section> -->
 
  <!-- END OF CONTAINER -->
 </div>
-
+<!-- vimeo player -->
+<script src="scripts/player.js"></script>
 
 <script type="text/javascript" src="scripts/myScripts.js"></script> 
 <script type="text/javascript" src="scripts/map_dentist.js"></script> 
@@ -399,6 +414,9 @@
 <script type="text/javascript" src="scripts/shoppingspree.js"></script> 
 <!-- observer script to animate revealing hidden things --> 
 <script>
+	function LaunchFakeSection(){
+		d3.selectAll('section').style('display', 'none');
+	}
 	// Check if IntersectionObserver is supported
 	if ('IntersectionObserver' in window) {
 		console.log("Your browser supports IntersectionObserver");

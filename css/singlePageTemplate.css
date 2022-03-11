@@ -268,7 +268,7 @@ a {
 	padding: 0 0 0 2em;
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .route-image{
 	max-width: 20vw;

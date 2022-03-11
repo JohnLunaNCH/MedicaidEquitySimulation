@@ -243,6 +243,7 @@ function clickedButton(e, path, highlight, id){
 }
 
 var numberofcalls = 0;
+var foundDentist = false;
 
 function CallDentist(location){
     numberofcalls ++;
@@ -250,6 +251,9 @@ function CallDentist(location){
     if (numberofcalls > 3){
         //call dentist who will talk
         answer = "-noanswer.mp4";   
+        if (location != 'location2'){
+            foundDentist = true;
+        }
     }
     const vidElement = d3.select('#callVid');
     vidElement.select('source').attr("src", "videos/" + location + answer);

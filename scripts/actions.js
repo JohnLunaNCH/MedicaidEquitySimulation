@@ -12,13 +12,13 @@ var actions;
 
 
 function callAction (action){
-	
 	for (var i = 0; i < actions.length; i ++){
 		if (actions[i].action == action){
 			adjustEnergy(actions[i].energy);
 			adjustMood(actions[i].mood);
 			adjustTooth(actions[i].tooth);
 			adjustMoney(actions[i].money);
+			actions[i].wasCalled = 1;
 		}
 	}
 }

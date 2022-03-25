@@ -317,5 +317,38 @@
     "Mood": "",
     "Energy": "",
     "isPurchased": ""
+  },
+  {
+    "Name": "Name Brand Foil",
+    "Category": "Other",
+    "Icon": "none",
+    "GroceryStorePrice": 1.98,
+    "GasStationPrice": 1.98,
+    "Health": "",
+    "Mood": "",
+    "Energy": "",
+    "isPurchased": 0
+  },
+  {
+    "Name": "Name Brand Heavy Duty Foil",
+    "Category": "Other",
+    "Icon": "none",
+    "GroceryStorePrice": 4.68,
+    "GasStationPrice": 4.68,
+    "Health": "",
+    "Mood": "",
+    "Energy": "",
+    "isPurchased": 0
+  },
+  {
+    "Name": "Generic Tin Foil",
+    "Category": "Other",
+    "Icon": "none",
+    "GroceryStorePrice": 1.28,
+    "GasStationPrice": 1.28,
+    "Health": "",
+    "Mood": "",
+    "Energy": "",
+    "isPurchased": 0
   }
 ]

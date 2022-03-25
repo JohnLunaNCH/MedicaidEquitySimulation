@@ -82,7 +82,7 @@
 <!-- Test Section -->
   	
 
-    <!-- Intro: Narration -->
+  <!-- Intro: Narration -->
   <section class="narration" id="Intro">
     <buffer></buffer>
     <div class="square-wrapper2">
@@ -92,11 +92,11 @@
     <div> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-	<!-- Chapter 1 - Section 1: Narration -->
-  <section class="banner intro-fridge">
+	<!-- Chapter 1: Grocery Narration -->
+  <section class="banner intro-fridge" id="Ch2-Sct1">
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
-			<div class="flexContainer column" style="justify-content: center; padding: 0 5vw; height: 100%;">
-				<div style="width: 40vw;">
+			<div class="flexContainer column narrationInner">
+				<div style="">
 					<h1 style="margin: 0 0 1em;">Monday Morning</h1>
 					<p>The kids are miraculously awake and getting ready for school. You pour them each a bowl of cereal and have just enough milk leftover to add to your coffee. The fridge is looking empty, besides some dangerously old takeout and a few loose packets of ketchup. You'll need to pick up some groceries today.</p>
 					<ul>
@@ -109,8 +109,8 @@
   	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
   </section>
  
-<!-- Chapter 1: grocery map -->
-<section class="banner grocery-blur" id="Ch1-Sct2">
+	<!-- Chapter 1: Grocery Map -->
+	<section class="banner grocery-blur" id="Ch1-Sct2">
   	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em; height: 50%;">  		
   		<div class="subContainer">
 
@@ -204,10 +204,10 @@
   </section>
 
 	<!-- Chapter 2: Bills Narration -->
-  <section class="banner intro-calc">
+  <section class="banner intro-calc" id="Ch2-Sct1">
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
-			<div class="flexContainer column" style="justify-content: center; padding: 0 5vw; height: 100%;">
-				<div style="width: 33vw;">
+			<div class="flexContainer column narrationInner">
+				<div>
 					<h1 style="margin: 0 0 1em;">Tuesday Evening</h1>
     			<p>The kids are fed and zoned out watching cartoons on one of those channels that always plays cartoons. You are sitting at a freshly cleared dining room table sorting through bills that are in various states of due (some in the state of "Over"). Rent is due before your next paycheck, so you'll have to choose which bills you can afford until then.</p>
 					<ul>
@@ -224,8 +224,8 @@
   	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-	<!-- Bills -->
-  <section class="banner livingroom-blur" id="Ch2-Sct1">
+	<!-- Chapter 2: Bills -->
+  <section class="banner livingroom-blur" id="Ch2-Sct2">
   	<div id="BillsSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 1em; overflow: hidden;">
   		<div class="subContainer" style="height:100%;">
   			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;">
@@ -248,49 +248,49 @@
   	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-  <!-- Science Fair -->
-  <section class="banner intro-science">
-  	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);height: 70vh;overflow-y: auto;">	  
-			<div class="flexContainer column" style="justify-content: center; flex: 0 1 auto; width: 33vw; height: 100%; padding: 0 5vw;">
+  <!-- Chapter 3: Science Fair -->
+  <section class="banner intro-science" id="Ch3-Sct1">
+  	<div class="darkbackground flexContainer row" style="background-color: rgba(0, 0, 0, 0);height: 70vh;overflow-y: auto; width: 100%;">	  
+			<div class="flexContainer column narrationInner" style="flex: 0 1 auto;">
 				<h1 style="margin: 0 0 1em;">Thursday Morning</h1>
 				<div>You've made it to Thursday. The coffee is hot, there are groceries in the fridge, bills are paid (mostly), and as you start to think maybe you'll make it through the weekend, Mia hands you a piece of paper that reads "SCIENCE FAIR! Thursday, 3pm" You remember Mia is a finalist. She gives you a look, a look that you used to give your mom, that says, "A good parent would be there." And, though you hate to miss work, you know she's right.</div>
 				
-						<p>What do you do?</p>
-						<ol>
-							<li>
-								<div  class="flexContainer row">
-									<div>
-										<p>Request time off work and attend...</p>
-										<p>
-											Miss 5 hours of work</br>
-											<b style="color: coral"> -$90 financial</b><b style="color: greenyellow"> +2 emotional health</b>
-										</p>
-									</div>
-									<button style="margin: 0 0 0 2em; height: 5em; align-self: center;" onClick="callAction('attendScienceFair');DisplayConclusion('intro-science');">Attend</button>
-								</div>
-							</li>
-							<li>
-								<div class="flexContainer row">
-									<div>
-										<p>Tell Mia that you cannot afford not to work, and won't be able to cheer for her at the science fair...</p>
-										<p>
-											<b style="color: coral"> -2 emotional health</b>
-										</p>
-									</div>
-									<button style="margin: 0 0 0 2em; height: 5em; align-self: center;" onClick="callAction('skipScienceFair');DisplayConclusion('intro-science');">Skip</button>
-								</div>
-							</li>
-						</ol>
+				<p>What do you do?</p>
+			</div>
+			<div id="sciencefairchoice" class="darkbackground flexContainer column" style="width: 30vw; height: 55vh; align-self: center; justify-content: center;">
+				<div style="align-content: center; overflow-y: auto;">
+					<div  class="flexContainer" style="justify-content: space-between; flex-flow: row wrap; padding:  0 0 1em 0; border-bottom: thin solid gray">
+						<div style="margin: 1em 0;">1.</div>
+						<div style="flex: 1 1 auto; padding: 0 0 0 1em; width: 20vw;">
+							<p>Request time off work and attend...</p>
+							<p>
+								Miss 5 hours of work</br>
+								<b style="color: coral"> -$90 financial</b><b style="color: greenyellow"> +2 emotional health</b>
+							</p>
+						</div>
+						<button style="height: 5em; align-self: center; width: 7em; text-align: center; padding: 0; margin: 0 0 0 2em;" onClick="callAction('attendScienceFair');DisplayConclusion('intro-science');">Attend</button>
+					</div>				
+					<div class="flexContainer" style="justify-content: space-between; flex-flow: row wrap;">
+						<div style="margin: 1em 0;">2.</div>
+						<div style="flex: 1 1 auto; padding: 0 0 0 1em; width: 20vw;">
+							<p>Tell Mia that you cannot afford not to work, and won't be able to cheer for her at the science fair...</p>
+							<p>
+								<b style="color: coral"> -2 emotional health</b>
+							</p>
+						</div>
+						<button style="height: 5em; align-self: center; width: 7em; text-align: center; padding: 0; margin: 0 0 0 2em;" onClick="callAction('skipScienceFair');DisplayConclusion('intro-science');">Skip</button>
+					</div>
+				</div>
 			</div>	  
   	</div>
   	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-  <!-- Dentist Narration Section -->
-  <section class="banner intro-lobby">
+  <!-- Chapter 4: Dentist Narration Section -->
+  <section class="banner intro-lobby" id="Ch4-Sct1">
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">		  
-				<div class="flexContainer column" style="justify-content: center; padding: 0 5vw; height: 100%;">
-					<div style="width: 33vw;">
+				<div class="flexContainer column narrationInner">
+					<div>
 						<h1 style="margin: 0 0 1em;">Scheduling a dentist</h1>
 						<p>At dinner, Mia mentioned they learned about dental care at school today and the teacher asked the students when they had last visited a dentist. Mia couldn't answer because she couldn't remember.</p>
 						<p>You realize that your children have not had a dental appointment since moving to the current neighborhood. It has been 4 years since their last dental check-up. You decide to schedule a dental visit for the children.</p>
@@ -300,77 +300,82 @@
   	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
   </section>
 
-	<!-- Dentist Map Section -->
-  	<section class="banner dentist-blur" id="ChX-SctX">
-	  	<div id="MapToDentistSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 0px">
-	  		<div class="subContainer" style="height:100%; width:100%">
-	  			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
-	  				<div style="display: flex; flex-flow: row; height:100%;">
-	  					<div id="dentist-description-container">
-	  						<div class="dentist-list-header">Dentist Selection</div>
-	  						<div id="dentist-list-container">
-	  							<div class="dentist-list-item" id="location1">
-	  								<h1>Hilltop Dental Group</h1>
-	  								<div>
-	  									Hours:</br>
-	  									Distance:</br>
-	  									Travel Time (Bus):
-	  								</div>
-	  							</div>
-	  							<div class="dentist-list-item" id="location2">
-	  								<h1>Dentist 2</h1>
-	  								<div>
-	  									Hours:</br>
-	  									Distance:</br>
-	  									Travel Time (Bus):
-	  								</div>
-	  							</div>
-	  							<div class="dentist-list-item" id="location3">
-	  								<h1>Buckeye Dental</h1>
-	  								<div>
-	  									Hours:</br>
-	  									Distance:</br>
-	  									Travel Time (Bus):
-	  								</div>
-	  							</div>
-	  							<div class="dentist-list-item" id="location4">
-	  								<h1>Williams Dental Group</h1>
-	  								<div>
-	  									Hours:</br>
-	  									Distance:</br>
-	  									Travel Time (Bus):
-	  								</div>
-	  							</div>
-	  							<div class="dentist-list-item" id="location5">
-	  								<h1>Smith Family Dentistry</h1>
-	  								<div>
-	  									Hours:</br>
-	  									Distance:</br>
-	  									Travel Time (Bus):
-	  								</div>
-	  							</div>
-	  						</div>
-	  						<div id="dentist-description"></div>
+	<!-- Chapter 4: Dentist Map Section -->
+	<section class="banner dentist-blur" id="Ch4-Sct2">
+  	<div id="MapToDentistSection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 20px; padding: 0px">
+  		<div class="subContainer" style="height:100%; width:100%">
+  			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
+  				<div style="display: flex; flex-flow: row; height:100%;">
+  					<div id="dentist-description-container">
+  						<div class="dentist-list-header">Dentist Selection</div>
+  						<div id="dentist-list-container">
+  							<div class="dentist-list-item" id="location1">
+  								<h1>Hilltop Dental Group</h1>
+  								<div>
+  									Hours:</br>
+  									Distance:</br>
+  									Travel Time (Bus):
+  								</div>
+  							</div>
+  							<div class="dentist-list-item" id="location2">
+  								<h1>Dentist 2</h1>
+  								<div>
+  									Hours:</br>
+  									Distance:</br>
+  									Travel Time (Bus):
+  								</div>
+  							</div>
+  							<div class="dentist-list-item" id="location3">
+  								<h1>Buckeye Dental</h1>
+  								<div>
+  									Hours:</br>
+  									Distance:</br>
+  									Travel Time (Bus):
+  								</div>
+  							</div>
+  							<div class="dentist-list-item" id="location4">
+  								<h1>Williams Dental Group</h1>
+  								<div>
+  									Hours:</br>
+  									Distance:</br>
+  									Travel Time (Bus):
+  								</div>
+  							</div>
+  							<div class="dentist-list-item" id="location5">
+  								<h1>Smith Family Dentistry</h1>
+  								<div>
+  									Hours:</br>
+  									Distance:</br>
+  									Travel Time (Bus):
+  								</div>
+  							</div>
+  						</div>
+  						<div id="dentist-description"></div>
+  					</div>
+  					<div id="dentistMapContainer">
+	  					<div style="width: 100%; overflow: hidden; height: 100%;align-self: center;">
+	  						<div id="MapToDentist" class="interactiveMap" style="height: 100%; align-self: center;"></div>
 	  					</div>
-	  					<div id="dentistMapContainer">
-		  					<div style="width: 100%; overflow: hidden; height: 100%;align-self: center;">
-		  						<div id="MapToDentist" class="interactiveMap" style="height: 100%; align-self: center;"></div>
-		  					</div>
-	  					</div>  					
-	  				</div>
-	  			</div>
-	  		</div>
-	  	</div>
-	  	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
-  	</section>
+  					</div>  					
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
+	</section>
 
-  	  <section class="narration">
-    <buffer></buffer>
-    <div class="square-wrapper">
-      <div class="square square-transition"> Outro </div>
-    </div>
-    <div> <a href="module2.html">Go To Module 2</a> </div>
-  </section>
+	<!-- Outro -->
+	<section class="narration" id="Outro">
+		<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
+			<div class="flexContainer column narrationInner">
+		    <buffer></buffer>
+		    <div class="square-wrapper">
+		      <div class="square square-transition"> Outro </div>
+		    </div>
+		    <div> <a href="module2.html" style="color: white; font-weight: bold;">Go To Module 2</a> </div>
+	  	</div>
+  	</div>
+	</section>
 
   	<!-- <section class="banner" id="ChX-SctX">
     <buffer></buffer>

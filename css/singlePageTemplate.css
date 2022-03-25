@@ -443,12 +443,21 @@ shoppingspreeIcons img.mediumIcon{
 }
 
 .checkoutlistcontainer{
-	margin: 1em 2em;
+	/*margin: 1em 2em;*/
 	border:  thin solid gray;
 	padding: 1em;
+	width: 40vw;
+	align-self: center;
 }
 
 .checkoutbutton{
 	margin: 0.5em;
 	padding: 0.2em 1em;
+}
+
+.narrationInner{
+	justify-content: center;
+	padding: 0 5vw;
+	height: 100%;
+	width: 40vw;
 }

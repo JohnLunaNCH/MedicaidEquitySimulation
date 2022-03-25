@@ -187,10 +187,22 @@ function PreCheckOut(){
 		.style("flex-flow", "column")
 		.style("justify-content", "space-between");
 	container.append('div').style("padding", "1em 0 0 0").text("Don't forget Mia's science fair project. You need to pick up some tin foil.");
-	container.append('div').text("Type 1");
-	container.append('div').text("Type 2");
-	container.append('div').text("Type 3");
-	container.append('button').text("Continue").attr("onClick", "OverBudget();");	
+	container.append('div').text("Name Brand Foil, 25sqft - $1.98")
+		.append('button')
+			.attr("onClick", "AddPurchase(\"Name Brand Foil\"); OverBudget();")
+			.classed("checkoutbutton", true)
+			.text("Add");
+	container.append('div').text("Name Brand Heavy Duty Foil, 50sqft - $4.68")
+		.append('button')
+			.attr("onClick", "AddPurchase(\"Name Brand Heavy Duty Foil\"); OverBudget();")
+			.classed("checkoutbutton", true)
+			.text("Add");
+	container.append('div').text("Generic Tin Foil, 25sqft - $1.28")
+		.append('button')
+			.attr("onClick", "AddPurchase(\"Generic Tin Foil\"); OverBudget();")
+			.classed("checkoutbutton", true)
+			.text("Add");
+	//container.append('button').text("Continue").attr("onClick", "OverBudget();");	
 }
 
 function OverBudget(){
@@ -219,10 +231,13 @@ function OverBudget(){
 	}
 	//calculate targetBudget (the "- 5" is what will need to modify based on the lowest possible budget)
 	targetBudget = Math.floor((totalPrice - 5)/5) * 5;
+	targetBudget += Math.random();
 
 	container.append('div').style("padding", "1em 0 0 0").text("You pick up your last item and arrive at the checkout lane. The cashier rings up your items and the total displays:");
 	container.append('div').text(formatter.format(totalPrice));
-	container.append('div').text("You can feel the blood rush to your face as you notice the cost is over your budget of " + formatter.format(targetBudget) + ".");
+	container.append('div').text("You fish out your debit card and swipe it at the machine. The machine says PROCESSING for what feels like an eternity before finally reporting");
+	container.append('div').text("DECLINED");
+	container.append('div').text("You can feel the blood rush to your face as you pull out what cash you have in your pockets, " + formatter.format(targetBudget) + ".");
 	container.append('div').text("You'll have to ask the cashier to remove some items from your purchase.");
 	container.append('button').text("Continue").attr("onClick", "CheckOut(); d3.select('#shoppinglist').style('display','none');");		
 }
@@ -236,7 +251,10 @@ function CheckOut(){
 	if (d3.select("#CheckoutList").size() > 0){
 		d3.select("#CheckoutList").node().innerHTML = "";
 	} else	{
-		d3.select("#storeContainer").append("div").attr("id", "CheckoutList").attr("class", "checkoutlistcontainer");
+		d3.select("#storeContainer")
+			.style("display", "flex")
+			.style("flex-flow", "column")
+			.append("div").attr("id", "CheckoutList").attr("class", "checkoutlistcontainer");
 	}
 	var checkoutlist = d3.select("#CheckoutList");
 	checkoutlist.style("overflow-y", "auto").style("height", "47vh");
@@ -269,5 +287,38 @@ function CheckOut(){
 	var tcRow = totalContainer.append("div");
 	tcRow.classed("flexContainer", true).classed("row", true);
 	tcRow.append("strong").text("Total").style("color", (totalPrice < targetBudget) ? "white" : "red");
-	tcRow.append("strong").style("flex", "1 0 auto").style("text-align", "right").text(formatter.format(totalPrice)).style("color", (totalPrice < targetBudget) ? "white" : "red");
+	tcRow.append("strong")
+		.style("flex", "1 0 auto")
+		.style("text-align", "right")
+		.style("color", (totalPrice < targetBudget || totalPrice == targetBudget) ? "white" : "red")
+		.text(formatter.format(totalPrice));
+	if (totalPrice < targetBudget || totalPrice == targetBudget){
+		d3.selectAll(".checkoutbutton")
+			.style("style", "none");
+		totalContainer.append("button")
+			.text("Pay")
+			.attr("onClick", "ShoppingReview()")
+			.style("float", "right")
+			.style("margin", "0 0 1em 0");
+	}
+}
+
+function ShoppingReview(){
+	d3.select('shoppingspreeicons').style('display', 'none');
+	var c = d3.select("#storeContainer");
+	c.node().innerHTML = "";
+	c.append('div')
+		.style("flex", "1 1 auto")
+		.style("align-self", "center")
+		.style("display", "flex")
+		.append('div')
+			.style('align-self', 'center')
+			.text("You bought some things, left some things behind (including a few shreds of your dignity), and made your way back home.");
+	c.append('div')
+		.style('display', 'flex')
+		.style('justify-content', 'end')
+		.style('height', '4em')
+		.append('button')
+			.text("Continue")
+			.attr("onClick", "addHeight(this)");
 }

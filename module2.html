@@ -56,11 +56,18 @@
   	</div>
   	<!-- Bottom section -->
   	<div class="flexContainer row" style="align-self: center; text-align: center;">
-  		<div>O</div>
-  		<div>O</div>
-  		<div>O</div>
-  		<div>O</div>
-  		<div>O</div>
+  		<div class="bulletProgress">
+  			<svg viewBox="0 0 80 10" width="100%" height="30">
+          <symbol id="circleButton" width="8" height="8" viewBox="0 0 2 2">
+              <circle cx="1" cy="1" r="0.75" stroke="white" stroke-width="0.25"/>
+          </symbol>
+          <use id="button1" ison="true" href="#circleButton" x="5" fill-opacity="0" fill="white"/>
+          <use id="button2" ison="false" href="#circleButton" x="20" fill-opacity="0" fill="white"/>
+          <use id="button3" ison="false" href="#circleButton" x="35" fill-opacity="0" fill="white"/>
+          <use id="button4" ison="false" href="#circleButton" x="50" fill-opacity="0" fill="white"/>
+          <use id="button5" ison="false" href="#circleButton" x="65" fill-opacity="0" fill="white"/>
+        </svg>
+  		</div>
   	</div>
   	<div><button onClick="Module2Next();">Next</button></div>
   </section>

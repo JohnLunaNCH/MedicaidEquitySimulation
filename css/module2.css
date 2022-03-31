@@ -27,3 +27,7 @@
 .alignCenter{
 	align-self: center;
 }
+
+.bulletProgress{
+	padding:  0 2em;
+}

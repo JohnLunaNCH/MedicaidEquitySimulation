@@ -23,3 +23,7 @@
 .confirmChoiceButton:hover {
 	background-color: #005A9C;
 }
+
+.alignCenter{
+	align-self: center;
+}

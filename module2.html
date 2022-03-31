@@ -36,11 +36,12 @@
 <!-- Main Container -->
 <div class="container" style="background-color: rgba(70,140,200,0.3);">
 	<section class="flexContainer column" style="justify-content: space-between; height: 65vh; margin: 15vh 4em; border-radius: 10px; background-color: rgba(50,65,80,0.8); padding: 5vh">
+		<!-- Title -->
   	<div>
   		<h1 style="margin: 0;"> Title</h1>
   	</div>
-  	<!-- mid section -->
-  	<div class="flexContainer row" style="flex: 4 1 auto;">
+  	<!-- Mid section -->
+  	<div id="midSection" class="flexContainer row" style="flex: 4 1 auto;">
   		<div id="typeA-buttonContainer" class="flexContainer column" style="justify-content: space-around; flex: 4 1 auto;">
   			<button class="multiplechoice">button</button>
   			<button class="multiplechoice">button</button>
@@ -50,16 +51,18 @@
   			<div id="confirmChoice" class="confirmChoiceButton" style="width: 100px;">Check Answers</div>
   		</div>
   		<div id="typeA-imageContainer" class="flexContainer row" style="justify-content:center; flex: 1 1 auto;">
-  			<div style="align-self: center; border-radius: 20px; width: 60vh; height: 40vh;">Image</div>
+  			<div style="align-self: center; border-radius: 20px; width: 60vh; height: 40vh; background-image: url(images/exampleImage.png);background-size: cover"></div>
   		</div>
   	</div>
-  	<div class="flexContainer row">
+  	<!-- Bottom section -->
+  	<div class="flexContainer row" style="align-self: center; text-align: center;">
   		<div>O</div>
   		<div>O</div>
   		<div>O</div>
   		<div>O</div>
   		<div>O</div>
   	</div>
+  	<div><button onClick="Module2Next();">Next</button></div>
   </section>
 
 <!--   <section class="narration flexContainer column" id="module2-sct1" style="justify-content: center;">
@@ -79,6 +82,7 @@
 <script src="scripts/player.js"></script>
 
 <script type="text/javascript" src="scripts/myScripts.js"></script> 
+<script type="text/javascript" src="scripts/module2nav.js"></script>
 <!-- observer script to animate revealing hidden things --> 
 <script>
 	window.onload = function() {

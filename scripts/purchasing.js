@@ -237,7 +237,7 @@ function OverBudget(){
 	container.append('div').text(formatter.format(totalPrice));
 	container.append('div').text("You fish out your debit card and swipe it at the machine. The machine says PROCESSING for what feels like an eternity before finally reporting");
 	container.append('div').text("DECLINED");
-	container.append('div').text("You can feel the blood rush to your face as you pull out what cash you have in your pockets, " + formatter.format(targetBudget) + ".");
+	container.append('div').text("You can feel the blood rush to your face as you pull out what cash and loose change you have on you, " + formatter.format(targetBudget) + ".");
 	container.append('div').text("You'll have to ask the cashier to remove some items from your purchase.");
 	container.append('button').text("Continue").attr("onClick", "CheckOut(); d3.select('#shoppinglist').style('display','none');");		
 }

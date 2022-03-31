@@ -97,3 +97,34 @@ function BillText (page){
         return "Page Not Found.";
     }
 }
+
+function BillTutorial(){
+    d3.select('#BillsSection').append('div')
+        .classed('shoppinglistContainer', true)
+        .classed('flexContainer', true)
+        .classed('row', true)
+        .attr('id', 'billtutorial');
+    d3.select("#billtutorial").attr("onClick", "");
+
+    const listDiv = d3.select("#billtutorial").append('div');
+    listDiv
+        .style("background-color", "black")
+        .style("height", "70vh")
+        .style("border-radius", "20px")
+        .style("border", "solid gray")
+        .style("padding", "1em")
+        .style("align-self", "center");
+    const container = listDiv.append('div');
+
+    container
+        .style("height", "100%")
+        .style("display", "flex")
+        .style("flex-flow", "column")
+        .style("justify-content", "space-between");
+    container.append('div')
+        .style("padding", "1em 0 0 0")
+        .text("Click on a bill to see its cost. Click on the Add button to add this bill to your total. Don't go over $400.");
+    container.append('button')
+        .attr("onClick", "d3.select('#billtutorial').style('display','none');")
+        .text("Continue");  
+}

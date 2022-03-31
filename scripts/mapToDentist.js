@@ -247,10 +247,10 @@ var foundDentist = false;
 
 function CallDentist(location){
     numberofcalls ++;
-    var answer = "-answer.mp4";
+    var answer = "-noanswer.mp4";
     if (numberofcalls > 3){
         //call dentist who will talk
-        answer = "-noanswer.mp4";   
+        answer = "-answer.mp4";   
         if (location != 'location2'){
             foundDentist = true;
         }

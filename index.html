@@ -259,7 +259,7 @@
 				<p>What do you do?</p>
 			</div>
 			<div id="sciencefairchoice" class="darkbackground flexContainer column" style="width: 30vw; height: 55vh; align-self: center; justify-content: center;">
-				<div style="align-content: center; overflow-y: auto;">
+				<div style="align-content: center; overflow-y: auto;" id="sciencefairchoiceDisplay">
 					<div  class="flexContainer" style="justify-content: space-between; flex-flow: row wrap; padding:  0 0 1em 0; border-bottom: thin solid gray">
 						<div style="margin: 1em 0;">1.</div>
 						<div style="flex: 1 1 auto; padding: 0 0 0 1em; width: 20vw;">
@@ -269,7 +269,7 @@
 								<b style="color: coral"> -$90 financial</b><b style="color: greenyellow"> +2 emotional health</b>
 							</p>
 						</div>
-						<button style="height: 5em; align-self: center; width: 7em; text-align: center; padding: 0; margin: 0 0 0 2em;" onClick="callAction('attendScienceFair');DisplayConclusion('intro-science');">Attend</button>
+						<button style="height: 5em; align-self: center; width: 7em; text-align: center; padding: 0; margin: 0 0 0 2em;" onClick="callAction('attendScienceFair');ScienceFairAttend();">Attend</button>
 					</div>				
 					<div class="flexContainer" style="justify-content: space-between; flex-flow: row wrap;">
 						<div style="margin: 1em 0;">2.</div>
@@ -279,7 +279,7 @@
 								<b style="color: coral"> -2 emotional health</b>
 							</p>
 						</div>
-						<button style="height: 5em; align-self: center; width: 7em; text-align: center; padding: 0; margin: 0 0 0 2em;" onClick="callAction('skipScienceFair');DisplayConclusion('intro-science');">Skip</button>
+						<button style="height: 5em; align-self: center; width: 7em; text-align: center; padding: 0; margin: 0 0 0 2em;" onClick="callAction('skipScienceFair');ScienceFairSkip();">Skip</button>
 					</div>
 				</div>
 			</div>	  
@@ -417,7 +417,8 @@
 <script type="text/javascript" src="scripts/mapToGroceryStores.js"></script>
 <script type="text/javascript" src="scripts/mapToDentist.js"></script> 
 <script type="text/javascript" src="scripts/bills.js"></script> 
-<script type="text/javascript" src="scripts/shoppingspree.js"></script> 
+<script type="text/javascript" src="scripts/shoppingspree.js"></script>
+<script type="text/javascript" src="scripts/sciencefair.js"></script>
 <!-- observer script to animate revealing hidden things --> 
 <script>
 	function LaunchFakeSection(){

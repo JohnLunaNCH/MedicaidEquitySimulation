@@ -252,6 +252,7 @@ function CheckOut(){
 		d3.select("#CheckoutList").node().innerHTML = "";
 	} else	{
 		d3.select("#storeContainer")
+			.style("padding", "0");
 			.style("display", "flex")
 			.style("flex-flow", "column")
 			.append("div").attr("id", "CheckoutList").attr("class", "checkoutlistcontainer");
@@ -259,10 +260,18 @@ function CheckOut(){
 	var checkoutlist = d3.select("#CheckoutList");
 	checkoutlist.style("overflow-y", "auto").style("height", "47vh");
 	var totalPrice = 0;
+	var colorvalue = 0;
+	var color = "";
 	for (var i = 0; i < items.length; i ++){
 		if (items[i].isPurchased > 0){
-			var p = checkoutlist.append("div").classed("flexContainer", true).classed("row", true).style("align-items", "center");
-			p.append("div").text("- " + items[i].Name + "");
+			color = "rgba(" + colorvalue.toString() + ", " + colorvalue.toString() + ", " + colorvalue.toString() + ", 0.5)";
+			var p = checkoutlist.append("div")
+					.classed("flexContainer", true)
+					.classed("row", true)
+					.style("align-items", "center")
+					.style("background-color", color)
+					.style("padding", "0.5em 2em");
+			p.append("div").text(" " + items[i].Name + "");
 			p.append("div")
 				.classed("checkoutprice", true)
 				.text(formatter.format((isAldi) ? items[i].GroceryStorePrice : items[i].GasStationPrice));
@@ -272,6 +281,13 @@ function CheckOut(){
 				.classed("checkoutbutton", true)
 				.text("Remove");
 				totalPrice += Number((isAldi) ? items[i].GroceryStorePrice : items[i].GasStationPrice);
+
+			if (colorvalue > 0){
+				colorvalue = 0;
+			}
+			else{
+				colorvalue = 20;
+			}
 		}
 	}
 	var totalContainer;

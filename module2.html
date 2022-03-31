@@ -8,6 +8,7 @@
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <link href="css/animation.css" rel="stylesheet" type="text/css">
 <link href="css/content.css" rel="stylesheet" type="text/css">
+<link href="css/module2.css" rel="stylesheet" type="text/css">
 
 <!-- jquery library -->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -31,10 +32,37 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="body">
+<body id="body" style="background-image: url(images/bg_dentist01_blur.png); background-size: cover;">
 <!-- Main Container -->
-<div class="container">
-  <section class="narration flexContainer column" id="module2-sct1" style="justify-content: center;">
+<div class="container" style="background-color: rgba(70,140,200,0.3);">
+	<section class="flexContainer column" style="justify-content: space-between; height: 65vh; margin: 15vh 4em; border-radius: 10px; background-color: rgba(50,65,80,0.8); padding: 5vh">
+  	<div>
+  		<h1 style="margin: 0;"> Title</h1>
+  	</div>
+  	<!-- mid section -->
+  	<div class="flexContainer row" style="flex: 4 1 auto;">
+  		<div id="typeA-buttonContainer" class="flexContainer column" style="justify-content: space-around; flex: 4 1 auto;">
+  			<button class="multiplechoice">button</button>
+  			<button class="multiplechoice">button</button>
+  			<button class="multiplechoice">button</button>
+  			<button class="multiplechoice">button</button>
+  			<button class="multiplechoice">button</button>
+  			<div id="confirmChoice" class="confirmChoiceButton" style="width: 100px;">Check Answers</div>
+  		</div>
+  		<div id="typeA-imageContainer" class="flexContainer row" style="justify-content:center; flex: 1 1 auto;">
+  			<div style="align-self: center; border-radius: 20px; width: 60vh; height: 40vh;">Image</div>
+  		</div>
+  	</div>
+  	<div class="flexContainer row">
+  		<div>O</div>
+  		<div>O</div>
+  		<div>O</div>
+  		<div>O</div>
+  		<div>O</div>
+  	</div>
+  </section>
+
+<!--   <section class="narration flexContainer column" id="module2-sct1" style="justify-content: center;">
   	<div style="position:relative; border-radius: 20px; overflow:hidden; height:45vw; width:80vw; align-self: center;">
   		<iframe src="https://player.vimeo.com/video/674956122?h=752c9b4a1a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Scenario 1"></iframe>
   	</div>
@@ -42,7 +70,7 @@
   		<h1>Title</h1>
   		<p>Description</p>
   	</div>
-  </section>
+  </section> -->
 
 
  <!-- END OF CONTAINER -->

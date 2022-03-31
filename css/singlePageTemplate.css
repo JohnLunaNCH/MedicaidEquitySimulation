@@ -445,7 +445,7 @@ shoppingspreeIcons img.mediumIcon{
 .checkoutlistcontainer{
 	/*margin: 1em 2em;*/
 	border:  thin solid gray;
-	padding: 1em;
+	/*padding: 1em;*/
 	width: 40vw;
 	align-self: center;
 }

@@ -245,23 +245,25 @@ function OverBudget(){
 function CheckOut(){
 	var isAldi = (groceryLocation =="aldi");
 	d3.select("#aisle").style("display", "none");
-	d3.select("#shoppingexplanation").node().innerHTML = "<h1>" + "Shopping Cart" + "</h1>";
+	d3.select('#storeContainer').node().innerHTML = "";
+	d3.select('#storeContainer').append('div')
+		.attr("id", "#shoppingexplanation")
+		.style("padding", "0 2em")
+		.node().innerHTML = "<h1>" + "Shopping Cart" + "</h1>";
 	
-
-	if (d3.select("#CheckoutList").size() > 0){
-		d3.select("#CheckoutList").node().innerHTML = "";
-	} else	{
-		d3.select("#storeContainer")
-			.style("padding", "0");
-			.style("display", "flex")
-			.style("flex-flow", "column")
-			.append("div").attr("id", "CheckoutList").attr("class", "checkoutlistcontainer");
-	}
+	d3.select("#storeContainer")
+		.style("padding", "0")
+		.style("display", "flex")
+		.style("flex-flow", "column")
+		.append("div")
+			.attr("id", "CheckoutList")
+			.attr("class", "checkoutlistcontainer");
 	var checkoutlist = d3.select("#CheckoutList");
 	checkoutlist.style("overflow-y", "auto").style("height", "47vh");
 	var totalPrice = 0;
 	var colorvalue = 0;
 	var color = "";
+
 	for (var i = 0; i < items.length; i ++){
 		if (items[i].isPurchased > 0){
 			color = "rgba(" + colorvalue.toString() + ", " + colorvalue.toString() + ", " + colorvalue.toString() + ", 0.5)";
@@ -301,7 +303,11 @@ function CheckOut(){
 													.style("align-self", "center");
 	}
 	var tcRow = totalContainer.append("div");
-	tcRow.classed("flexContainer", true).classed("row", true);
+	tcRow
+		.classed("flexContainer", true)
+		.classed("row", true)
+		.style("background-color", color)
+		.style("padding", "0.5em 2em");
 	tcRow.append("strong").text("Total").style("color", (totalPrice < targetBudget) ? "white" : "red");
 	tcRow.append("strong")
 		.style("flex", "1 0 auto")
@@ -311,11 +317,14 @@ function CheckOut(){
 	if (totalPrice < targetBudget || totalPrice == targetBudget){
 		d3.selectAll(".checkoutbutton")
 			.style("style", "none");
-		totalContainer.append("button")
-			.text("Pay")
-			.attr("onClick", "ShoppingReview()")
-			.style("float", "right")
-			.style("margin", "0 0 1em 0");
+		d3.select('#storeContainer').append('div')
+			.style("align-self", "center")
+			.style("padding", "1em 0")
+			.append("button")
+				.text("Pay")
+				.attr("onClick", "ShoppingReview()")
+				.style("float", "right")
+				.style("margin", "0 0 1em 0");
 	}
 }
 

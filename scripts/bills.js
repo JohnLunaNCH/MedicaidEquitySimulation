@@ -50,17 +50,24 @@ function selectBill (page){
 
 function AddBill (page){
     billstotal += currentBill;
-    d3.select('#billTotal')
-        .text(billstotal.toFixed(2));
+    DisplayTotal();
     BillText(page);
 }
 
 function RemoveBill (page){
     if ((billstotal - currentBill) > -1)
         billstotal -= currentBill;
-    d3.select('#billTotal')
-        .text(billstotal.toFixed(2));
+    DisplayTotal();
     BillText(page);
+}
+
+function DisplayTotal(){
+    if (billstotal > 400)
+        d3.select('#billTotal').style('color', 'red');
+    else
+        d3.select('#billTotal').style('color', 'white');
+    d3.select('#billTotal')
+        .text("$" + billstotal.toFixed(2));
 }
 
 function BillText (page){
@@ -127,4 +134,20 @@ function BillTutorial(){
     container.append('button')
         .attr("onClick", "d3.select('#billtutorial').style('display','none');")
         .text("Continue");  
+}
+
+function BillConclusion(){
+    var section = d3.select("#BillsSection");
+    section.node().innerHTML = "";
+    section.style('display', 'flex').style('justify-content', 'center').style('flex-flow', 'column');
+    section.append('div')
+        .style("padding", "2em")
+        .style("text-align", "center")
+        .text("You pay what you can and make plans to rough it until you can secure enough money to cover the bills and their late fees.");
+    section.append('div')
+        .style('display', 'flex')
+        .style('justify-content', 'center')
+        .append('button')
+            .attr("onClick", "addHeight(this)")
+            .text("Continue");
 }

@@ -409,3 +409,13 @@ function playPause(v){
         v.pause();
     }
 }
+
+function playPause(v, delay){
+    setTimeout(function(){
+        if(v.paused){
+            v.play();
+        } else{
+            v.pause();
+        }
+    }, delay);
+}

@@ -21,20 +21,6 @@ $.get('html/m2_typeVideo.txt', function (response){
     m2_typeVideo = response;
 });
 
-function Module2Next(){
-	//select and clear the midSection
-	var container = midSection;
-	container
-		.style("justify-content", "space-evenly")
-		.classed("column", true)
-		.node().innerHTML = "";
-
-	var scaleCont = container.append('div').attr('id', 'scaleContainer').classed("alignCenter", true).style("text-align", "center");
-		scaleCont.append('div').text("The thing that asks the question that the user chooses from the scale thing.").classed("alignCenter", true);
-		scaleCont.append('div').text("----the scale----").classed("alignCenter", true);
-	container.append('div').classed("alignCenter", true).append('div').classed("confirmChoiceButton", true).text("Continue");
-}
-
 function Sect1(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
@@ -44,12 +30,22 @@ function Sect1(){
 	d3.select('#bottomContinueButton').attr("onClick", "Sect2()");
 }
 
+
+//video
 function Sect2(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeVideo;
-	midSection.select('iframe').attr('src', 'https://player.vimeo.com/video/674956122?h=752c9b4a1a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+	EnableButton(d3.select('#bottomContinueButton'), false);
+	//Scenario5 https://vimeo.com/manage/videos/677321017
+	midSection.select('iframe').attr('src', 'https://player.vimeo.com/video/677321017?h=882a3a78b2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+	
+	//wait til end of video to turn continue button on
+	var player = new Vimeo.Player(document.querySelector('iframe'));
+	player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
+
 	bottomSection.select(".bulletProgress").style("display", "none");
+	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-end");
 	d3.select('#bottomContinueButton').attr("onClick", "Sect3()");
 }
 
@@ -64,12 +60,25 @@ function Sect3(){
 	AddButton(buttonContainer, "Somewhat Agree", 'multiplechoice');
 	AddButton(buttonContainer, "Disagree", 'multiplechoice');
 	AddButton(buttonContainer, "Strongly Disagree", 'multiplechoice');
-	AddButton(buttonContainer, "Confirm Choice", 'confirmChoiceButton');
-	buttonContainer.select('.confirmChoiceButton')
-		.style('width', '100px')
-		.attr('onClick', 'Sect4()');
-	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('#bottomContinueButton').style("display", "none");
+
+	SetBulletProgress(4, 0);
+
+	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
+	d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'Sect4()');
+}
+
+function SetBulletProgress(amount, sect){
+	bottomSection.select(".bulletProgress").style("display", "block");
+	var bar = bottomSection.select("svg");
+	bar.attr('viewBox', '0 0 ' + ((amount * 15) + 5) + ' 10');
+	bar.selectAll('use').remove();
+	for (var i =0; i < amount; i ++){
+		bar.append('use')
+			.attr('href', '#circleButton')
+			.attr('x', ((i * 15) + 5))
+			.attr('fill', 'white')
+			.attr('fill-opacity', (i == sect) ? '1' : '0');
+	}
 }
 
 function Sect4(){
@@ -82,8 +91,12 @@ function Sect4(){
 			d3.select(this).attr('ison', '0');
 			MakeButtonClickable(d3.select(this));
 		});
-	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('.confirmChoiceButton').style("display", "block").attr("onClick", "Sect5()");
+	
+	SetBulletProgress(4, 1);
+
+	d3.select('#bottomContinueButton').style("visibility", "hidden");
+	d3.select('.confirmChoiceButton').style("visibility", "visible").attr("onClick", "Sect5()");
+
 }
 
 function Sect5(){
@@ -96,7 +109,10 @@ function Sect5(){
 			d3.select(this).attr('ison', '0');
 			MakeButtonClickable(d3.select(this));
 		});
-	bottomSection.select(".bulletProgress").style("display", "none");
+
+	SetBulletProgress(4, 2);
+
+	d3.select('#bottomContinueButton').style("visibility", "hidden");
 	d3.select('.confirmChoiceButton').attr("onClick", "Sect6()");
 }
 
@@ -110,26 +126,42 @@ function Sect6(){
 			d3.select(this).attr('ison', '0');
 			MakeButtonClickable(d3.select(this));
 		});
-	bottomSection.select(".bulletProgress").style("display", "none");
+	SetBulletProgress(4, 3);
+	d3.select('#bottomContinueButton').style("visibility", "hidden");
 	d3.select('.confirmChoiceButton').attr("onClick", "Sect7()");
 }
 
+//Naration
 function Sect7(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeNarration;
 	midSection.select("#narrationContainer").text("Watch the following scenario, can you spot the difference between this encounter and the previous encounter?");
 	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('#bottomContinueButton').style("display","block").attr("onClick", "Sect8()");
+	d3.select('#bottomContinueButton').style("visibility","visible").attr("onClick", "Sect8()");
 }
 
+//Video
 function Sect8(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
+	EnableButton(d3.select('#bottomContinueButton'), false);
 	midSection.node().innerHTML = m2_typeVideo;
-	midSection.select('iframe').attr('src', 'https://player.vimeo.com/video/674956122?h=752c9b4a1a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+	midSection.select('iframe').attr('src', 'https://player.vimeo.com/video/676021184?h=bb40bb226d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
 	bottomSection.select(".bulletProgress").style("display", "none");
+	//wait til end of video to turn continue button on
+	var player = new Vimeo.Player(document.querySelector('iframe'));
+	player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
+
+	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-end");
 	d3.select('#bottomContinueButton').attr("onClick", "Sect9()");
+}
+
+function EnableButton(button, turnOn){
+	if(turnOn)
+		button.style('visibility', 'visible');
+	else
+		button.style('visibility', 'hidden');
 }
 
 function Sect9(){
@@ -144,12 +176,11 @@ function Sect9(){
 	AddButton(buttonContainer, "Did not explain using words most patients can understand ", 'multiplechoice');
 	AddButton(buttonContainer, "Did not employ teach-back to ensure the explanation was sufficient to achieve full understanding for the patient ", 'multiplechoice');
 	AddButton(buttonContainer, "Did not respect the patient’s reaction towards vaccinations ", 'multiplechoice');
-	AddButton(buttonContainer, "Confirm Choice", 'confirmChoiceButton');
-	buttonContainer.select('.confirmChoiceButton')
-		.style('width', '100px')
-		.attr('onClick', 'Sect10()');
-	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('#bottomContinueButton').style("display", "none");
+
+	SetBulletProgress(5, 0);
+
+	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
+	d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'Sect10()');
 }
 
 function Sect10(){
@@ -162,12 +193,10 @@ function Sect10(){
 	AddButton(buttonContainer, "HPV vaccination may promote teen sexual activity", 'multiplechoice');
 	AddButton(buttonContainer, "HPV vaccination is not useful for teens that are not sexually active", 'multiplechoice');
 	
-	AddButton(buttonContainer, "Confirm Choice", 'confirmChoiceButton');
-	buttonContainer.select('.confirmChoiceButton')
-		.style('width', '100px')
-		.attr('onClick', 'Sect11()');
-	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('#bottomContinueButton').style("display", "none");
+
+	SetBulletProgress(5, 1);
+
+		d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'Sect11()');
 }
 
 function Sect11(){
@@ -183,13 +212,18 @@ function Sect11(){
 	AddButton(buttonContainer, "Provide easy-to-read hand-out and point to or circle key information ", 'multiplechoice');
 	AddButton(buttonContainer, "Make it a standard part of the routine dental encounter ", 'multiplechoice');
 
-	
-	AddButton(buttonContainer, "Confirm Choice", 'confirmChoiceButton');
-	buttonContainer.select('.confirmChoiceButton')
-		.style('width', '100px')
-		.attr('onClick', 'Sect12()');
+	SetBulletProgress(5, 2);
+
+		d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'End()');
+}
+
+function End(){
+	titleSection.select('h1').text("");
+	ClearSection(midSection);
+	midSection.node().innerHTML = m2_typeNarration;
+	midSection.select("#narrationContainer").text("That concludes the simulation. Thank you for participating!");
 	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('#bottomContinueButton').style("display", "none");
+	d3.select('#bottomContinueButton').style("visibility","hidden");
 }
 
 function Sect12(){
@@ -204,13 +238,9 @@ function Sect12(){
 	AddButton(buttonContainer, "I do not do it now, but plan to do this in the next 2 to 6 months. ", 'multiplechoice');
 	AddButton(buttonContainer, "I do not do it now and do not plan to do this. ", 'multiplechoice');
 
-	
-	AddButton(buttonContainer, "Confirm Choice", 'confirmChoiceButton');
-	buttonContainer.select('.confirmChoiceButton')
-		.style('width', '100px')
-		.attr('onClick', 'Sect13()');
-	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('#bottomContinueButton').style("display", "none");
+	SetBulletProgress(5, 3);
+
+		d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'Sect13()');
 }
 
 function Sect13(){
@@ -227,13 +257,9 @@ function Sect13(){
 	AddButton(buttonContainer, "Association w/ encouraging sexual activity ", 'multiplechoice');
 	AddButton(buttonContainer, "Other ", 'multiplechoice');
 
-	
-	AddButton(buttonContainer, "Confirm Choice", 'confirmChoiceButton');
-	buttonContainer.select('.confirmChoiceButton')
-		.style('width', '100px')
-		.attr('onClick', 'Sect14()');
-	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('#bottomContinueButton').style("display", "none");
+	SetBulletProgress(5, 4);
+
+		d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'Sect14()');
 }
 
 function ClearSection(container){

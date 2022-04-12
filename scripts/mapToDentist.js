@@ -216,9 +216,68 @@ function mapButtons_dentist (button, id, highlight, path){
         });
 }
 
+function mapButtons_dentist_disable (id){
+    var mapthing;
+    switch(id){
+        case "location1":
+            mapthing = location1;
+            break;
+        case "location2":
+            mapthing = location2;
+            break;
+        case "location3":
+            mapthing = location3;
+            break;
+        case "location4":
+            mapthing = location4;
+            break;
+        case "location5":
+            mapthing = location5;
+            break;
+    }
+    mapthing.button
+        .on("mouseover", function(){
+            if(!isClicked_dentist){
+                //highlight.style("display", "block")        
+                //path.style("display", "block"); 
+                //d3.select(this)
+                //.style("cursor", "pointer");
+            }
+        })
+        .on("mouseout", function(){
+            if(!isClicked_dentist){
+                mapthing.path.style("display", "none");
+                mpathing.highlight.style("display", "none");
+                d3.select(this)
+                .style("cursor", "default");
+            }
+        })
+        .on("click", function(e) {
+            console.log("button disabled");
+        });
+    d3.select("#" + id)
+        .on("mouseover", function(){
+            if(!isClicked_dentist){
+                //highlight.style("display", "block");        
+                //path.style("display", "block"); 
+            }
+            //d3.select(this)
+              //  .style("cursor", "pointer");
+        })
+        .on("mouseout", function(){
+            if(!isClicked_dentist){
+                mapthing.path.style("display", "none");
+                mapthing.highlight.style("display", "none");   
+            }
+            d3.select(this)
+                .style("cursor", "default");
+        })
+        .on("click", function(e){
+            console.log("button disabled");            
+        });
+}
+
 function clickedButton(e, path, highlight, id){
-            //populate map specific description
-            //d3.select("#" + id)
             isClicked_dentist = true;
             var copy = document.getElementById(id).innerHTML;
 
@@ -226,7 +285,6 @@ function clickedButton(e, path, highlight, id){
                 .style("display", "flex")
                 .html("<div class=\"dentist-list-item\">" + copy + "</div>" 
                     + videoHtml
-                    //+ "<button onClick=\"CallDentist(d3.select(this).parent, " + id + ")\">Call Dentist</button>"
                     );
             d3.select("#dentist-list-container")
                 .style("display", "none");
@@ -246,6 +304,13 @@ var numberofcalls = 0;
 var foundDentist = false;
 
 function CallDentist(location){
+    //disable and mark dentist button
+    var dentistNameNode = d3.select("#dentist-list-container").select("#"+location);
+    var title = dentistNameNode.select(".dentistName").node().innerHTML;
+    dentistNameNode.select(".dentistName").text("(called) " + title);
+    dentistNameNode.style('background-color', 'rgba(150, 150, 150, 0.75)');
+    mapButtons_dentist_disable(location);
+    
     numberofcalls ++;
     var answer = "-noanswer.mp4";
     if (numberofcalls > 3){
@@ -256,9 +321,26 @@ function CallDentist(location){
         }
     }
     const vidElement = d3.select('#callVid');
+    if (foundDentist)
+    {
+        document.getElementById('callVid').addEventListener('ended',ConcludeSegment,false);
+    }
     vidElement.select('source').attr("src", "videos/" + location + answer);
     vidElement.node().load();
     vidElement.node().play();
+}
+
+function ConcludeSegment(e){
+    //display dnetist call conclusion?
+    var section = d3.select("#MapToDentistSection");
+    section.node().innerHTML = "";
+    section.style('display', 'flex').style('justify-content', 'center').style('flex-flow', 'column');
+    section.append('div')
+        .style('display', 'flex')
+        .style('justify-content', 'center')
+        .append('button')
+            .attr("onClick", "addHeight(this)")
+            .text("Continue");
 }
 
 function disableAllPaths_dentist (){

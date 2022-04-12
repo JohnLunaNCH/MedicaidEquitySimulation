@@ -1,0 +1,20 @@
+<div class="flexContainer column" style="justify-content: center; width: 100%;">
+<div id="scaleContainer" class="alignCenter" style="text-align: center;">
+	<div id="scaleNarration" class="alignCenter" style="padding: 2em;">The thing that asks the question that the user chooses from the scale thing.</div>
+	<div class="alignCenter" style="padding: 0 2em 2em 2em;">
+		<button class="multiplechoice scaleButton">1</button>
+		<button class="multiplechoice scaleButton">2</button>
+		<button class="multiplechoice scaleButton">3</button>
+		<button class="multiplechoice scaleButton">4</button>
+		<button class="multiplechoice scaleButton">5</button>
+		<button class="multiplechoice scaleButton">6</button>
+		<button class="multiplechoice scaleButton">7</button>
+		<button class="multiplechoice scaleButton">8</button>
+		<button class="multiplechoice scaleButton">9</button>
+		<button class="multiplechoice scaleButton">10</button>
+	</div>
+</div>
+<div class="alignCenter" style="padding: 2em;">
+	<div class="confirmChoiceButton">Continue</div>
+</div>
+</div>

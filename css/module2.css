@@ -31,3 +31,10 @@
 .bulletProgress{
 	padding:  0 2em;
 }
+
+.scaleButton{
+	width: 3em;
+	margin: 0 .5em;
+	text-align: center;
+	padding: 0.5em;
+}

@@ -1,9 +1,5 @@
 <div id="midSection" class="flexContainer row" style="flex: 4 1 auto;">
-	<div id="typeA-buttonContainer" class="flexContainer column" style="justify-content: space-around; flex: 4 1 auto;">
-		<button class="multiplechoice">button</button>
-		<button class="multiplechoice">button</button>
-		<button class="multiplechoice">button</button>
-		<button class="multiplechoice">button</button>
+	<div id="buttonContainer" class="flexContainer column" style="justify-content: space-around; flex: 4 1 auto;">
 		<button class="multiplechoice">button</button>
 		<div id="confirmChoice" class="confirmChoiceButton" style="width: 100px;">Check Answers</div>
 	</div>

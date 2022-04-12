@@ -1,0 +1,13 @@
+<div id="midSection" class="flexContainer row" style="flex: 4 1 auto;">
+	<div id="typeA-buttonContainer" class="flexContainer column" style="justify-content: space-around; flex: 4 1 auto;">
+		<button class="multiplechoice">button</button>
+		<button class="multiplechoice">button</button>
+		<button class="multiplechoice">button</button>
+		<button class="multiplechoice">button</button>
+		<button class="multiplechoice">button</button>
+		<div id="confirmChoice" class="confirmChoiceButton" style="width: 100px;">Check Answers</div>
+	</div>
+	<div id="typeA-imageContainer" class="flexContainer row" style="justify-content:center; flex: 1 1 auto;">
+		<div style="align-self: center; border-radius: 20px; width: 60vh; height: 40vh; background-image: url(images/exampleImage.png);background-size: cover"></div>
+	</div>
+</div>

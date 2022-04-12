@@ -1,0 +1,7 @@
+<div id="scaleContainer" class="alignCenter" style="text-align: center;">
+	<div class="alignCenter">The thing that asks the question that the user chooses from the scale thing.</div>
+	<div class="alignCenter">----the scale----</div>
+</div>
+<div class="alignCenter">
+	<div class="confirmChoiceButton">Continue</div>
+</div>

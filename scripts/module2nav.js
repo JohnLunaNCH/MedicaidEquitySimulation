@@ -170,17 +170,31 @@ function Sect9(){
 	midSection.node().innerHTML = m2_typeMultipleChoice;
 	var buttonContainer = midSection.select('#buttonContainer');
 	buttonContainer.node().innerHTML = "";
-	AddButton(buttonContainer, "Did not mention HPV vaccine at all", 'multiplechoice');
-	AddButton(buttonContainer, "Did not explain about the HPV vaccine ", 'multiplechoice');
-	AddButton(buttonContainer, "Did not provide accurate information about the HPV vaccine ", 'multiplechoice');
-	AddButton(buttonContainer, "Did not explain using words most patients can understand ", 'multiplechoice');
-	AddButton(buttonContainer, "Did not employ teach-back to ensure the explanation was sufficient to achieve full understanding for the patient ", 'multiplechoice');
-	AddButton(buttonContainer, "Did not respect the patient’s reaction towards vaccinations ", 'multiplechoice');
+	AddButton(buttonContainer, "Did not mention HPV vaccine at all", 'multiplechoice', 0);
+	AddButton(buttonContainer, "Did not explain about the HPV vaccine ", 'multiplechoice', 0);
+	AddButton(buttonContainer, "Did not provide accurate information about the HPV vaccine ", 'multiplechoice', 0);
+	AddButton(buttonContainer, "Did not explain using words most patients can understand ", 'multiplechoice', 0);
+	AddButton(buttonContainer, "Did not employ teach-back to ensure the explanation was sufficient to achieve full understanding for the patient ", 'multiplechoice', 1);
+	AddButton(buttonContainer, "Did not respect the patient’s reaction towards vaccinations ", 'multiplechoice', 0);
 
-	SetBulletProgress(5, 0);
+	buttonContainer.selectAll('.multiplechoice').each(function(){
+	    MakeButtonClickable(d3.select(this), buttonContainer);
+	});
+
+	SetBulletProgress(3, 0);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'Sect10()');
+	d3.select('#bottomContinueButton').text("Check Answer").style("visibility", "visible").attr('onClick', 'Sect9B()');
+}
+
+function Sect9B(){
+	titleSection.select('h1').text("What did the dentist miss?");
+	CheckAnswer("Correct Answer: The dentist did not employ teach-back.")
+
+	SetBulletProgress(3, 0);
+
+	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect10()');
 }
 
 function Sect10(){
@@ -189,14 +203,24 @@ function Sect10(){
 	midSection.node().innerHTML = m2_typeMultipleChoice;
 	var buttonContainer = midSection.select('#buttonContainer');
 	buttonContainer.node().innerHTML = "";
-	AddButton(buttonContainer, "Bad side-effects", 'multiplechoice');
-	AddButton(buttonContainer, "HPV vaccination may promote teen sexual activity", 'multiplechoice');
-	AddButton(buttonContainer, "HPV vaccination is not useful for teens that are not sexually active", 'multiplechoice');
+	AddButton(buttonContainer, "Bad side-effects", 'multiplechoice', 1);
+	AddButton(buttonContainer, "HPV vaccination may promote teen sexual activity", 'multiplechoice', 1);
+	AddButton(buttonContainer, "HPV vaccination is not useful for teens that are not sexually active", 'multiplechoice', 1);
 	
 
-	SetBulletProgress(5, 1);
+	SetBulletProgress(3, 1);
 
-		d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'Sect11()');
+		d3.select('#bottomContinueButton').text("Check Answer").style("visibility", "visible").attr('onClick', 'Sect10B()');
+}
+
+function Sect10B(){
+	titleSection.select('h1').text("What could be the parent or patient’s concern regarding HPV vaccines?");
+	CheckAnswer("A parent may respond in any of these ways.");
+	
+
+	SetBulletProgress(3, 1);
+
+		d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect11()');
 }
 
 function Sect11(){
@@ -205,16 +229,24 @@ function Sect11(){
 	midSection.node().innerHTML = m2_typeMultipleChoice;
 	var buttonContainer = midSection.select('#buttonContainer');
 	buttonContainer.node().innerHTML = "";
-	AddButton(buttonContainer, "Check vaccination records as part of the routine check-up ", 'multiplechoice');
-	AddButton(buttonContainer, "Naturally introduce HPV vaccine as preventive measure for cancer (oral cancer) ", 'multiplechoice');
-	AddButton(buttonContainer, "Use easy-to-understand terms (plain language) to explain medical concepts ", 'multiplechoice');
-	AddButton(buttonContainer, "Employ teach-back to assess and ensure understanding  ", 'multiplechoice');
-	AddButton(buttonContainer, "Provide easy-to-read hand-out and point to or circle key information ", 'multiplechoice');
-	AddButton(buttonContainer, "Make it a standard part of the routine dental encounter ", 'multiplechoice');
+	AddButton(buttonContainer, "Check vaccination records as part of the routine check-up ", 'multiplechoice', 1);
+	AddButton(buttonContainer, "Naturally introduce HPV vaccine as preventive measure for cancer (oral cancer) ", 'multiplechoice', 1);
+	AddButton(buttonContainer, "Use easy-to-understand terms (plain language) to explain medical concepts ", 'multiplechoice', 1);
+	AddButton(buttonContainer, "Employ teach-back to assess and ensure understanding  ", 'multiplechoice', 1);
+	AddButton(buttonContainer, "Provide easy-to-read hand-out and point to or circle key information ", 'multiplechoice', 1);
+	AddButton(buttonContainer, "Make it a standard part of the routine dental encounter ", 'multiplechoice', 1);
 
-	SetBulletProgress(5, 2);
+	SetBulletProgress(3, 2);
 
-		d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'End()');
+		d3.select('#bottomContinueButton').text("Check Answer").style("visibility", "visible").attr('onClick', 'Sect11B()');
+}
+
+function Sect11B(){
+	titleSection.select('h1').text("What could the dentist do to better advocate for HPV vaccination?");
+	CheckAnswer("All of these are good ways to help you introduce HPV vaccination.");
+	SetBulletProgress(3, 2);
+
+		d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'End()');
 }
 
 function End(){
@@ -274,6 +306,35 @@ function AddButton(section, text, classType){
     }
 }
 
+function AddButton(section, text, classType, isright){
+	var button = section.append('button');
+	button.classed(classType, true).text(text).attr('ison', '0').attr('isright', isright);
+	if (classType == "multiplechoice"){
+        MakeButtonClickable(button);
+    }
+}
+
+function CheckAnswer(answerText){
+	midSection.selectAll('.multiplechoice').each(
+		function(){
+			var b = d3.select(this);
+			if (b.attr('ison') == '1'){
+				if(b.attr('isright') == '1')
+				{
+					b.style('background-color', 'green');
+				} else {
+					b.style('background-color', 'red');
+				}
+			} else {
+				if(b.attr('isright') == '1'){
+					b.style('background-color', 'rbga(0,0,0,0.75)');
+				}
+			}
+		});
+	midSection.select('#answerContainer').style('background-color', 'rgba(0,0,0,0.75)');
+	midSection.select('#answer').text(answerText);
+}
+
 function MakeButtonClickable(button){
 	button
 	        .on("mouseover", function(){
@@ -293,8 +354,7 @@ function MakeButtonClickable(button){
 	        			.style("background-color", "transparent")
 	        			.attr('ison', '0');
 	        	}
-	        	if (d3.select(this).classed('scaleButton')){
-	        		console.log("this is a scale button");
+	        	if (d3.select(this).classed('scaleButton')){	        		
 	        		DisableAllOther(d3.select(this).node().innerHTML);
 	        	}
 	        });
@@ -309,5 +369,39 @@ function DisableAllOther(button){
 	        			.attr('ison', '0');
 			}
 		});
+}
+
+function DisableAllOther(button, container){
+	container.selectAll('.multiplechoice')
+		.each(function () {
+			if (d3.select(this).node().innerHTML != button){
+				d3.select(this)
+	        			.style("background-color", "transparent")
+	        			.attr('ison', '0');
+			}
+		});
+}
+
+function MakeButtonClickable(button, container){
+	button
+	        .on("mouseover", function(){
+	            d3.select(this).style("cursor", "pointer");
+	        })
+	        .on("mouseout", function(){
+	            d3.select(this).style("cursor", "default");         
+	        })
+	        .on("click", function(e) {
+	        	if (d3.select(this).attr('ison') == '0'){
+	        		d3.select(this)
+	        			.style("background-color", "#005A9C")
+	        			.attr('ison', '1');
+	        	}
+	        	else{
+	        		d3.select(this)
+	        			.style("background-color", "transparent")
+	        			.attr('ison', '0');
+	        	}	        		
+	        	DisableAllOther(d3.select(this).node().innerHTML, container);
+	        });
 }
 

@@ -21,6 +21,20 @@ $.get('html/m2_typeVideo.txt', function (response){
     m2_typeVideo = response;
 });
 
+function SetBulletProgress(amount, sect){
+	bottomSection.select(".bulletProgress").style("display", "block");
+	var bar = bottomSection.select("svg");
+	bar.attr('viewBox', '0 0 ' + ((amount * 15) + 5) + ' 10');
+	bar.selectAll('use').remove();
+	for (var i =0; i < amount; i ++){
+		bar.append('use')
+			.attr('href', '#circleButton')
+			.attr('x', ((i * 15) + 5))
+			.attr('fill', 'white')
+			.attr('fill-opacity', (i == sect) ? '1' : '0');
+	}
+}
+
 function Sect1(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
@@ -67,22 +81,8 @@ function Sect3(){
 	d3.select('#bottomContinueButton').style("visibility", "visible").attr('onClick', 'Sect4()');
 }
 
-function SetBulletProgress(amount, sect){
-	bottomSection.select(".bulletProgress").style("display", "block");
-	var bar = bottomSection.select("svg");
-	bar.attr('viewBox', '0 0 ' + ((amount * 15) + 5) + ' 10');
-	bar.selectAll('use').remove();
-	for (var i =0; i < amount; i ++){
-		bar.append('use')
-			.attr('href', '#circleButton')
-			.attr('x', ((i * 15) + 5))
-			.attr('fill', 'white')
-			.attr('fill-opacity', (i == sect) ? '1' : '0');
-	}
-}
-
 function Sect4(){
-	titleSection.select('h1').text("On a scale of 1-10, how convinced are you about the importance of:");
+	titleSection.select('h1').text("On a scale of 1-10 where 1 is Not Important and 10 is Very Important, how convinced are you about the importance of:");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeScale;
 	midSection.select("#scaleNarration").text("Routinely recommending HPV vaccine to all eligible patients ");
@@ -100,7 +100,7 @@ function Sect4(){
 }
 
 function Sect5(){
-	titleSection.select('h1').text("On a scale of 1-10, how convinced are you about the importance of:");
+	titleSection.select('h1').text("On a scale of 1-10 where 1 is Not Important and 10 is Very Important, how convinced are you about the importance of:");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeScale;
 	midSection.select("#scaleNarration").text("Explaining dental and HPV vaccine information using plain language ");
@@ -117,7 +117,7 @@ function Sect5(){
 }
 
 function Sect6(){
-	titleSection.select('h1').text("On a scale of 1-10, how convinced are you about the importance of:");
+	titleSection.select('h1').text("On a scale of 1-10 where 1 is Not Important and 10 is Very Important, how convinced are you about the importance of:");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeScale;
 	midSection.select("#scaleNarration").text("Using teach-back to assess and ensure understanding ");
@@ -198,7 +198,7 @@ function Sect9B(){
 }
 
 function Sect10(){
-	titleSection.select('h1').text("What could be the parent or patient’s concern regarding HPV vaccines?");
+	titleSection.select('h1').text("What could be the parent or patient’s concern regarding HPV vaccines? (select all that apply)");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeMultipleChoice;
 	var buttonContainer = midSection.select('#buttonContainer');
@@ -224,7 +224,7 @@ function Sect10B(){
 }
 
 function Sect11(){
-	titleSection.select('h1').text("What could the dentist do to better advocate for HPV vaccination?");
+	titleSection.select('h1').text("What could dental providers do to better advocate for HPV vaccination?");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeMultipleChoice;
 	var buttonContainer = midSection.select('#buttonContainer');

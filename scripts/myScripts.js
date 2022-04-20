@@ -71,3 +71,39 @@ body.onscroll = function myFunction () {
 function parralax (t, position){
   t.style.backgroundPosition = position;
 }
+
+var disclosurestxt;
+
+$.get('html/disclosures.txt', function (response){
+    disclosurestxt = response;
+    MedicaidMadeMeDoIt();
+});
+
+function MedicaidMadeMeDoIt(){
+    d3.select('#splashSection').append('div')
+        .classed('shoppinglistContainer', true)
+        .classed('flexContainer', true)
+        .classed('row', true)
+        .attr('id', 'disclosures');
+    d3.select("#disclosures").attr("onClick", "");
+
+    const listDiv = d3.select("#disclosures").append('div');
+    listDiv
+        .style("background-color", "white")
+        .style("height", "70vh")
+        .style("border-radius", "20px")
+        .style("border", "solid gray")
+        .style("padding", "1em")
+        .style("align-self", "center");
+    const container = listDiv.append('div');
+
+    container
+        .style("height", "100%")
+        .style("display", "flex")
+        .style("flex-flow", "column")
+        .style("justify-content", "space-between");
+    container.append('div').node().innerHTML = disclosurestxt;
+    container.append('button')
+        .attr("onClick", "d3.select('#disclosures').style('display','none');")
+        .text("Launch Simulation");  
+}

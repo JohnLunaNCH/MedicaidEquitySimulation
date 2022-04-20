@@ -179,7 +179,9 @@ vertical-align: middle;
 .intro-lobby{
 	background-image: url(../images/intro_lobby.png)
 }
-
+.disclosures{
+	background-image: url(../images/MedicaidMadeUsPutThisInHere.png)
+}
 
 /* Other */
 .parallax {
@@ -237,6 +239,10 @@ a {
 	padding: 10px;
 	border-bottom: thin solid rgba(0, 0, 0, 0.25);
 	overflow-x: auto;
+}
+#disclosures img{
+	height: 10vh;
+	width: auto;
 }
 .dentist-list-item h1{
 	margin: 0px;

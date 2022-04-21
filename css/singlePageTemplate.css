@@ -256,6 +256,14 @@ strong {
 	background-size: contain;
 	background-position: center;
 }
+.placeHolderStats{
+	background-image: url(../images/StatusIconslarge.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: right;
+	height: 5vh;
+	margin: 2vh;
+}
 .dentist-list-item h1{
 	margin: 0px;
 }

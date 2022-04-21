@@ -1,9 +1,61 @@
-<div style="width: 100%; height: 50vh; overflow: auto; color: black; font-size: 1.5em;">The Medicaid Care Experience Simulation (MCarES) Project is funded by the Ohio Department of Medicaid and administered by the Ohio Colleges of Medicine Government Resource Center. The views expressed in this training are solely those of the authors and do not represent the views of the state of Ohio or federal Medicaid programs. 
+<div style="width: 100%; height: 50vh; overflow: auto; color: black; font-size: 1em;">
+<h3>Disclosures</h3>
+The Medicaid Care Experience Simulation (MCarES) Project is funded by the Ohio Department of Medicaid and administered by the Ohio Colleges of Medicine Government Resource Center. The views expressed in this training are solely those of the authors and do not represent the views of the state of Ohio or federal Medicaid programs. 
 <br><br>
 The following virtual reality simulation contains content that some people may find triggering. If you believe that you will find the material triggering, you may choose not to participate or you can withdraw at any time.
+
+<h4>Nationwide Children's Hospital Mission, Vision, & Values</h4>
+At Nationwide Children’s Hospital, we are committed to best outcomes and health equity for all children, ensuring every child has access to the best care regardless of their ability to pay.
 <br><br>
-The next paragraph includes language that was required by Medicaid to be displayed at the beginning of this simulation. The statement, an Ohio law from 2021, does not reflect the values or mission of Nationwide Children’s Hospital where we are committed to best outcomes and health equity for all children, ensuring every child has access to the best care regardless of their ability to pay. For more information about Nationwide Children’s Hospital mission, please go to <a href="https://www.nationwidechildrens.org/about-us/our-story/mission-vision-and-values">https://www.nationwidechildrens.org/about-us/our-story/mission-vision-and-values</a>
+Upon this fundamental belief, Nationwide Children's is committed to providing the highest quality:
+<ul>
+<li><strong>Care</strong> for patients and whole child wellness</li>
+<li><strong>Advocacy</strong> for children and families</li>
+<li><strong>Research</strong> discoveries</li>
+<li><strong>Education</strong> of patients, families, team members and the community</li>
+</ul>
+<h4>Our Vision</h4>
+Leading the transformation of child health so children everywhere achieve best outcomes.
+<h4>Our Values</h4>
+As One Team where Everyone Matters we:
+<h4>Do the Right Thing</h4>
+<ul>
+	<li>We are committed to health equity for all children</li>
+	<li>We always act with integrity, kindness, empathy and honesty</li>
+	<li>We are inclusive and respectful, embracing the uniqueness and differences of each individual.</li>
+</ul>
+<h4>Prioritize Quality and Safety</h4>
+<ul>
+	<li>We put patients and families in the center of every decision</li>
+	<li>We create a safe day every day</li>
+	<li>We communicate clearly and completely</li>
+	<li>We routinely seek input from others and always support our colleagues</li>
+</ul>
+<h4>Promote Health and Well Being</h4>
+<ul>
+	<li>We balance work and life demands</li>
+	<li>We generate optimism and energy in one another</li>
+	<li>We advance our health, and the health of our community</li>
+</ul>
+<h4>Are Agile and Innovative</h4>
+<ul>
+	<li>We embrace and lead positive change</li>
+	<li>We fuel a streamlined environment and an entrepreneurial spirit</li>
+	<li>We generate and share new knowledge and ideas</li>
+</ul>
+<h4>Get Results</h4>
+<ul>
+	<li>We’re accountable (we do what we say we’ll do)</li>
+	<li>We’re determined (we get the desired result)</li>
+	<li>We’re committed to best outcomes and constant improvement</li>
+	<li>We leverage our diverse strengths and talents</li>
+</ul>
+<br>
+For more information about Nationwide Children’s Hospital mission, please go to <a href="https://www.nationwidechildrens.org/about-us/our-story/mission-vision-and-values">https://www.nationwidechildrens.org/about-us/our-story/mission-vision-and-values</a>
 <br><br>
-An Ohio law signed on July 1, 2021 and made effective on September 30, 2021 states: “A medical practitioner, health care institution, or health care payer has the freedom to decline to perform, participate in, or pay for any health care service which violates the practitioner’s, institution’s, or payer’s conscience as informed by the moral, ethical, or religious beliefs or principles held by the practitioner, institution, or payer.”
+For more information about Nationwide Children's Hospital's stance on Health Equity, Diversity & Inclusion, please go to <a href="https://www.nationwidechildrens.org/about-us/diversity-inclusion">https://www.nationwidechildrens.org/about-us/diversity-inclusion</a>
+<br>
+<br>
+<div style="font-size: 0.75em; font-weight: light;">As requested by the Ohio Department of Medicaid, the following statement outlines an Ohio law made effective on September 30, 2021: “A medical practitioner, health care institution, or health care payer has the freedom to decline to perform, participate in, or pay for any health care service which violates the practitioner’s, institution’s, or payer’s conscience as informed by the moral, ethical, or religious beliefs or principles held by the practitioner, institution, or payer.” From https://www.ebglaw.com/insights/ohios-medical-practitioner-conscience-clause-becomes-effective/ "This makes clear that the new law does not permit refusal to provide services based on who is receiving the services (e.g., declining to provide services to specific patient populations but providing those services to other patient populations). Rather, the new law only protects a conscience-based objection to a specific health care service."</div>
 </div>
 <div class="logos"></div>

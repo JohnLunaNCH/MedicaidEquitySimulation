@@ -222,6 +222,10 @@ a {
 	border-radius: 0 20px 20px 0;
 	overflow: hidden;
 }
+strong {
+	font-weight: bold;
+	line-height: 1.5em;
+}
 .dentist-list-header{
 	border-bottom: thin solid black;
 	height: 4em;

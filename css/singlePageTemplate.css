@@ -244,6 +244,14 @@ a {
 	height: 10vh;
 	width: auto;
 }
+.logos {
+	height: 10vh;
+	width: auto;
+	background-image: url(../images/logos.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
 .dentist-list-item h1{
 	margin: 0px;
 }

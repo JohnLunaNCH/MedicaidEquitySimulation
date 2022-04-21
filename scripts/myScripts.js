@@ -94,6 +94,7 @@ function MedicaidMadeMeDoIt(){
         .style("border-radius", "20px")
         .style("border", "solid gray")
         .style("padding", "1em")
+        .style("margin", "0 10vw")
         .style("align-self", "center");
     const container = listDiv.append('div');
 

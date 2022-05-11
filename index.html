@@ -505,7 +505,7 @@
 		}, 1000);
 	};
 
-	document.getElementByID('prologueVid').addEventListener('ended',displayButton,false);
+	document.getElementById('prologueVid').addEventListener('ended',displayButton,false);
 	function displayButton(){
 		d3.select('#prologueContinueButton').style('visibility', 'visible');
 	}

@@ -18,20 +18,20 @@ nav.select("#button2")
 
 var page1, page2, page3, page4, page5;
 
-$.get('html/shopping-tutorial-page01.txt', function (response){
+$.get('scripts/shopping-tutorial-page01.txt', function (response){
     page1 = response;
     
 });
-$.get('html/shopping-tutorial-page02.txt', function (response){
+$.get('scripts/shopping-tutorial-page02.txt', function (response){
     page2 = response;
 });
-$.get('html/shopping-tutorial-page03.txt', function (response){
+$.get('scripts/shopping-tutorial-page03.txt', function (response){
     page3 = response;
 });
-$.get('html/shopping-tutorial-page04.txt', function (response){
+$.get('scripts/shopping-tutorial-page04.txt', function (response){
     page4 = response;
 });
-$.get('html/shopping-tutorial-page05.txt', function (response){
+$.get('scripts/shopping-tutorial-page05.txt', function (response){
     page5 = response;
 });
 

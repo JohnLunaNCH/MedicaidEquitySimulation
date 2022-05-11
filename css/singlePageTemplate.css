@@ -322,12 +322,7 @@ button:hover {
 	background-color: #005A9C;
 }
 
-.selectedButton {
-	background-color: gray;
-}
-.selectedButton:hover {
-	background-color: #005A9C;
-}
+
 
 .Continue-Button {
 	height: 3em;
@@ -489,4 +484,11 @@ shoppingspreeIcons img.mediumIcon{
 	padding: 0 5vw;
 	height: 100%;
 	width: 40vw;
+}
+
+.selectedButton {
+	background-color: gray;
+}
+.selectedButton:hover {
+	background-color: #005A9C;
 }

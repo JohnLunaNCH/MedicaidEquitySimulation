@@ -44,7 +44,8 @@ function selectBill (page){
             d3.select("#selected-highlight")
                 .attr("xlink:href", "#bills-" + page + "-highlight")
                 .style("display", "block");
-            BillText(page);            
+            BillText(page);
+            d3.select("#PayBillsButton").style('visibility', 'visible');            
         })
 }
 

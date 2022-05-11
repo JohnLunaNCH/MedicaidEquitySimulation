@@ -206,6 +206,8 @@ function PreCheckOut(){
 }
 
 function OverBudget(){
+	
+	d3.select('shoppingspreeicons').style('display', 'none');
 	const listDiv = d3.select("#shoppinglist").select('div');
 	listDiv.node().innerHTML = "";
 	listDiv
@@ -329,7 +331,7 @@ function CheckOut(){
 }
 
 function ShoppingReview(){
-	d3.select('shoppingspreeicons').style('display', 'none');
+	// d3.select('shoppingspreeicons').style('display', 'none');
 	var c = d3.select("#storeContainer");
 	c.node().innerHTML = "";
 	c.append('div')

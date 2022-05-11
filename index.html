@@ -76,7 +76,7 @@
       <h2 class="hero_header">MCarES<span class="light">Medicaid Care Experience Simulation Project</span></h2>
       <p class="tagline"></p>
     </div>
-    <div style="height: 1em;" class="align-bottom"> <a class="start-Button" onClick="addHeight(this); playPause(d3.select('#callVid').node(), 2000);">Start</a> </div>
+    <div style="height: 1em;" class="align-bottom"> <a class="start-Button" onClick="addHeight(this); playPause(d3.select('#prologueVid').node(), 2000);">Start</a> </div>
     <buffer></buffer>
   </section>
 
@@ -89,11 +89,11 @@
     	<div class="square-wrapper2" style="height: 1.5em; position: absolute; top: -2em; overflow: visible;">
       	<div class="square2 square-transition2"> Prologue </div>
     	</div>
-    	<video style="object-fit: contain; position: absolute; width: 100%; height: 100%" id="callVid" onClick="playPause(this)">
+    	<video style="object-fit: contain; position: absolute; width: 100%; height: 100%" id="prologueVid" onClick="playPause(this)">
 				<source src="videos/MES-IntroSequence-Test01.mp4" type="video/mp4">
 			</video>
 		</div>
-    <div style="display: flex; justify-content: flex-end;"> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
+    <div id="prologueContinueButton" style="display: flex; justify-content: flex-end; visibility: hidden;"> <button class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</button> </div>
   </section>
 
 	<!-- Chapter 1: Grocery Narration -->
@@ -110,7 +110,7 @@
 				</div>
 			</div>
 	  </div>
-  	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
+  	<div class="Continue-Button" style="display: flex; justify-content: flex-end;"> <button onClick="addHeight(this)">Continue</button> </div>
   </section>
  
 	<!-- Chapter 1: Grocery Map -->
@@ -204,7 +204,7 @@
 
   		</div>
   	</div>
-  	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
+  	<!-- <div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div> -->
   </section>
 
 	<!-- Chapter 2: Bills Narration -->
@@ -225,7 +225,7 @@
 				</div>
 			</div>
   	</div>
-  	<div class="Continue-Button"> <a onClick="addHeight(this); BillTutorial();">Continue</a> </div>
+  	<div class="Continue-Button" style="display: flex; justify-content: flex-end;"> <button onClick="addHeight(this); BillTutorial();">Continue</button> </div>
   </section>
 
 	<!-- Chapter 2: Bills -->
@@ -249,12 +249,12 @@
   			</div>
   			<div style="align-self: end;display: flex;justify-content: center;">
   				<div>
-	  				<button id="PayBillsButton" onClick="BillConclusion()">Pay Bills</button>
+	  				<button id="PayBillsButton" onClick="BillConclusion()" style="visibility: hidden;">Pay Bills</button>
   				</div>
   			</div>
   		</div>
   	</div>
-  	<div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div>
+  	<!-- <div style="height: 1em;"> <a class="Continue-Button" onClick="addHeight(this)">Continue</a> </div> -->
   </section>
 
   <!-- Chapter 3: Science Fair -->
@@ -292,8 +292,8 @@
 				</div>
 			</div>	  
   	</div>
-  	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
-  </section>
+<!--   	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
+ -->  </section>
 
   <!-- Chapter 4: Dentist Narration Section -->
   <section class="banner intro-lobby" id="Ch4-Sct1">
@@ -306,7 +306,7 @@
 					</div>
 				</div>
   	</div>
-  	<div class="Continue-Button"> <a onClick="addHeight(this)">Continue</a> </div>
+  	<div class="Continue-Button" style="display: flex; justify-content: flex-end;"> <button onClick="addHeight(this)">Continue</button> </div>
   </section>
 
 	<!-- Chapter 4: Dentist Map Section -->
@@ -504,6 +504,11 @@
 			new Image().src = "images/exterior-aldi.png";
 		}, 1000);
 	};
+
+	document.getElementByID('prologueVid').addEventListener('ended',displayButton,false);
+	function displayButton(){
+		d3.select('#prologueContinueButton').style('visibility', 'visible');
+	}
 
 	console.log("Got to end of script");
 </script>

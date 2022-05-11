@@ -1,0 +1,9 @@
+<div class="panel" id="tutPanelLeft">
+    <img src="images/poster-grocerycheckout.png">
+</div>
+<div class="panel" id="tutPanelRight">
+    <h1>Check Out</h1>
+    <p>When you have collected all your groceries or if you run out of time, you will be taken to the checkout lane. You will be charged for all the items in your cart and if you can not afford your balance, you'll have to select items to remove.</p>
+    <p>To start shopping, press the play button below:</p>
+    <button onClick="StartSpree(); d3.select('shoppingspreeicons').select('ul').selectAll('li').style('background-color', 'unset');">Play</button>
+</div>

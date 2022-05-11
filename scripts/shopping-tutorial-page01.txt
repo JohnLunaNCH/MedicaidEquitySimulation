@@ -1,0 +1,10 @@
+<div class="panel" id="tutPanelLeft">
+    <img src="images/poster-grocerybag.png">
+</div>
+<div class="panel" id="tutPanelRight">
+        <h1>Grocery Shopping</h1>
+        <p>
+        You arrive at your chosen location. Long rows of flourescent bulbs cast an even light across the store's many items.</p>
+        <p id="flavortext">[text specific to location]</p>
+        <p>(click the next bullet below to continue)</p>
+</div>

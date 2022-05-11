@@ -27,13 +27,13 @@ var aldiText;
 var cornerstoreText;
 var gasstationText;
 
-$.get('html/info_aldi.txt', function (response){
+$.get('scripts/info_aldi.txt', function (response){
     aldiText = response;
 });
-$.get('html/info_cornerstore.txt', function (response){
+$.get('scripts/info_cornerstore.txt', function (response){
     cornerstoreText = response;
 });
-$.get('html/info_gasstation.txt', function (response){
+$.get('scripts/info_gasstation.txt', function (response){
     gasstationText = response;
 });
 
@@ -75,6 +75,7 @@ d3.xml("images/mapmask.svg")
                         break;
                 }
             });
+
         //make the buttons functional
         trans.selectAll('use')
             .each(function (d, i) {

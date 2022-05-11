@@ -1,0 +1,13 @@
+<div>
+	<button class="callbutton" id="button-calldentist"	onClick="">
+		Call Dentist
+	</button>
+	<button class="callbutton" onClick="ResetMap_dentist()">
+		Go Back
+	</button>
+</div>
+<div class="callContainer">
+	<video height="300" id="callVid" onClick="playPause(this)">
+		<source src="" type="video/mp4">
+	</video>
+</div>

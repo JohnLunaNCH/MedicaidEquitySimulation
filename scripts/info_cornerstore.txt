@@ -1,0 +1,32 @@
+<div class="map-description">
+    <div style="flex: 2 0 auto;width: 270px;text-align: center;">
+        <img class="route-image" src="images/svg_path_toCornerStore.svg">
+    </div>
+    <div style="display: flex;flex-flow: column;justify-content: space-between;">
+        <div>
+            <h1 class="map-description-header">
+                <div>Corner Store</div>
+                <div>
+                    <img class="mediumIcon" src="images/Broccoli.png">
+                    <img class="mediumIcon" src="images/Broccoli.png">
+                </div>
+                <div>
+                    <img class="mediumIcon" src="images/Time.png">
+                    <img class="mediumIcon" src="images/Time.png">
+                </div>
+                <div>
+                    <img class="mediumIcon" src="images/Dollar.png">
+                </div>
+            </h1>
+            <p>
+            The Corner Store is a similar time cost when compared to the Super Market. The food costs less but there are not as many healthy options.
+            </p>
+            <p class="keyItem"><img class="mediumIcon" src="images/Broccoli.png"> The corner store has mostly snacks and some frozen foods.</p>
+            <p class="keyItem"><img class="mediumIcon" src="images/Time.png"> Estimated Travel Time: 30min.</p>
+            <p class="keyItem"><img class="mediumIcon" src="images/Dollar.png"> The prices are affordable.</p>
+        </div>
+        <div class="continue-to-store">
+            <button onClick="StartShoppingSpree('cornerstore')">Continue To Store</button>
+        </div>
+    </div>
+</div>

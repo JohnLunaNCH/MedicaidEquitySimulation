@@ -1,5 +1,5 @@
 <div>
-	<button class="callbutton" id="button-calldentist"	onClick="">
+	<button class="callbutton" id="button-calldentist"	onClick="" style="visibility: visible;">
 		Call Dentist
 	</button>
 	<button class="callbutton" onClick="ResetMap_dentist()">

@@ -28,7 +28,7 @@ var dentistContainer, dentistTransform;
 var descriptionDisplay;
 
 var videoHtml;
-$.get('html/location1.txt', function (response){
+$.get('scripts/location1.txt', function (response){
     videoHtml = response;
 });
 
@@ -310,6 +310,10 @@ function CallDentist(location){
     dentistNameNode.select(".dentistName").text("(called) " + title);
     dentistNameNode.style('background-color', 'rgba(150, 150, 150, 0.75)');
     mapButtons_dentist_disable(location);
+
+    d3.select('#button-calldentist')
+    .classed('selectedButton', true)
+    .attr('onClick', ' ');
     
     numberofcalls ++;
     var answer = "-noanswer.mp4";

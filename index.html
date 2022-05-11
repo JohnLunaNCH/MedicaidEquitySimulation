@@ -115,7 +115,7 @@
  
 	<!-- Chapter 1: Grocery Map -->
 	<section class="banner grocery-blur" id="Ch1-Sct2">
-  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em; height: 50%;">  		
+  	<div id="MapToGrocerySection" style="margin: 0px; flex: 5 0 auto; background-color: hsla(0, 0%, 0%, 0.5); border-radius: 15px; padding: 1em; height: 50%; overflow: hidden;">  		
   		<div class="subContainer">
 
   			<!-- Grocery Directions SubSection -->
@@ -160,16 +160,16 @@
 	  		</div>
 
 	  		<!-- Shopping Spree SubSection -->
-	  		<div id="storeContainer" style="position: relative; height: 100%; left: 200vw; top: -150%">
+	  		<div id="storeContainer" style="position: relative; height: 100%; left: 200vw; top: -157%;">
 	    		<div id="shoppingexplanation" style="flex: 1 0 auto; padding: 0 2em;">
 	    			<div style="width: 45vw;">
 					    <h1>In the Store</h1>
 					    <p>
-						    	You spend some time roaming the store, and you've found almost everything on your list. Just three things left. Click the list icon (<img class="" src="images/icon-shoppinglist.png" style="padding: 0 0.5em;height: 1.5em;vertical-align: bottom;">) above to see what's left.
+						    	You spend some time roaming the store, and you've found almost everything on your list. Just three things left. Click on one of the items to navigate to that section.
 					    </p>
 						</div>
 	    		</div>
-	        <div id="aisle" style="display: flex; flex-flow: row; width: 100%; height: 60vh; overflow-y: auto;">        	
+	        <div id="aisle" style="display: flex; flex-flow: row; width: 68%; height: 66vh; overflow-y: auto;">        	
 	            <div class="aisleColumn">
 	            	<div class="aisleItem" id="aisleButton01"></div>
 	            	<div class="aisleItem" id="aisleButton03"></div>
@@ -183,6 +183,20 @@
 	            	<div class="aisleItem" id="aisleButton08"></div>
 	            </div>
 	        </div>
+	        <div style="width: 30vw;height: 108%;position: absolute;top: -7px;right: -1em;max-width: 55vh;display: flex;flex-flow: row;justify-content: center;">
+          	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 275.52 400.32">
+              <defs>
+                  <style>.cls-1{opacity:0;}.cls-3{}</style>
+              </defs>
+              <image onClick="d3.select('#shoppinglist').style('display', 'none');" id="background" width="574" height="834" transform="scale(0.48)" xlink:href="images/shoppinglist1.png"/>
+              <path id="strike-soda" class="cls-1" d="M30.59,349.08c-.66-.14.12-.67.35-.79a3.26,3.26,0,0,1,2-.36,115.67,115.67,0,0,0,21.67,1.85c26.22.34,52.44.45,78.65.67.65,0,.55.36.18.67a3.36,3.36,0,0,1-2.05.55L109,351.48l-39.9-.34c-12.78-.11-25.9.52-38.49-2.06Z" transform="translate(0.11)"/>
+              <path id="strike-toothpaste" class="cls-1" d="M30.25,327.82c-1.32-.73,1.29-2.08,2.26-1.55,5.7,3.16,12.5,2.35,18.74,2,25.45-1.5,51.1-2.65,76.47.69,1.95.25.22,2.06-1.06,1.89-7.31-1-14.66-1.56-22-1.88-13-.55-26-.24-39,.38-6.44.3-12.87.75-19.31,1.06-5.49.26-11.19.15-16.11-2.58Z" transform="translate(0.11)"/>
+              <path id="strike-breakfast" class="cls-1" d="M34,304.9c-.46.05-1-.07-.71-.58s1.39-.67,1.93-.72q11.32-1.05,22.67-1.87,40.59-2.93,81.31-2.92c.44,0,1,0,.71.58s-1.41.72-1.93.72q-11.55,0-23.08.24-40.51.82-80.9,4.55Z" transform="translate(0.11)"/>
+              <rect onClick="PopulateAisle('Drinks');" id="button-soda" class="svgbutton cls-3" x="21.84" y="340.06" width="136.65" height="23.74" rx="7"/>
+          		<rect onClick="PopulateAisle('Toothpaste');" id="button-toothpaste" class="svgbutton cls-3" x="21.84" y="313.74" width="136.65" height="23.74" rx="7"/>
+          		<rect onClick="PopulateAisle('Breakfast');" id="button-breakfast" class="svgbutton cls-3" x="21.84" y="287.06" width="136.65" height="23.74" rx="7"/>
+          	</svg>            		
+        	</div>
 
 	        <div class="flexContainer row shoppinglistContainer" id="shoppinglist" onClick="d3.select('#shoppinglist').style('display', 'none');" style="display: none;">
 	          <div style="width: 50vh; align-self: center; min-width: 250px;">

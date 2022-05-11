@@ -1,7 +1,7 @@
 <div class="panel" id="tutPanelLeft">
     <h1>Grocery List</h1>
-    <p>You can view your Grocery List by clicking on the list icon at the top right.</p>
-    <p>The Grocery List shows what items you have left to buy</p>
+    <p>Your grocery list will be visible on the right side of the window.</p>
+    <p>The Grocery List shows what items you have left to buy. Click on an item to navigate to that part of the store.</p>
     <p>Your goal is to pick up the last three items on your shopping list without running out of time or money.</p>
 </div>
 <div class="panel" id="tutPanelRight">

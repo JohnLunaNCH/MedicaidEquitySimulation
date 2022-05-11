@@ -13,7 +13,8 @@ body {
 	font-style: normal;
 	font-weight: 200;
 	color: #FFFFFF;
-	font-size: large;
+	font-size: larger;
+	line-height: 1.5em;
 }
 /* Container */
 .container {
@@ -397,7 +398,6 @@ button:hover {
 .aisleColumn{
 	display: flex;
 	flex-flow: column;
-	/*flex: 1 1 auto;*/
 	width: 50%;
 }
 
@@ -407,6 +407,7 @@ button:hover {
 	display: none;
 	background-color: rgba(0, 0, 0, 0.75);
 	flex: 0 1 auto;
+	font-size: small;
 }
 
 shoppingspreeIcons {

@@ -86,8 +86,7 @@ function assignButton(button){
             	d3.select('shoppingspreeicons').select('ul').selectAll('li').style("background-color", "unset");
             	//activate shopping list (if inactive)
             	d3.select("#icon-list")
-            		.style("display", "block")
-            		.style("background-color", "green");
+            		.style("display", "none");
             	assignButton(nav.select("#button3"));
             }
             else if (d3.select(this).attr("id") == "button3"){

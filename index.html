@@ -93,7 +93,7 @@
 				<source src="videos/MES-IntroSequence-Test01.mp4" type="video/mp4">
 			</video>
 		</div>
-    <div id="prologueContinueButton" style="display: flex; justify-content: flex-end; visibility: visible;">
+    <div id="prologueContinueButton" style="background-color: gray;display: flex; justify-content: flex-end; visibility: visible;">
     	<button class="Ch1-Sct2-Button" onClick="addHeight(this)">Skip Prologue</button>
     </div>
   </section>
@@ -404,35 +404,6 @@
   	</div>
 	</section>
 
-  	<!-- <section class="banner" id="ChX-SctX">
-    <buffer></buffer>
-    <h2 class="parallax"> Section Title </h2>
-    <p class="parallax_description"> Lorem ipsum dolor sit amet </p>
-	  <buffer></buffer>
-
-	  <div> <button onClick="callAction('eatFakeSandwich')">Eat a Fake Sandwich</button></div>
-	  <div> <button onClick="callAction('eatSandwich')">Eat a Real Sandwich</button></div>
-	  <div> <button onClick="callAction('attendScienceFair')">Skip work to go to science fair?</button></div>
-	  <div> <button onClick="callAction('skipScienceFair')">Skip science fair to go to work?</button></div>
-	  <div><a onclick="adjustEnergy(1);adjustMood(-1);adjustMoney(-1);">Adjust Three Things</a></div>
-	  <div><a onclick="setEnergy(0);setMood(0);setMoney(0);setTooth(0);">Reset Values</a></div>
-	  <buffer></buffer>
-    <div style="height: 1em;"> <a class="Ch1-Sct1-Button" onClick="addHeight(this)">Continue</a> </div>
-  	</section>
-  	<section class="banner livingroom" id="Ch1-Sct2">
-    <buffer></buffer>
-    <div class="square-wrapper">
-      <div class="square square-transition"> Lorem ipsum dolor sit amet </div>
-    </div>
-    <div><button onclick="toggleLocation()">Toggle Location</button></div>
-    <div><button onClick="populateAisle('Breakfast')">Populate Breakfast Aisle</button></div>
-    <div id="purchasingTotals"></div>
-    <div id="BreakfastAisle"></div>
-    <div id="itemDescription"></div>
-	  <buffer></buffer>
-    <div style="height: 1em;"> <a class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</a> </div>
-  	</section> -->
-
  <!-- END OF CONTAINER -->
 </div>
 <!-- vimeo player -->
@@ -523,7 +494,7 @@
 
 	d3.select('#prologueVid').node().addEventListener('ended',displayButton,false);
 	function displayButton(){
-		d3.select('#prologueContinueButton').select('button').text("Continue");
+		d3.select('#prologueContinueButton').style('background-color', '#59A5DB').select('button').text("Continue");
 	}
 
 	console.log("Got to end of script");

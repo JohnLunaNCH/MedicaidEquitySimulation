@@ -89,11 +89,13 @@
     	<div class="square-wrapper2" style="height: 1.5em; position: absolute; top: -2em; overflow: visible;">
       	<div class="square2 square-transition2"> Prologue </div>
     	</div>
-    	<video style="object-fit: contain; position: absolute; width: 100%; height: 100%" id="prologueVid" onClick="playPause(this)">
+    	<video style="object-fit: contain; position: absolute; width: 100%; height: 100%" id="prologueVid"> <!-- onClick="playPause(this)"> -->
 				<source src="videos/MES-IntroSequence-Test01.mp4" type="video/mp4">
 			</video>
 		</div>
-    <div id="prologueContinueButton" style="display: flex; justify-content: flex-end; visibility: hidden;"> <button class="Ch1-Sct2-Button" onClick="addHeight(this)">Continue</button> </div>
+    <div id="prologueContinueButton" style="display: flex; justify-content: flex-end; visibility: visible;">
+    	<button class="Ch1-Sct2-Button" onClick="addHeight(this)">Skip Prologue</button>
+    </div>
   </section>
 
 	<!-- Chapter 1: Grocery Narration -->
@@ -521,7 +523,7 @@
 
 	d3.select('#prologueVid').node().addEventListener('ended',displayButton,false);
 	function displayButton(){
-		d3.select('#prologueContinueButton').style('visibility', 'visible');
+		d3.select('#prologueContinueButton').select('button').text("Continue");
 	}
 
 	console.log("Got to end of script");

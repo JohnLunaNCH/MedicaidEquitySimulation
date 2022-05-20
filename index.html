@@ -93,8 +93,8 @@
 				<source src="videos/MES-IntroSequence-Test01.mp4" type="video/mp4">
 			</video>
 		</div>
-    <div id="prologueContinueButton" style="background-color: gray;display: flex; justify-content: flex-end; visibility: visible;">
-    	<button class="Ch1-Sct2-Button" onClick="addHeight(this)">Skip Prologue</button>
+    <div id="prologueContinueButton" style="display: flex; justify-content: flex-end; visibility: visible;">
+    	<button class="Ch1-Sct2-Button" onClick="addHeight(this)" style="background-color: gray;">Skip Prologue</button>
     </div>
   </section>
 
@@ -494,7 +494,7 @@
 
 	d3.select('#prologueVid').node().addEventListener('ended',displayButton,false);
 	function displayButton(){
-		d3.select('#prologueContinueButton').style('background-color', '#59A5DB').select('button').text("Continue");
+		d3.select('#prologueContinueButton').select('button').text("Continue").style('background-color', '#59A5DB');
 	}
 
 	console.log("Got to end of script");

@@ -1,7 +1,6 @@
 var statsVid;
 var previousStart;
 
-//This initializes the stats, displays, and checks for cookies
 function setVariables(){
 	statsVid = d3.select('#statsVid');
 }

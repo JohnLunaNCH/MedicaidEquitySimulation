@@ -169,6 +169,39 @@ function OutOfTime(){
 	container.append('button').text("Continue").attr("onClick", "PreCheckOut();");	
 }
 
+function ReadyToCheckOut(){
+	DisplayShoppingList();
+	d3.select("#shoppinglist").attr("onClick", "");
+	const listDiv = d3.select("#shoppinglist").select('div');
+	listDiv.node().innerHTML = "";
+	listDiv
+		.style("background-color", "black")
+		.style("height", "6em")
+		.style("width", "20em")
+		.style("border-radius", "20px")
+		.style("border", "solid gray")
+		.style("padding", "1em");
+	const container = listDiv.append('div');
+	container
+		.style("height", "100%")
+		.style("display", "flex")
+		.style("flex-flow", "column")
+		.style("justify-content", "space-between");
+	container.append('div').style("padding", "1em 0 0 0").text("Are you ready to checkout?");
+	var buttons = container.append('div');
+	buttons
+		.style("display", "flex")
+		.style("flex-flow", "row")
+		.style("justify-content", "space-evenly");
+	buttons.append('button')
+		.attr("onClick", "PreCheckOut()")
+		.text("Yes");
+	buttons.append('button')
+		.attr("onClick", "d3.select('#shoppinglist').style('display', 'none');")
+		.text("No");
+	//container.append('button').text("Continue").attr("onClick", "OverBudget();");	
+}
+
 function PreCheckOut(){
 	DisplayShoppingList();
 	d3.select("#shoppinglist").attr("onClick", "");

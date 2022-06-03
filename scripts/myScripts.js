@@ -74,7 +74,7 @@ function parralax (t, position){
 
 var disclosurestxt;
 
-$.get('html/disclosures.txt', function (response){
+$.get('scripts/disclosures.txt', function (response){
     disclosurestxt = response;
     MedicaidMadeMeDoIt();
 });

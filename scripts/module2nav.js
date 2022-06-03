@@ -189,7 +189,7 @@ function Sect8a(){
 	player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-end");
-	d3.select('#bottomContinueButton').attr("onClick", "Sect9()");
+	d3.select('#bottomContinueButton').attr("onClick", "Sect8b()");
 }
 
 function Sect8b(){

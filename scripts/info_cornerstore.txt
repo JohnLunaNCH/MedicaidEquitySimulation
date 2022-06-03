@@ -19,7 +19,7 @@
                 </div>
             </h1>
             <p>
-            The Corner Store is a similar time cost when compared to the Super Market. The food costs less but there are not as many healthy options.
+            The Corner Store is further than the Gas Station, but closer than the Super Market. The food costs less but there are not as many healthy options.
             </p>
             <p class="keyItem"><img class="mediumIcon" src="images/Broccoli.png"> The corner store has mostly snacks and some frozen foods.</p>
             <p class="keyItem"><img class="mediumIcon" src="images/Time.png"> Estimated Travel Time: 30min.</p>

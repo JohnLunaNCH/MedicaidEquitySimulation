@@ -151,4 +151,5 @@ function BillConclusion(){
         .append('button')
             .attr("onClick", "addHeight(this)")
             .text("Continue");
+    changeStatsBills();
 }

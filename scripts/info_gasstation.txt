@@ -25,7 +25,7 @@
             <p class="keyItem"><img class="mediumIcon" src="images/Dollar.png"> The prices are high for what you get.</p>
         </div>
         <div class="continue-to-store">
-            <button onClick="StartShoppingSpree('gasstation')">Continue To Store</button>
+            <button onClick="StartShoppingSpree('gasstation');changeStats(6);">Continue To Store</button>
         </div>
     </div>
 </div>

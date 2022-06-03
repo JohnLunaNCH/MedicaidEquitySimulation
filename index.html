@@ -26,7 +26,7 @@
 	<!-- my scripts -->
 	<script type="text/javascript" src="scripts/cookieControl.js"></script> 
 
-	<script type="text/javascript" src="scripts/stats.js"></script> 
+	<script type="text/javascript" src="scripts/stats.js"></script>
 	<script type="text/javascript" src="scripts/actions.js"></script> 
 	<script type="text/javascript" src="scripts/purchasing.js"></script> 
 		<!--<script type="text/javascript" src="scripts/require.js"></script> -->
@@ -57,13 +57,18 @@
       </ul>
     </shoppingspreeIcons>
     <stats class="stats-hidden stats-visible">
-    	<div class="placeHolderStats"></div>
+    	<div>
+    		<video style="object-fit: contain; position: absolute; height: 99%; right: 2vw" id="statsVid"> <!-- onClick="playPause(this)"> -->
+					<source src="videos/stats.mp4" type="video/mp4">
+				</video>    		
+    	</div>
+    	<!-- <div class="placeHolderStats"></div>
       <ul style="display: none">
         <li style="color: black;">Energy <div id="energy"> </div></li>
         <li style="color: black;">Mood <div id="mood"> </div></li>
         <li style="color: black;">Tooth <div id="tooth"> </div></li>
         <li style="color: black;">Money <div id="money"> </div></li>
-      </ul>
+      </ul> -->
     </stats>
   </header>
   
@@ -112,7 +117,7 @@
 				</div>
 			</div>
 	  </div>
-  	<div class="Continue-Button" style="display: flex; justify-content: flex-end;"> <button onClick="addHeight(this)">Continue</button> </div>
+  	<div class="Continue-Button" style="display: flex; justify-content: flex-end;"> <button onClick="addHeight(this);">Continue</button> </div>
   </section>
  
 	<!-- Chapter 1: Grocery Map -->

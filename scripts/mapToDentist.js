@@ -343,7 +343,7 @@ function ConcludeSegment(e){
         .style('display', 'flex')
         .style('justify-content', 'center')
         .append('button')
-            .attr("onClick", "addHeight(this)")
+            .attr("onClick", "addHeight(this); changeStatsDentist();")
             .text("Continue");
 }
 

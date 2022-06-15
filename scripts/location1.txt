@@ -2,7 +2,7 @@
 	<button class="callbutton" id="button-calldentist"	onClick="" style="visibility: visible;">
 		Call Dentist
 	</button>
-	<button class="callbutton" onClick="ResetMap_dentist()">
+	<button class="callbutton" id="button-dentistGoBack" onClick="ResetMap_dentist()">
 		Go Back
 	</button>
 </div>

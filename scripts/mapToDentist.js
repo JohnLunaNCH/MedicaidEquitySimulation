@@ -314,6 +314,10 @@ function CallDentist(location){
     d3.select('#button-calldentist')
     .classed('selectedButton', true)
     .attr('onClick', ' ');
+
+    d3.select('#button-dentistGoBack')
+    .classed('selectedButton', true)
+    .attr('onClick', ' ');
     
     numberofcalls ++;
     var answer = "-noanswer.mp4";
@@ -328,14 +332,22 @@ function CallDentist(location){
     if (foundDentist)
     {
         document.getElementById('callVid').addEventListener('ended',ConcludeSegment,false);
+    } else {
+        document.getElementById('callVid').addEventListener('ended', ReactivateGoBackButton,false);
     }
     vidElement.select('source').attr("src", "videos/" + location + answer);
     vidElement.node().load();
     vidElement.node().play();
 }
 
+function ReactivateGoBackButton(e){
+    d3.select('#button-dentistGoBack')
+        .classed('selectedButton', false)
+        .attr('onClick', 'ResetMap_dentist()');
+}
+
 function ConcludeSegment(e){
-    //display dnetist call conclusion?
+    //display dentist call conclusion
     var section = d3.select("#MapToDentistSection");
     section.node().innerHTML = "";
     section.style('display', 'flex').style('justify-content', 'center').style('flex-flow', 'column');

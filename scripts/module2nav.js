@@ -493,7 +493,15 @@ function End(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeNarration;
-	midSection.select("#narrationContainer").text("That concludes the simulation. Thank you for participating!");
+	midSection.select("#narrationContainer")
+		.style("width", "100%")
+		.style("line-height", "2.5em")
+		.style("font-size", "larger");
+	midSection.append("div").text("That concludes the simulation. Thank you for participating!");
+	midSection.append("div").text("Please click on the following link to complete a post-simulation survey:");
+	midSection.append("div").append("a")
+		.attr("href", "https://go.osu.edu/mcareshpv")
+		.html("https://go.osu.edu/mcareshpv");
 	bottomSection.select(".bulletProgress").style("display", "none");
 	d3.select('#bottomContinueButton').style("visibility","hidden");
 }

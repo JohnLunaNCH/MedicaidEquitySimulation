@@ -1,6 +1,7 @@
 <div class="panel" id="tutPanelLeft">
     <h1>Time Remaining</h1>
     <p>You have one hour until you need to go back to the house. Time will tick down with each action you take (i.e. traversing the store, selecting an item).</p>
+        <p>(click the next bullet below to continue the tutorial)</p>
 </div>
 <div class="panel" id="tutPanelRight">
     <img src="images/poster-groceryclock.png">

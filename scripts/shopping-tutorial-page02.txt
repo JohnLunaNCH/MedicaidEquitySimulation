@@ -1,8 +1,9 @@
 <div class="panel" id="tutPanelLeft">
     <h1>Grocery List</h1>
-    <p>Your grocery list will be visible on the right side of the window.</p>
-    <p>The Grocery List shows what items you have left to buy. Click on an item to navigate to that part of the store.</p>
+    <p>Your grocery list will be visible on the right side of the window after you start shopping.</p>
+    <p>The Grocery List shows what items you have left to buy. You will be able to click on an item to navigate to that part of the store in the exercise.</p>
     <p>Your goal is to pick up the last three items on your shopping list without running out of time or money.</p>
+    <p>(click the next bullet below to continue the tutorial)</p>
 </div>
 <div class="panel" id="tutPanelRight">
     <img src="images/poster-shoppinglist.png">

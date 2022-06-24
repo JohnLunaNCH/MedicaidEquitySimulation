@@ -251,10 +251,20 @@ function Sect00NewEnding02(){
 	SetBulletProgress(10, 1);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding03()');
+	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding03a()');
 }
 
-function Sect00NewEnding03(){
+//TODO: Insert section here
+function Sect00NewEnding03a(){
+	titleSection.select('h1').text("");
+	ClearSection(midSection);
+	midSection.node().innerHTML = m2_typeNarration;
+	midSection.select("#narrationContainer").text("The following pages will provide guidance on how to answer parents’ question");
+	bottomSection.select(".bulletProgress").style("display", "none");
+	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr("onClick", "Sect00NewEnding03b()");
+}
+
+function Sect00NewEnding03b(){
 	titleSection.select('h1').text("Why does my child need HPV vaccination?");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeMultipleChoice;
@@ -493,15 +503,16 @@ function End(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeNarration;
-	midSection.select("#narrationContainer")
+	var centerSection = midSection.select("#narrationContainer");
+	centerSection
 		.style("width", "100%")
 		.style("line-height", "2.5em")
 		.style("font-size", "larger");
-	midSection.append("div").text("That concludes the simulation. Thank you for participating!");
-	midSection.append("div").text("Please click on the following link to complete a post-simulation survey:");
-	midSection.append("div").append("a")
-		.attr("href", "https://go.osu.edu/mcareshpv")
-		.html("https://go.osu.edu/mcareshpv");
+	centerSection.append("div").text("That concludes the simulation. Thank you for participating!");
+	centerSection.append("div").text("Please click on the following link to complete a post-simulation survey:");
+	centerSection.append("div").append("a")
+		.attr("href", "https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=${e://Field/ParticipantID} ")
+		.html("https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=${e://Field/ParticipantID} ");
 	bottomSection.select(".bulletProgress").style("display", "none");
 	d3.select('#bottomContinueButton').style("visibility","hidden");
 }

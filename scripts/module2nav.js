@@ -512,7 +512,9 @@ function End(){
 	centerSection.append("div").text("Please click on the following link to complete a post-simulation survey:");
 	centerSection.append("div").append("a")
 		.attr("href", "https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=${e://Field/ParticipantID} ")
-		.html("https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=${e://Field/ParticipantID} ");
+		.html("https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=${e://Field/ParticipantID} ")
+		.style("color", "white")
+		.style("font-weight", "bold");
 	bottomSection.select(".bulletProgress").style("display", "none");
 	d3.select('#bottomContinueButton').style("visibility","hidden");
 }

@@ -231,7 +231,7 @@ function Sect00NewEnding01(){
 	SetBulletProgress(10, 0);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding02()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding02()');
 }
 
 function Sect00NewEnding02(){
@@ -251,7 +251,7 @@ function Sect00NewEnding02(){
 	SetBulletProgress(10, 1);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding03a()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding03a()');
 }
 
 //TODO: Insert section here
@@ -261,7 +261,7 @@ function Sect00NewEnding03a(){
 	midSection.node().innerHTML = m2_typeNarration;
 	midSection.select("#narrationContainer").text("The following pages will provide guidance on how to answer parents’ question");
 	bottomSection.select(".bulletProgress").style("display", "none");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr("onClick", "Sect00NewEnding03b()");
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr("onClick", "Sect00NewEnding03b()");
 }
 
 function Sect00NewEnding03b(){
@@ -280,7 +280,7 @@ function Sect00NewEnding03b(){
 	SetBulletProgress(10, 2);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding04()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding04()');
 }
 
 function Sect00NewEnding04(){
@@ -296,7 +296,7 @@ function Sect00NewEnding04(){
 	SetBulletProgress(10, 3);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding05()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding05()');
 }
 
 function Sect00NewEnding05(){
@@ -312,7 +312,7 @@ function Sect00NewEnding05(){
 	SetBulletProgress(10, 4);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding06()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding06()');
 }
 
 function Sect00NewEnding06(){
@@ -328,7 +328,7 @@ function Sect00NewEnding06(){
 	SetBulletProgress(10, 5);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding07()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding07()');
 }
 
 function Sect00NewEnding07(){
@@ -345,7 +345,7 @@ function Sect00NewEnding07(){
 	SetBulletProgress(10, 6);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding08a()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding08a()');
 }
 
 function Sect00NewEnding08a(){
@@ -360,7 +360,7 @@ function Sect00NewEnding08a(){
 	SetBulletProgress(10, 7);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding08()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding08()');
 }
 
 function Sect00NewEnding08(){
@@ -376,7 +376,7 @@ function Sect00NewEnding08(){
 	SetBulletProgress(10, 7);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding09()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding09()');
 }
 
 function Sect00NewEnding09(){
@@ -394,7 +394,7 @@ function Sect00NewEnding09(){
 	SetBulletProgress(10, 8);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'Sect00NewEnding10()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding10()');
 }
 
 function Sect00NewEnding10(){
@@ -411,7 +411,7 @@ function Sect00NewEnding10(){
 	SetBulletProgress(10, 0);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Contine").style("visibility", "visible").attr('onClick', 'End()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'End()');
 }
 
 function Sect9(){

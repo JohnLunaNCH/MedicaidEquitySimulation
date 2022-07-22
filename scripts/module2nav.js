@@ -511,8 +511,12 @@ function End(){
 	centerSection.append("div").text("That concludes the simulation. Thank you for participating!");
 	centerSection.append("div").text("Please click on the following link to complete a post-simulation survey:");
 	centerSection.append("div").append("a")
-		.attr("href", "https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=${e://Field/ParticipantID} ")
-		.html("https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=${e://Field/ParticipantID} ")
+		.attr("href", "https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=$"+ (new URL(window.location)).searchParams.get('ParticipantID'))
+		.html("https://osu.az1.qualtrics.com/jfe/form/SV_6zAAKgSaQyfIpPo?ParticipantID=$" + 
+				(new URL(window.location))
+					.searchParams
+						.get('ParticipantID')
+			) // {e://Field/ParticipantID} ")
 		.style("color", "white")
 		.style("font-weight", "bold");
 	bottomSection.select(".bulletProgress").style("display", "none");

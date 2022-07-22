@@ -88,23 +88,28 @@ function MedicaidMadeMeDoIt(){
     d3.select("#disclosures").attr("onClick", "");
 
     const listDiv = d3.select("#disclosures").append('div');
-    listDiv
-        .style("background-color", "white")
-        .style("height", "70vh")
-        .style("border-radius", "20px")
-        .style("border", "solid gray")
-        .style("padding", "2em")
-        .style("margin", "0 10vw")
-        .style("align-self", "center");
-    const container = listDiv.append('div');
-
-    container
-        .style("height", "100%")
-        .style("display", "flex")
-        .style("flex-flow", "column")
-        .style("justify-content", "space-between");
-    container.append('div').node().innerHTML = disclosurestxt;
-    container.append('button')
-        .attr("onClick", "d3.select('#disclosures').style('display','none');")
-        .text("Launch Simulation");  
+    if (listDiv != null){
+        listDiv
+            .style("background-color", "white")
+            .style("height", "70vh")
+            .style("border-radius", "20px")
+            .style("border", "solid gray")
+            .style("padding", "2em")
+            .style("margin", "0 10vw")
+            .style("align-self", "center");
+        const container = listDiv.append('div');
+        if (container != null){
+            container
+                .style("height", "100%")
+                .style("display", "flex")
+                .style("flex-flow", "column")
+                .style("justify-content", "space-between");
+            if (disclosurestxt != null){
+                container.append('div').node().innerHTML = disclosurestxt;
+            }
+            container.append('button')
+                .attr("onClick", "d3.select('#disclosures').style('display','none');")
+                .text("Launch Simulation");  
+        }
+    }
 }

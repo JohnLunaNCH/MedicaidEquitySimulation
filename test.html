@@ -1,0 +1,10 @@
+<div> <button onclick="window.open('module2.html' + window.location.search, '_self');" style="color: white; font-weight: bold;">Continue to the Dentist Visit</button> </div>
+<script type="text/javascript">
+	console.log(window.location.search);
+	let params = (new URL(window.location)).searchParams;
+	let name = params.get('ParticipantID');
+	if (name==null)
+		console.log("no ParticipantID found");
+	console.log(name);
+	console.log((new URL(window.location)).searchParams.get('ParticipantID'));
+</script>

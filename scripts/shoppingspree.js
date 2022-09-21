@@ -83,7 +83,7 @@ function assignButton(button){
                 .attr("ison", "true"); 
             PopulateTutorialPage(d3.select(this).attr("id"));
             if (d3.select(this).attr("id") == "button2"){
-            	d3.select('shoppingspreeicons').select('ul').selectAll('li').style("background-color", "unset");
+            	d3.select('shoppingspreeicons').select('ul').selectAll('li').classed("green", false);
             	//activate shopping list (if inactive)
             	d3.select("#icon-list")
             		.style("display", "none");
@@ -93,17 +93,17 @@ function assignButton(button){
             	assignButton(nav.select("#button4"));
             }
             else if (d3.select(this).attr("id") == "button4"){
-            	d3.select('shoppingspreeicons').select('ul').selectAll('li').style("background-color", "unset");
+            	d3.select('shoppingspreeicons').select('ul').selectAll('li').classed("green", false);
             	//activate time remaining icon
             	d3.select("#icon-time").style("display", "block")
-            		.style("background-color", "green");
+            		.classed("green", true);
             	assignButton(nav.select("#button5"));
             }
             else if (d3.select(this).attr("id") == "button5"){
-            	d3.select('shoppingspreeicons').select('ul').selectAll('li').style("background-color", "unset");
+            	d3.select('shoppingspreeicons').select('ul').selectAll('li').classed("green", false);
             	//activate checkout icon        
             	d3.select("#icon-checkout").style("display", "block")
-            		.style("background-color", "green");
+            		.classed("green", true);
             }
         });
 }

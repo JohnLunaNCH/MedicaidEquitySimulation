@@ -147,6 +147,19 @@ vertical-align: middle;
 	top:  410px;
 }
 
+#icon-checkout{
+	cursor: pointer;
+	padding: 0 1em 0 0;
+	background-color: #59A5DB;
+}
+#icon-checkout:hover{
+	background-color: #005A9C;
+}
+
+.green{
+	background-color: green;
+}
+
 /* Background Images */
 .livingroom {
     background-image: url(../images/bg_livingroom02.png);

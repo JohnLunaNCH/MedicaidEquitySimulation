@@ -14,8 +14,10 @@ function addHeight(obj) {
    	obj.classList.add('hidden');
    }
 
-	scrollBy(container, (window.innerHeight * (chapter - 1)), scrollDuration, easeInOutCubic)	
+	scrollBy(container, (window.innerHeight * (chapter - 1)), scrollDuration, easeInOutCubic);	
 }
+
+var stopScroll = false;
 
 function scrollBy(element, value, duration, easingFunc) {
    var startTime;
@@ -30,18 +32,24 @@ function scrollBy(element, value, duration, easingFunc) {
 
    // create recursive function to call every frame
    var scroll = function(timestamp) {
-      startTime = startTime || timestamp;
-      var elapsed = timestamp - startTime;
+        if (stopScroll){
+         return;   
+        }
+        startTime = startTime || timestamp;
+        var elapsed = timestamp - startTime;
 	
-	y = startPos + (scrollEndValue - startPos) * easingFunc(elapsed / duration);
-	window.scroll({
-		top: y,
-		behavior: 'instant'
-	});
-      elapsed <= duration && window.requestAnimationFrame(scroll);
+    	y = startPos + (scrollEndValue - startPos) * easingFunc(elapsed / duration);
+    	window.scroll({
+    		top: y,
+    		behavior: 'instant'
+    	});
+          elapsed <= duration && window.requestAnimationFrame(scroll);
    };
+
    // call recursive function
-   if (startPos != scrollEndValue) window.requestAnimationFrame(scroll);
+   if (startPos != scrollEndValue){ 
+    window.requestAnimationFrame(scroll);
+   }
 }
 
 var easeInOutCubic = function(t) {
@@ -112,4 +120,32 @@ function MedicaidMadeMeDoIt(){
                 .text("Launch Simulation");  
         }
     }
+}
+
+var elem = document.documentElement;
+function openFullscreen() {
+    stopScroll = true;
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+
+  setTimeout(
+    function(){
+        window.scrollTo(
+            0, 
+            document.getElementsByClassName("container")[0].scrollHeight
+        );
+        stopScroll = false;
+    }, 
+    100);
+  
+
+  // scrollBy(
+  //   document.getElementsByClassName("container")[0], 
+  //   (window.innerHeight * (chapter - 1)), 
+  //   scrollDuration, easeInOutCubic);
 }

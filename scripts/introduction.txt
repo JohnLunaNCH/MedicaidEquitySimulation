@@ -1,15 +1,17 @@
-<div style="width: 100%; height: 60vh; overflow: auto; color: white; font-size: 1em;">
-<h3>Introduction</h3>
-The purpose of this simulation is to advance health equity for low-income patients by increasing healthcare providers’ sensitivity and empathy towards the challenges faced by disadvantaged patient populations. There are two primary objectives for the simulation:
-<ul>
-<li>Through experiencing some of the challenges faced by a low-income single-parent family, the participant can develop awareness of the barriers these patients encounter in obtaining healthcare. </li>
-<li>To train dentists how to recommend HPV vaccine to age-appropriate youth as cancer prevention, in alignment with the American Dental Association policy.</li>
-</ul>
-<div style="padding: 0 0 1em 0;">
-This simulation consists of two sequential modules. In the first module, you will take on the role of Patricia Rogers, a single parent with a 15-year-old daughter Mia and 9-year-old son Dylan. You will need to make daily life choices that impact on the family’s finance, physical health, emotional wellbeing and time/energy level, as reflected by the stats bar on the top right corner.
+<div style="border: 1px white solid; padding: 0 0 0 1em;">
+	<div style="width: 100%; height: 45vh; overflow: auto; color: white; font-size: 1em;">
+		<h3>Introduction</h3>
+		The purpose of this simulation is to advance health equity for low-income patients by increasing healthcare providers’ sensitivity and empathy towards the challenges faced by disadvantaged patient populations. There are two primary objectives for the simulation:
+		<ul>
+			<li>Through experiencing some of the challenges faced by a low-income single-parent family, the participant can develop awareness of the barriers these patients encounter in obtaining healthcare. </li>
+			<li>To train dentists how to recommend HPV vaccine to age-appropriate youth as cancer prevention, in alignment with the American Dental Association policy.</li>
+		</ul>
+		<div style="padding: 0 0 1em 0;">
+			This simulation consists of two sequential modules. In the first module, you will take on the role of Patricia Rogers, a single parent with a 15-year-old daughter Mia and 9-year-old son Dylan. You will need to make daily life choices that impact on the family’s finance, physical health, emotional wellbeing and time/energy level, as reflected by the stats bar on the top right corner.
+		</div>
+	</div>
 </div>
 <div class="flexContainer column">
-This simulation works best in full-screen at 100% browser zoom. To exit full screen, press the "Esc" key on your keyboard.
-<button onclick="openFullscreen();" style="margin: 1em 30%;">Enter Full-Screen</button>
-</div>
+	This simulation works best in full-screen at 100% browser zoom. To exit full screen, press the "Esc" key on your keyboard.
+	<button onclick="openFullscreen();" style="margin: 1em 30%;">Enter Full-Screen</button>
 </div>

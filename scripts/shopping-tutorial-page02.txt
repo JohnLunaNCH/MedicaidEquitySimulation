@@ -1,4 +1,4 @@
-<div class="panel" id="tutPanelLeft">
+<div class="panel" id="tutPanelLeft" style="height: 60vh; overflow-y: auto;">
     <h1>Grocery List</h1>
     <p>Your grocery list will be visible on the right side of the window after you start shopping.</p>
     <p>The Grocery List shows what items you have left to buy. You will be able to click on an item to navigate to that part of the store in the exercise.</p>

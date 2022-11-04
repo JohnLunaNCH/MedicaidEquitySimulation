@@ -26,121 +26,137 @@ var container, trans;
 var aldiText;
 var cornerstoreText;
 var gasstationText;
+var groceryTextChecked = 0;
 
 $.get('scripts/info_aldi.txt', function (response){
     aldiText = response;
+    TextReady();
 });
 $.get('scripts/info_cornerstore.txt', function (response){
     cornerstoreText = response;
+    TextReady();
 });
 $.get('scripts/info_gasstation.txt', function (response){
     gasstationText = response;
+    TextReady();
 });
 
+function TextReady(){
+    groceryTextChecked++;
+    if (groceryTextChecked == 3){
+        SetUpGroceryStoreMap();
+    }
+}
 
-d3.xml("images/mapmask.svg")
-    .then(data => {
-        //insert the svg code
-        d3.select("#MapToGrocery")
-            .node().append(data.documentElement);
+function SetUpGroceryStoreMap(){
+    d3.xml("images/mapmask.svg")
+        .then(data => {
+            //insert the svg code
+            d3.select("#MapToGrocery")
+                .node().append(data.documentElement);
 
-        //assign the container and main transform
-        container = d3.select("#MapToGrocery").select('svg');
-        trans = container.select('#map');
+            //assign the container and main transform
+            container = d3.select("#MapToGrocery").select('svg');
+            trans = container.select('#map');
 
-        //fix the illustrator file
-        trans.selectAll('image')
-            .attr("xlink:href", function() {
-                return "images/" + d3.select(this).attr("xlink:href");
-            });
-        
-        //asign path groups to their variables
-        trans.selectAll('g')
-            .each(function (){
-                var id = d3.select(this).attr("id");
-                switch (id){
-                    case 'aldi-paths':
-                        aldiPath = d3.select(this);
-                        break;
-                    case 'cvs-paths':
-                        cvsPath = d3.select(this);
-                        break;
-                    case 'gasstation-paths':
-                        gasstationPath = d3.select(this);
-                        break;
-                    case 'cornerstore-paths':
-                        cornerstorePath = d3.select(this);
-                        break;
-                    default:
-                        break;
-                }
-            });
+            //fix the illustrator file
+            trans.selectAll('image')
+                .attr("xlink:href", function() {
+                    return "images/" + d3.select(this).attr("xlink:href");
+                });
+            
+            //asign path groups to their variables
+            trans.selectAll('g')
+                .each(function (){
+                    var id = d3.select(this).attr("id");
+                    switch (id){
+                        case 'aldi-paths':
+                            aldiPath = d3.select(this);
+                            break;
+                        case 'cvs-paths':
+                            cvsPath = d3.select(this);
+                            break;
+                        case 'gasstation-paths':
+                            gasstationPath = d3.select(this);
+                            break;
+                        case 'cornerstore-paths':
+                            cornerstorePath = d3.select(this);
+                            break;
+                        default:
+                            break;
+                    }
+                });
 
-        //make the buttons functional
-        trans.selectAll('use')
-            .each(function (d, i) {
-                var id = d3.select(this).attr("id");
+            //make the buttons functional
+            trans.selectAll('use')
+                .each(function (d, i) {
+                    var id = d3.select(this).attr("id");
 
-                switch (id){
-                    case 'aldi-highlight':
-                        aldiHighlight = d3.select(this);
-                        break;
-                    case 'aldi':
-                        aldi = d3.select(this);
-                        mapButtons(aldi, id, aldiHighlight, aldiPath, aldiText);
-                        break;
-                    case 'cornerstore-highlight':
-                        cornerstoreHighlight = d3.select(this);
-                        break;
-                    case 'cornerstore':
-                        cornerstore = d3.select(this);
-                        mapButtons(cornerstore, id, cornerstoreHighlight, cornerstorePath, cornerstoreText);
-                        break;
-                    case 'cvs-highlight':
-                        cvsHighlight = d3.select(this);
-                        break;
-                    case 'cvs':
-                        cvs = d3.select(this);
-                        mapButtons(cvs, id, cvsHighlight, cvsPath, "");
-                        break;
-                    case 'gasstation-highlight':
-                        gasstationHighlight = d3.select(this);
-                        break;
-                    case 'gasstation':
-                        gasstation = d3.select(this);
-                        mapButtons(gasstation, id, gasstationHighlight, gasstationPath, gasstationText);
-                        break;
-                    default:
-                        console.log("Uncaught element");
-                        break;
-                }
-            });
+                    switch (id){
+                        case 'aldi-highlight':
+                            aldiHighlight = d3.select(this);
+                            break;
+                        case 'aldi':
+                            aldi = d3.select(this);
+                            mapButtons(aldi, id, aldiHighlight, aldiPath, aldiText);
+                            console.log("Mapped aldi");
+                            break;
+                        case 'cornerstore-highlight':
+                            cornerstoreHighlight = d3.select(this);
+                            break;
+                        case 'cornerstore':
+                            cornerstore = d3.select(this);
+                            mapButtons(cornerstore, id, cornerstoreHighlight, cornerstorePath, cornerstoreText);
+                            console.log("Mapped cornerstore");
+                            break;
+                        case 'cvs-highlight':
+                            cvsHighlight = d3.select(this);
+                            break;
+                        case 'cvs':
+                            cvs = d3.select(this);
+                            mapButtons(cvs, id, cvsHighlight, cvsPath, "");
+                            console.log("Mapped cvs");
+                            break;
+                        case 'gasstation-highlight':
+                            gasstationHighlight = d3.select(this);
+                            break;
+                        case 'gasstation':
+                            gasstation = d3.select(this);
+                            mapButtons(gasstation, id, gasstationHighlight, gasstationPath, gasstationText);
+                            console.log("Mapped gasstation");
+                            break;
+                        default:
+                            console.log("Uncaught element");
+                            break;
+                    }
+                });
 
-        const mapBackground = trans.select('#map-background');
+            const mapBackground = trans.select('#map-background');
 
-        mapBackground
-            .on("click", function(){
-                disableAllPaths();
-                toggleMap(false);
-                d3.select("#map-description-container")
-                //.text("You clicked the map.");
-                .html("<div style=\"line-height: 50vh;\">Click on a destination to get more information.</div>");
-            });
+            mapBackground
+                .on("click", function(){
+                    disableAllPaths();
+                    toggleMap(false);
+                    d3.select("#map-description-container")
+                    //.text("You clicked the map.");
+                    .html("<div style=\"line-height: 50vh;\">Click on a destination to get more information.</div>");
+                });
 
-        //find the offset of the transform in the svg
-        var matrix = mapBackground.attr("transform").split(" ");
-        const width = Number(mapBackground.attr('width'));
-        const height = Number(mapBackground.attr('height'));
-        const posX = Number(matrix[4]);
-        const posY = Number(matrix[5].substring(0, matrix[5].length - 1));
-        const maxX = width + posX;
-        const maxY = height + posY;
+            //find the offset of the transform in the svg
+            var matrix = mapBackground.attr("transform").split(" ");
+            const width = Number(mapBackground.attr('width'));
+            const height = Number(mapBackground.attr('height'));
+            const posX = Number(matrix[4]);
+            const posY = Number(matrix[5].substring(0, matrix[5].length - 1));
+            const maxX = width + posX;
+            const maxY = height + posY;
 
-        trans.attr("transform", "translate(0, 0) scale(1)");
+            trans.attr("transform", "translate(0, 0) scale(1)");
 
-        //set up the map movement
-        initializeMap(posX, posY, maxX, maxY);
-    });
+            //set up the map movement
+            initializeMap(posX, posY, maxX, maxY);
+        });
+}
 
 function initializeMap(lowX, lowY, highX, highY){
     handleZoom_mtg = (e) => trans.attr('transform', e.transform);

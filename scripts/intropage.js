@@ -20,7 +20,8 @@ function DisplayIntroPage(){
         .style("border", "solid gray")
         .style("padding", "2em")
         .style("margin", "0 20vw")
-        .style("align-self", "center");
+        .style("align-self", "center")
+        .style("overflow-y", "auto");
     const container = listDiv.append('div');
 
     container
@@ -32,5 +33,6 @@ function DisplayIntroPage(){
     container.append('button')
         .attr("onClick",
         	"playPause(d3.select('#prologueVid').node(), 2000);d3.select('#introduction').style('display','none');")
+        .style("margin", "0 30%")
         .text("Continue");  
 }

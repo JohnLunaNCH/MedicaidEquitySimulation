@@ -3,7 +3,7 @@
         <img class="route-image" src="images/svg_path_toAldi.svg">
     </div>
     <div style="display: flex;flex-flow: column;justify-content: space-between;">
-        <div>
+        <div style="height:60vh; overflow-y:auto;">
             <h1 class="map-description-header">
                 <div>Discount Super Market</div>
                 <div>

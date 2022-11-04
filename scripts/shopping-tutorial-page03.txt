@@ -1,4 +1,4 @@
-<div class="panel" id="tutPanelLeft">
+<div class="panel" id="tutPanelLeft" style="height: 60vh; overflow-y: auto;">
     <h1>Choose Wisely</h1>
     <p>Stores offer multiple brands with different cost and quality levels. Lower quality items cost less, but may impact your family's health.</p>
         <p>(click the next bullet below to continue the tutorial)</p>

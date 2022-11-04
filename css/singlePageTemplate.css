@@ -13,7 +13,7 @@ body {
 	font-style: normal;
 	font-weight: 200;
 	color: #FFFFFF;
-	font-size: larger;
+	font-size: large;
 	line-height: 1.5em;
 }
 /* Container */
@@ -483,7 +483,7 @@ shoppingspreeIcons img.mediumIcon{
 	/*margin: 1em 2em;*/
 	border:  thin solid gray;
 	/*padding: 1em;*/
-	width: 40vw;
+	width: 70vw;
 	align-self: center;
 }
 

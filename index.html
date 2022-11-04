@@ -107,7 +107,7 @@
   <section class="banner intro-fridge" id="Ch2-Sct1">
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
 			<div class="flexContainer column narrationInner">
-				<div style="">
+				<div style="height: 70vh; overflow-y: auto;">
 					<h1 style="margin: 0 0 1em;">Monday Morning</h1>
 					<p>The kids are miraculously awake and getting ready for school. You pour them each a bowl of cereal and have just enough milk leftover to add to your coffee. The fridge is looking empty, besides some dangerously old takeout and a few loose packets of ketchup. You'll need to pick up some groceries today.</p>
 					<ul>
@@ -232,7 +232,7 @@
   <section class="banner intro-calc" id="Ch2-Sct1">
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">
 			<div class="flexContainer column narrationInner">
-				<div>
+				<div style="height: 70vh; overflow-y: auto;">
 					<h1 style="margin: 0 0 1em;">Tuesday Evening</h1>
     			<p>The kids are fed and zoned out watching cartoons on one of those channels that always plays cartoons. After the grocery store debacle, you went to one of those cash advance places to get enough money to pay bills and rent. You are sitting at a freshly cleared dining room table sorting through bills that are in various states of due (some in the state of "Over"). After subtracting rent, you have $400. You'll have to choose which bills you can afford.</p>
 					<ul>
@@ -282,10 +282,12 @@
   <section class="banner intro-science" id="Ch3-Sct1">
   	<div class="darkbackground flexContainer row" style="background-color: rgba(0, 0, 0, 0);height: 70vh;overflow-y: auto; width: 100%;">	  
 			<div class="flexContainer column narrationInner" style="flex: 0 1 auto;">
-				<h1 style="margin: 0 0 1em;">Thursday Morning</h1>
-				<div>You've made it to Thursday. The coffee is hot, there are groceries in the fridge, bills are paid (mostly), and as you start to think maybe you'll make it through the weekend, Mia hands you a piece of paper that reads "SCIENCE FAIR! Thursday, 3pm" You remember Mia is a finalist. She gives you a look, a look that you used to give your mom, that says, "A good parent would be there." And, though you hate to miss work, you know she's right.</div>
-				
-				<p>What do you do?</p>
+				<div style="height: 70vh; overflow-y: auto; padding: 0 1em 0 0;">
+					<h1 style="margin: 0 0 1em;">Thursday Morning</h1>
+					<div>You've made it to Thursday. The coffee is hot, there are groceries in the fridge, bills are paid (mostly), and as you start to think maybe you'll make it through the weekend, Mia hands you a piece of paper that reads "SCIENCE FAIR! Thursday, 3pm" You remember Mia is a finalist. She gives you a look, a look that you used to give your mom, that says, "A good parent would be there." And, though you hate to miss work, you know she's right.</div>
+					
+					<p>What do you do?</p>
+				</div>
 			</div>
 			<div id="sciencefairchoice" class="darkbackground flexContainer column" style="width: 30vw; height: 55vh; align-self: center; justify-content: center;">
 				<div style="align-content: center; overflow-y: auto;" id="sciencefairchoiceDisplay">
@@ -320,7 +322,7 @@
   <section class="banner intro-lobby" id="Ch4-Sct1">
   	<div class="darkbackground" style="background-color: rgba(0, 0, 0, 0);">		  
 				<div class="flexContainer column narrationInner">
-					<div>
+					<div style="height: 70vh; overflow-y: auto;">
 						<h1 style="margin: 0 0 1em;">Scheduling a dentist</h1>
 						<p>At dinner, Mia mentioned they learned about dental care at school today and the teacher asked the students when they had last visited a dentist. Mia couldn't answer because she couldn't remember.</p>
 						<p>You know the answer though. Neither you nor your children have had a dental appointment since their father passed. That would make it at least 5 years since their last dental check-up. You decide to schedule a dental visit for the children.</p>
@@ -336,11 +338,14 @@
   		<div class="subContainer" style="height:100%; width:100%">
   			<div style="display: flex; flex-flow: column wrap; justify-content: space-evenly;height:100%;">
   				<div style="display: flex; flex-flow: row; height:100%;">
+
   					<div id="dentist-description-container">
+  						<!-- header -->
   						<div class="dentist-list-header">
-  							<div style="font-size: larger; font-weight:  bold">Dentist Selection<div>
+  							<div style="font-weight:  bold">Dentist Selection</div>
   							<div><i>You need to successfully book an appointment to move on to the next module.</i></div>		
   						</div>
+  						<!-- list container -->
   						<div id="dentist-list-container">
   							<div class="dentist-list-item" id="location1">
   								<h1 class="dentistName">Hilltop Dental Group</h1>
@@ -383,13 +388,17 @@
   								</div>
   							</div>
   						</div>
-  						<div id="dentist-description"></div>
+  						<!-- populated description -->
+  						<div id="dentist-description">  							
+  						</div>
   					</div>
+
   					<div id="dentistMapContainer">
 	  					<div style="width: 100%; overflow: hidden; height: 100%;align-self: center;">
 	  						<div id="MapToDentist" class="interactiveMap" style="height: 100%; align-self: center;"></div>
 	  					</div>
-  					</div>  					
+  					</div> 	
+
   				</div>
   			</div>
   		</div>

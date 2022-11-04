@@ -30,122 +30,124 @@ var descriptionDisplay;
 var videoHtml;
 $.get('scripts/location1.txt', function (response){
     videoHtml = response;
+    SetUpMapToDentist();
 });
 
+function SetUpMapToDentist(){
+    d3.xml("images/dentist-mapmask.svg")
+        .then(data => {
+            //insert the svg code
+            d3.select("#MapToDentist")
+                .node().append(data.documentElement);
 
-d3.xml("images/dentist-mapmask.svg")
-    .then(data => {
-        //insert the svg code
-        d3.select("#MapToDentist")
-            .node().append(data.documentElement);
+            //assign the container and main transform
+            dentistContainer = d3.select("#MapToDentist").select('svg');
+            dentistTransform = dentistContainer.select('#map');
 
-        //assign the container and main transform
-        dentistContainer = d3.select("#MapToDentist").select('svg');
-        dentistTransform = dentistContainer.select('#map');
+            //fix the illustrator file
+            dentistTransform.selectAll('image')
+                .attr("xlink:href", function() {
+                    return "images/" + d3.select(this).attr("xlink:href");
+                });
+            dentistContainer.style("height", "100%");
+            dentistContainer.style("border-radius", "0 20px 20px 0");
+            d3.select("#dentist-description")
+                .style("display", "none");
+            
+            //asign path groups to their variables
+            dentistTransform.selectAll('g')
+                .each(function (){
+                    var id = d3.select(this).attr("id");
+                    switch (id){
+                        case 'location1-paths':
+                            location1.path = d3.select(this);
+                            break;
+                        case 'location2-paths':
+                            location2.path = d3.select(this);
+                            break;
+                        case 'location3-paths':
+                            location3.path = d3.select(this);
+                            break;
+                        case 'location4-paths':
+                            location4.path = d3.select(this);
+                            break;
+                        case 'location5-paths':
+                            location5.path = d3.select(this);
+                            break;
+                        default:
+                            break;
+                    }
+                });
+            //make the buttons functional
+            dentistTransform.selectAll('use')
+                .each(function (d, i) {
+                    var id = d3.select(this).attr("id");
+                   
+                    switch (id){
+                        case 'location1-highlight':
+                            location1.highlight = d3.select(this);
+                            break;
+                        case 'location1':
+                            location1.button = d3.select(this);
+                            mapButtons_dentist(location1.button, id, location1.highlight, location1.path);
+                            break;
+                        case 'location2-highlight':
+                            location2.highlight = d3.select(this);
+                            break;
+                        case 'location2':
+                            location2.button = d3.select(this);
+                            mapButtons_dentist(location2.button, id, location2.highlight, location2.path);
+                            break;
+                        case 'location3-highlight':
+                            location3.highlight = d3.select(this);
+                            break;
+                        case 'location3':
+                            location3.button = d3.select(this);
+                            mapButtons_dentist(location3.button, id, location3.highlight, location3.path);
+                            break;
+                        case 'location4-highlight':
+                            location4.highlight = d3.select(this);
+                            break;
+                        case 'location4':
+                            location4.button = d3.select(this);
+                            mapButtons_dentist(location4.button, id, location4.highlight, location4.path);
+                            break;
+                        case 'location5-highlight':
+                            location5.highlight = d3.select(this);
+                            break;
+                        case 'location5':
+                            location5.button = d3.select(this);
+                            mapButtons_dentist(location5.button, id, location5.highlight, location5.path);
+                            break;
+                        default:
+                            console.log("Uncaught element: " + id);
+                            break;
+                    }
+                });
 
-        //fix the illustrator file
-        dentistTransform.selectAll('image')
-            .attr("xlink:href", function() {
-                return "images/" + d3.select(this).attr("xlink:href");
-            });
-        dentistContainer.style("height", "100%");
-        dentistContainer.style("border-radius", "0 20px 20px 0");
-        d3.select("#dentist-description")
-            .style("display", "none");
-        
-        //asign path groups to their variables
-        dentistTransform.selectAll('g')
-            .each(function (){
-                var id = d3.select(this).attr("id");
-                switch (id){
-                    case 'location1-paths':
-                        location1.path = d3.select(this);
-                        break;
-                    case 'location2-paths':
-                        location2.path = d3.select(this);
-                        break;
-                    case 'location3-paths':
-                        location3.path = d3.select(this);
-                        break;
-                    case 'location4-paths':
-                        location4.path = d3.select(this);
-                        break;
-                    case 'location5-paths':
-                        location5.path = d3.select(this);
-                        break;
-                    default:
-                        break;
-                }
-            });
-        //make the buttons functional
-        dentistTransform.selectAll('use')
-            .each(function (d, i) {
-                var id = d3.select(this).attr("id");
-               
-                switch (id){
-                    case 'location1-highlight':
-                        location1.highlight = d3.select(this);
-                        break;
-                    case 'location1':
-                        location1.button = d3.select(this);
-                        mapButtons_dentist(location1.button, id, location1.highlight, location1.path);
-                        break;
-                    case 'location2-highlight':
-                        location2.highlight = d3.select(this);
-                        break;
-                    case 'location2':
-                        location2.button = d3.select(this);
-                        mapButtons_dentist(location2.button, id, location2.highlight, location2.path);
-                        break;
-                    case 'location3-highlight':
-                        location3.highlight = d3.select(this);
-                        break;
-                    case 'location3':
-                        location3.button = d3.select(this);
-                        mapButtons_dentist(location3.button, id, location3.highlight, location3.path);
-                        break;
-                    case 'location4-highlight':
-                        location4.highlight = d3.select(this);
-                        break;
-                    case 'location4':
-                        location4.button = d3.select(this);
-                        mapButtons_dentist(location4.button, id, location4.highlight, location4.path);
-                        break;
-                    case 'location5-highlight':
-                        location5.highlight = d3.select(this);
-                        break;
-                    case 'location5':
-                        location5.button = d3.select(this);
-                        mapButtons_dentist(location5.button, id, location5.highlight, location5.path);
-                        break;
-                    default:
-                        console.log("Uncaught element: " + id);
-                        break;
-                }
-            });
+            const mapBackground = dentistTransform.select('#map-background-dentist');
 
-        const mapBackground = dentistTransform.select('#map-background-dentist');
+            mapBackground
+                .on("click", function(e){
+                    ResetMap_dentist();
+                });
 
-        mapBackground
-            .on("click", function(e){
-                ResetMap_dentist();
-            });
-
-        //find the offset of the transform in the svg
-        var matrix = mapBackground.attr("transform").split(" ");
-        const width = Number(mapBackground.attr('width'));
-        const height = Number(mapBackground.attr('height'));
-        const posX = Number(matrix[4]);
-        const posY = Number(matrix[5].substring(0, matrix[5].length - 1));
-        const maxX = width + posX;
-        const maxY = height + posY;
+            //find the offset of the transform in the svg
+            var matrix = mapBackground.attr("transform").split(" ");
+            const width = Number(mapBackground.attr('width'));
+            const height = Number(mapBackground.attr('height'));
+            const posX = Number(matrix[4]);
+            const posY = Number(matrix[5].substring(0, matrix[5].length - 1));
+            const maxX = width + posX;
+            const maxY = height + posY;
 
 
-        dentistTransform.attr("transform", "translate(0, 0) scale(1)");
+            dentistTransform.attr("transform", "translate(0, 0) scale(1)");
 
-        //set up the map movement
-        initializeMap_dentist(posX, posY, maxX, maxY);
-    });
+            //set up the map movement
+            initializeMap_dentist(posX, posY, maxX, maxY);
+        });
+}
 
 function moveMap_dentist(scale, x, y){
     dentistContainer

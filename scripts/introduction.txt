@@ -12,6 +12,6 @@
 	</div>
 </div>
 <div class="flexContainer column">
-	This simulation works best in full-screen at 100% browser zoom. To exit full screen, press the "Esc" key on your keyboard.
+	This simulation works best in full-screen at 100% browser zoom on Chrome or Firefox. Once you begin, please do not refresh the page or you will lose your progress. To enter full screen, you can hit the button below. To exit full screen, press the "Esc" key on your keyboard.
 	<button onclick="openFullscreen();" style="margin: 1em 30%;">Enter Full-Screen</button>
 </div>

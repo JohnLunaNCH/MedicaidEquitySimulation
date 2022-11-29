@@ -50,13 +50,13 @@ function Sect2a(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeVideo;
-	EnableButton(d3.select('#bottomContinueButton'), false);
+	EnableButton(d3.select('#bottomContinueButton'), true);
 	//Scenario5 https://vimeo.com/manage/videos/677321017
 	midSection.select('iframe').attr('src', 'https://player.vimeo.com/video/716780801?h=78076ab601&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
 	
 	//wait til end of video to turn continue button on
 	var player = new Vimeo.Player(document.querySelector('iframe'));
-	player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
+	//player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
 
 	bottomSection.select(".bulletProgress").style("display", "none");
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-end");
@@ -67,13 +67,13 @@ function Sect2b(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeVideo;
-	EnableButton(d3.select('#bottomContinueButton'), false);
+	EnableButton(d3.select('#bottomContinueButton'), true);
 	//Scenario5 https://vimeo.com/manage/videos/677321017
 	midSection.select('iframe').attr('src', 'https://player.vimeo.com/video/716778233?h=7cd69bafa4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
-	
+
 	//wait til end of video to turn continue button on
 	var player = new Vimeo.Player(document.querySelector('iframe'));
-	player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
+	//player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
 
 	bottomSection.select(".bulletProgress").style("display", "none");
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-end");
@@ -84,13 +84,13 @@ function Sect2c(){
 	titleSection.select('h1').text("");
 	ClearSection(midSection);
 	midSection.node().innerHTML = m2_typeVideo;
-	EnableButton(d3.select('#bottomContinueButton'), false);
+	EnableButton(d3.select('#bottomContinueButton'), true);
 	//Scenario5 https://vimeo.com/manage/videos/677321017
 	midSection.select('iframe').attr('src', 'https://player.vimeo.com/video/716781038?h=8ae793245c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
 	
 	//wait til end of video to turn continue button on
 	var player = new Vimeo.Player(document.querySelector('iframe'));
-	player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
+	//player.on('ended',function(){EnableButton(d3.select('#bottomContinueButton'), true);});
 
 	bottomSection.select(".bulletProgress").style("display", "none");
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-end");

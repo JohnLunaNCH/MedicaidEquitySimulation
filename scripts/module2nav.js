@@ -345,7 +345,7 @@ function Sect00NewEnding07(){
 	SetBulletProgress(10, 6);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
-	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding08a()');
+	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'Sect00NewEnding08()');
 }
 
 function Sect00NewEnding08a(){
@@ -408,7 +408,7 @@ function Sect00NewEnding10(){
 	list.append("li").text("The Vaccines for Children (VFC) program provides vaccines for children ages 18 years and younger who are uninsured, Medicaid-eligible, American Indian or Alaska Native. Learn more at www.cdc.gov/vaccines/programs/vfc/parents/qa-detailed.html");
 	list.append("li").text("You can also check with your local health department and with your health insurance.");
 
-	SetBulletProgress(10, 0);
+	SetBulletProgress(10, 9);
 
 	d3.select('#bottomContinueButtonContainer').style("justify-content", "flex-start");
 	d3.select('#bottomContinueButton').text("Continue").style("visibility", "visible").attr('onClick', 'End()');
